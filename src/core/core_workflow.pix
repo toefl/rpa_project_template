@@ -7,20 +7,29 @@
     <Childs>
       <AbstractStep z:Id="i3" i:type="CommentStep">
         <Childs />
+        <HeightOnFlowchart>50</HeightOnFlowchart>
         <Id>f1613084-3fce-4055-b54d-b7c5294f7943</Id>
         <Parent z:Ref="i2" />
+        <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
         <PropertyValues />
         <SelectedOptionId i:nil="true" />
+        <WidthOnFlowchart>360</WidthOnFlowchart>
         <IsCollapsed>false</IsCollapsed>
-        <Text>// ===================================================
-// Описание:
-// Центральный координатор цикла работы с транзакциями. Организует обработку всех транзакций, повторные попытки (retry), контроль лимитов ошибок, обновление статусов и подготовку транзакций к дальнейшей бизнес-логике. Делегирует обработку атомарных транзакций в специализированные компоненты, обеспечивает устойчивость, автоматический recovery, уведомления и финализацию процесса. Обрабатывает технические окна и реагирует на бизнес-исключения.
-// ===================================================</Text>
+        <Text>### Описание
+Центральный координатор цикла работы с транзакциями: управляет обработкой и повторами, контролирует лимиты ошибок, обновляет статусы, подготавливает транзакции к бизнес-логике, обеспечивает устойчивость, восстановление после ошибки, уведомления и финализацию процесса с учётом технических окон и бизнес-исключений.
+
+| Направление | Аргумент | Тип | Описание |
+| :--- | :--- | :--- | :--- |
+| **InOut** | `global_context` | Dictionary&lt;System.String, System.Object&gt; | Глобальный контекст выполнения приложения. Содержит пути, конфигурации и динамические параметры. |
+
+---</Text>
       </AbstractStep>
       <AbstractStep z:Id="i4" i:type="ExecutedStep">
         <Childs />
+        <HeightOnFlowchart>50</HeightOnFlowchart>
         <Id>027500bf-1b60-4c2b-98f4-1456a49e0a91</Id>
         <Parent z:Ref="i2" />
+        <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
         <PropertyValues>
           <PropertyValue z:Id="i5">
             <PropertyName>Value</PropertyName>
@@ -43,6 +52,7 @@
           </PropertyValue>
         </PropertyValues>
         <SelectedOptionId i:nil="true" />
+        <WidthOnFlowchart>360</WidthOnFlowchart>
         <AutoCloseMode>None</AutoCloseMode>
         <EnableStatus>true</EnableStatus>
         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -60,17 +70,22 @@
                     <Childs>
                       <AbstractStep z:Id="i11" i:type="CommentStep">
                         <Childs />
+                        <HeightOnFlowchart>50</HeightOnFlowchart>
                         <Id>98d23234-73a6-40ac-aaa5-22015a47fd1b</Id>
                         <Parent z:Ref="i10" />
+                        <PositionOnFlowchart xmlns:d13p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                         <PropertyValues />
                         <SelectedOptionId i:nil="true" />
+                        <WidthOnFlowchart>360</WidthOnFlowchart>
                         <IsCollapsed>false</IsCollapsed>
                         <Text>Проверка перед циклом — защищает от лишних инициализаций, если тех. окно наступило ДО входа в цикл.</Text>
                       </AbstractStep>
                       <AbstractStep z:Id="i12" i:type="ExecutedStep">
                         <Childs />
+                        <HeightOnFlowchart>50</HeightOnFlowchart>
                         <Id>07bd8f38-102b-4cc3-9b28-f797d846f035</Id>
                         <Parent z:Ref="i10" />
+                        <PositionOnFlowchart xmlns:d13p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                         <PropertyValues>
                           <PropertyValue z:Id="i13">
                             <PropertyName>FilePath</PropertyName>
@@ -98,6 +113,7 @@
                           </PropertyValue>
                         </PropertyValues>
                         <SelectedOptionId i:nil="true" />
+                        <WidthOnFlowchart>360</WidthOnFlowchart>
                         <AutoCloseMode>None</AutoCloseMode>
                         <EnableStatus>true</EnableStatus>
                         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -111,10 +127,13 @@
                             <Childs>
                               <AbstractStep z:Id="i18" i:type="ExecutedStep">
                                 <Childs />
+                                <HeightOnFlowchart>50</HeightOnFlowchart>
                                 <Id>5a7e9408-60fd-4124-b210-5868b936fac8</Id>
                                 <Parent z:Ref="i17" />
+                                <PositionOnFlowchart xmlns:d17p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                                 <PropertyValues />
-                                <SelectedOptionId>0</SelectedOptionId>
+                                <SelectedOptionId i:nil="true" />
+                                <WidthOnFlowchart>360</WidthOnFlowchart>
                                 <AutoCloseMode>None</AutoCloseMode>
                                 <EnableStatus>true</EnableStatus>
                                 <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -123,10 +142,13 @@
                                 <_activityFullName>BR.Core.Base.Return</_activityFullName>
                               </AbstractStep>
                             </Childs>
+                            <HeightOnFlowchart i:nil="true" />
                             <Id>f02cc3db-c45e-4c16-95f7-8f85ebaad008</Id>
                             <Parent z:Ref="i16" />
+                            <PositionOnFlowchart xmlns:d15p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                             <PropertyValues />
                             <SelectedOptionId i:nil="true" />
+                            <WidthOnFlowchart i:nil="true" />
                             <AutoCloseMode>None</AutoCloseMode>
                             <EnableStatus>true</EnableStatus>
                             <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -136,10 +158,13 @@
                           </AbstractStep>
                           <AbstractStep z:Id="i19" i:type="ExecutedStep">
                             <Childs />
+                            <HeightOnFlowchart i:nil="true" />
                             <Id>daa27e3e-f8d2-422c-b3f3-969b73ed66c6</Id>
                             <Parent z:Ref="i16" />
+                            <PositionOnFlowchart xmlns:d15p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                             <PropertyValues />
                             <SelectedOptionId i:nil="true" />
+                            <WidthOnFlowchart i:nil="true" />
                             <AutoCloseMode>None</AutoCloseMode>
                             <EnableStatus>true</EnableStatus>
                             <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -148,8 +173,10 @@
                             <_activityFullName>BR.Core.Base.IfFalse</_activityFullName>
                           </AbstractStep>
                         </Childs>
+                        <HeightOnFlowchart i:nil="true" />
                         <Id>ce57365f-4c32-43de-a32e-262ee1e820c7</Id>
                         <Parent z:Ref="i10" />
+                        <PositionOnFlowchart xmlns:d13p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                         <PropertyValues>
                           <PropertyValue z:Id="i20">
                             <PropertyName>Condition</PropertyName>
@@ -161,6 +188,7 @@
                           </PropertyValue>
                         </PropertyValues>
                         <SelectedOptionId i:nil="true" />
+                        <WidthOnFlowchart i:nil="true" />
                         <AutoCloseMode>None</AutoCloseMode>
                         <EnableStatus>true</EnableStatus>
                         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -169,10 +197,13 @@
                         <_activityFullName>BR.Core.Base.If</_activityFullName>
                       </AbstractStep>
                     </Childs>
+                    <HeightOnFlowchart i:nil="true" />
                     <Id>d3d2d4f2-0bfb-479e-9ac5-b1d3a746a7e7</Id>
                     <Parent z:Ref="i9" />
+                    <PositionOnFlowchart xmlns:d11p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                     <PropertyValues />
                     <SelectedOptionId i:nil="true" />
+                    <WidthOnFlowchart i:nil="true" />
                     <AutoCloseMode>None</AutoCloseMode>
                     <EnableStatus>true</EnableStatus>
                     <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -189,10 +220,13 @@
                             <Childs>
                               <AbstractStep z:Id="i24" i:type="ExecutedStep">
                                 <Childs />
+                                <HeightOnFlowchart>50</HeightOnFlowchart>
                                 <Id>c151804d-c40f-4a31-ba2f-67d4b8c8dc46</Id>
                                 <Parent z:Ref="i23" />
+                                <PositionOnFlowchart xmlns:d17p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                                 <PropertyValues />
                                 <SelectedOptionId i:nil="true" />
+                                <WidthOnFlowchart>360</WidthOnFlowchart>
                                 <AutoCloseMode>None</AutoCloseMode>
                                 <EnableStatus>true</EnableStatus>
                                 <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -201,10 +235,13 @@
                                 <_activityFullName>BR.Core.Base.BreakLoop</_activityFullName>
                               </AbstractStep>
                             </Childs>
+                            <HeightOnFlowchart i:nil="true" />
                             <Id>60a53e85-f9e2-4052-8bc1-57e21eb6b879</Id>
                             <Parent z:Ref="i22" />
+                            <PositionOnFlowchart xmlns:d15p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                             <PropertyValues />
                             <SelectedOptionId i:nil="true" />
+                            <WidthOnFlowchart i:nil="true" />
                             <AutoCloseMode>None</AutoCloseMode>
                             <EnableStatus>true</EnableStatus>
                             <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -214,10 +251,13 @@
                           </AbstractStep>
                           <AbstractStep z:Id="i25" i:type="ExecutedStep">
                             <Childs />
+                            <HeightOnFlowchart i:nil="true" />
                             <Id>e0e52fca-104f-41d4-adf7-a086e1d63dab</Id>
                             <Parent z:Ref="i22" />
+                            <PositionOnFlowchart xmlns:d15p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                             <PropertyValues />
                             <SelectedOptionId i:nil="true" />
+                            <WidthOnFlowchart i:nil="true" />
                             <AutoCloseMode>None</AutoCloseMode>
                             <EnableStatus>true</EnableStatus>
                             <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -226,8 +266,10 @@
                             <_activityFullName>BR.Core.Base.IfFalse</_activityFullName>
                           </AbstractStep>
                         </Childs>
+                        <HeightOnFlowchart i:nil="true" />
                         <Id>c7d928da-0775-4564-96c7-4a92813b4762</Id>
                         <Parent z:Ref="i21" />
+                        <PositionOnFlowchart xmlns:d13p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                         <PropertyValues>
                           <PropertyValue z:Id="i26">
                             <PropertyName>Condition</PropertyName>
@@ -239,6 +281,7 @@
                           </PropertyValue>
                         </PropertyValues>
                         <SelectedOptionId i:nil="true" />
+                        <WidthOnFlowchart i:nil="true" />
                         <AutoCloseMode>None</AutoCloseMode>
                         <EnableStatus>true</EnableStatus>
                         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -247,10 +290,13 @@
                         <_activityFullName>BR.Core.Base.If</_activityFullName>
                       </AbstractStep>
                     </Childs>
+                    <HeightOnFlowchart i:nil="true" />
                     <Id>2bdf0dff-8571-4a43-a29d-5bda17c8008d</Id>
                     <Parent z:Ref="i9" />
+                    <PositionOnFlowchart xmlns:d11p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                     <PropertyValues />
                     <SelectedOptionId i:nil="true" />
+                    <WidthOnFlowchart i:nil="true" />
                     <AutoCloseMode>None</AutoCloseMode>
                     <EnableStatus>true</EnableStatus>
                     <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -262,8 +308,10 @@
                     <Childs>
                       <AbstractStep z:Id="i28" i:type="ExecutedStep">
                         <Childs />
+                        <HeightOnFlowchart>50</HeightOnFlowchart>
                         <Id>773b0887-085c-490d-9899-1b350d952496</Id>
                         <Parent z:Ref="i27" />
+                        <PositionOnFlowchart xmlns:d13p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                         <PropertyValues>
                           <PropertyValue z:Id="i29">
                             <PropertyName>Value</PropertyName>
@@ -283,6 +331,7 @@
                           </PropertyValue>
                         </PropertyValues>
                         <SelectedOptionId i:nil="true" />
+                        <WidthOnFlowchart>360</WidthOnFlowchart>
                         <AutoCloseMode>None</AutoCloseMode>
                         <EnableStatus>true</EnableStatus>
                         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -292,8 +341,10 @@
                       </AbstractStep>
                       <AbstractStep z:Id="i31" i:type="ExecutedStep">
                         <Childs />
+                        <HeightOnFlowchart>50</HeightOnFlowchart>
                         <Id>9444a128-ff33-4577-975c-a70428d626f8</Id>
                         <Parent z:Ref="i27" />
+                        <PositionOnFlowchart xmlns:d13p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                         <PropertyValues>
                           <PropertyValue z:Id="i32">
                             <PropertyName>FilePath</PropertyName>
@@ -335,6 +386,7 @@
                           </PropertyValue>
                         </PropertyValues>
                         <SelectedOptionId i:nil="true" />
+                        <WidthOnFlowchart>360</WidthOnFlowchart>
                         <AutoCloseMode>None</AutoCloseMode>
                         <EnableStatus>true</EnableStatus>
                         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -343,10 +395,13 @@
                         <_activityFullName>BR.Core.Base.ExecuteScript</_activityFullName>
                       </AbstractStep>
                     </Childs>
+                    <HeightOnFlowchart i:nil="true" />
                     <Id>1a48cb84-5bcf-4d3a-9a42-60a8c91b5b34</Id>
                     <Parent z:Ref="i9" />
+                    <PositionOnFlowchart xmlns:d11p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                     <PropertyValues />
                     <SelectedOptionId i:nil="true" />
+                    <WidthOnFlowchart i:nil="true" />
                     <AutoCloseMode>None</AutoCloseMode>
                     <EnableStatus>true</EnableStatus>
                     <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -362,8 +417,10 @@
                             <Childs>
                               <AbstractStep z:Id="i40" i:type="ExecutedStep">
                                 <Childs />
+                                <HeightOnFlowchart>50</HeightOnFlowchart>
                                 <Id>fa256fdc-9d51-409c-93ef-551537653371</Id>
                                 <Parent z:Ref="i39" />
+                                <PositionOnFlowchart xmlns:d17p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                                 <PropertyValues>
                                   <PropertyValue z:Id="i41">
                                     <PropertyName>Key</PropertyName>
@@ -391,6 +448,7 @@
                                   </PropertyValue>
                                 </PropertyValues>
                                 <SelectedOptionId i:nil="true" />
+                                <WidthOnFlowchart>360</WidthOnFlowchart>
                                 <AutoCloseMode>None</AutoCloseMode>
                                 <EnableStatus>true</EnableStatus>
                                 <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -400,8 +458,10 @@
                               </AbstractStep>
                               <AbstractStep z:Id="i44" i:type="ExecutedStep">
                                 <Childs />
+                                <HeightOnFlowchart>50</HeightOnFlowchart>
                                 <Id>73965e2d-d6b6-4545-8f7b-317d7394f4ec</Id>
                                 <Parent z:Ref="i39" />
+                                <PositionOnFlowchart xmlns:d17p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                                 <PropertyValues>
                                   <PropertyValue z:Id="i45">
                                     <PropertyName>FilePath</PropertyName>
@@ -429,6 +489,7 @@
                                   </PropertyValue>
                                 </PropertyValues>
                                 <SelectedOptionId i:nil="true" />
+                                <WidthOnFlowchart>360</WidthOnFlowchart>
                                 <AutoCloseMode>None</AutoCloseMode>
                                 <EnableStatus>true</EnableStatus>
                                 <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -437,10 +498,13 @@
                                 <_activityFullName>BR.Core.Base.ExecuteScript</_activityFullName>
                               </AbstractStep>
                             </Childs>
+                            <HeightOnFlowchart i:nil="true" />
                             <Id>e2aeefd0-64b0-4659-95e4-81ece01924b7</Id>
                             <Parent z:Ref="i38" />
+                            <PositionOnFlowchart xmlns:d15p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                             <PropertyValues />
                             <SelectedOptionId i:nil="true" />
+                            <WidthOnFlowchart i:nil="true" />
                             <AutoCloseMode>None</AutoCloseMode>
                             <EnableStatus>true</EnableStatus>
                             <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -450,10 +514,13 @@
                           </AbstractStep>
                           <AbstractStep z:Id="i48" i:type="ExecutedStep">
                             <Childs />
+                            <HeightOnFlowchart i:nil="true" />
                             <Id>4a29a713-8dcc-4ca1-8675-dc9d3fa8c949</Id>
                             <Parent z:Ref="i38" />
+                            <PositionOnFlowchart xmlns:d15p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                             <PropertyValues />
                             <SelectedOptionId i:nil="true" />
+                            <WidthOnFlowchart i:nil="true" />
                             <AutoCloseMode>None</AutoCloseMode>
                             <EnableStatus>true</EnableStatus>
                             <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -462,8 +529,10 @@
                             <_activityFullName>BR.Core.Base.IfFalse</_activityFullName>
                           </AbstractStep>
                         </Childs>
+                        <HeightOnFlowchart i:nil="true" />
                         <Id>80cf13f3-2233-4101-a68b-dbcead8f6dee</Id>
                         <Parent z:Ref="i37" />
+                        <PositionOnFlowchart xmlns:d13p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                         <PropertyValues>
                           <PropertyValue z:Id="i49">
                             <PropertyName>Condition</PropertyName>
@@ -475,6 +544,7 @@
                           </PropertyValue>
                         </PropertyValues>
                         <SelectedOptionId i:nil="true" />
+                        <WidthOnFlowchart i:nil="true" />
                         <AutoCloseMode>None</AutoCloseMode>
                         <EnableStatus>true</EnableStatus>
                         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -483,10 +553,13 @@
                         <_activityFullName>BR.Core.Base.If</_activityFullName>
                       </AbstractStep>
                     </Childs>
+                    <HeightOnFlowchart i:nil="true" />
                     <Id>c7a335d9-9065-4d18-8db2-7b745626db8d</Id>
                     <Parent z:Ref="i9" />
+                    <PositionOnFlowchart xmlns:d11p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                     <PropertyValues />
                     <SelectedOptionId i:nil="true" />
+                    <WidthOnFlowchart i:nil="true" />
                     <AutoCloseMode>None</AutoCloseMode>
                     <EnableStatus>false</EnableStatus>
                     <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -503,8 +576,10 @@
                             <Childs>
                               <AbstractStep z:Id="i53" i:type="ExecutedStep">
                                 <Childs />
+                                <HeightOnFlowchart>50</HeightOnFlowchart>
                                 <Id>6f0746ca-2728-4c71-b950-4b5380ff28bb</Id>
                                 <Parent z:Ref="i52" />
+                                <PositionOnFlowchart xmlns:d17p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                                 <PropertyValues>
                                   <PropertyValue z:Id="i54">
                                     <PropertyName>FilePath</PropertyName>
@@ -532,6 +607,7 @@
                                   </PropertyValue>
                                 </PropertyValues>
                                 <SelectedOptionId i:nil="true" />
+                                <WidthOnFlowchart>360</WidthOnFlowchart>
                                 <AutoCloseMode>None</AutoCloseMode>
                                 <EnableStatus>true</EnableStatus>
                                 <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -540,10 +616,13 @@
                                 <_activityFullName>BR.Core.Base.ExecuteScript</_activityFullName>
                               </AbstractStep>
                             </Childs>
+                            <HeightOnFlowchart i:nil="true" />
                             <Id>3582553b-7243-4aa6-8de3-c5a3df002d69</Id>
                             <Parent z:Ref="i51" />
+                            <PositionOnFlowchart xmlns:d15p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                             <PropertyValues />
                             <SelectedOptionId i:nil="true" />
+                            <WidthOnFlowchart i:nil="true" />
                             <AutoCloseMode>None</AutoCloseMode>
                             <EnableStatus>true</EnableStatus>
                             <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -553,10 +632,13 @@
                           </AbstractStep>
                           <AbstractStep z:Id="i57" i:type="ExecutedStep">
                             <Childs />
+                            <HeightOnFlowchart i:nil="true" />
                             <Id>4947bbee-52c5-47c4-b2dd-f2563f81c050</Id>
                             <Parent z:Ref="i51" />
+                            <PositionOnFlowchart xmlns:d15p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                             <PropertyValues />
                             <SelectedOptionId i:nil="true" />
+                            <WidthOnFlowchart i:nil="true" />
                             <AutoCloseMode>None</AutoCloseMode>
                             <EnableStatus>true</EnableStatus>
                             <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -565,8 +647,10 @@
                             <_activityFullName>BR.Core.Base.IfFalse</_activityFullName>
                           </AbstractStep>
                         </Childs>
+                        <HeightOnFlowchart i:nil="true" />
                         <Id>47920b82-ec64-45ce-9453-1ff6b829e6e8</Id>
                         <Parent z:Ref="i50" />
+                        <PositionOnFlowchart xmlns:d13p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                         <PropertyValues>
                           <PropertyValue z:Id="i58">
                             <PropertyName>Condition</PropertyName>
@@ -578,6 +662,7 @@
                           </PropertyValue>
                         </PropertyValues>
                         <SelectedOptionId i:nil="true" />
+                        <WidthOnFlowchart i:nil="true" />
                         <AutoCloseMode>None</AutoCloseMode>
                         <EnableStatus>true</EnableStatus>
                         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -586,10 +671,13 @@
                         <_activityFullName>BR.Core.Base.If</_activityFullName>
                       </AbstractStep>
                     </Childs>
+                    <HeightOnFlowchart i:nil="true" />
                     <Id>7c035dc4-5989-408e-96b8-a02ff70b11a9</Id>
                     <Parent z:Ref="i9" />
+                    <PositionOnFlowchart xmlns:d11p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                     <PropertyValues />
                     <SelectedOptionId i:nil="true" />
+                    <WidthOnFlowchart i:nil="true" />
                     <AutoCloseMode>None</AutoCloseMode>
                     <EnableStatus>true</EnableStatus>
                     <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -606,8 +694,10 @@
                             <Childs>
                               <AbstractStep z:Id="i62" i:type="ExecutedStep">
                                 <Childs />
+                                <HeightOnFlowchart>50</HeightOnFlowchart>
                                 <Id>2c9260d6-bbd6-442a-9872-aff559f9e628</Id>
                                 <Parent z:Ref="i61" />
+                                <PositionOnFlowchart xmlns:d17p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                                 <PropertyValues>
                                   <PropertyValue z:Id="i63">
                                     <PropertyName>CSCode</PropertyName>
@@ -619,6 +709,7 @@
                                   </PropertyValue>
                                 </PropertyValues>
                                 <SelectedOptionId i:nil="true" />
+                                <WidthOnFlowchart>360</WidthOnFlowchart>
                                 <AutoCloseMode>None</AutoCloseMode>
                                 <EnableStatus>true</EnableStatus>
                                 <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -627,10 +718,13 @@
                                 <_activityFullName>BR.Core.Base.ExecuteCSCode</_activityFullName>
                               </AbstractStep>
                             </Childs>
+                            <HeightOnFlowchart i:nil="true" />
                             <Id>24239ddb-2d37-4bd1-869f-dde494aa0a86</Id>
                             <Parent z:Ref="i60" />
+                            <PositionOnFlowchart xmlns:d15p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                             <PropertyValues />
                             <SelectedOptionId i:nil="true" />
+                            <WidthOnFlowchart i:nil="true" />
                             <AutoCloseMode>None</AutoCloseMode>
                             <EnableStatus>true</EnableStatus>
                             <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -640,10 +734,13 @@
                           </AbstractStep>
                           <AbstractStep z:Id="i64" i:type="ExecutedStep">
                             <Childs />
+                            <HeightOnFlowchart i:nil="true" />
                             <Id>c5ec286b-e884-451d-a871-e6d1b8df31b4</Id>
                             <Parent z:Ref="i60" />
+                            <PositionOnFlowchart xmlns:d15p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                             <PropertyValues />
                             <SelectedOptionId i:nil="true" />
+                            <WidthOnFlowchart i:nil="true" />
                             <AutoCloseMode>None</AutoCloseMode>
                             <EnableStatus>true</EnableStatus>
                             <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -652,8 +749,10 @@
                             <_activityFullName>BR.Core.Base.IfFalse</_activityFullName>
                           </AbstractStep>
                         </Childs>
+                        <HeightOnFlowchart i:nil="true" />
                         <Id>3dd83fc1-b649-4801-bb55-c3577afdb40f</Id>
                         <Parent z:Ref="i59" />
+                        <PositionOnFlowchart xmlns:d13p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                         <PropertyValues>
                           <PropertyValue z:Id="i65">
                             <PropertyName>Condition</PropertyName>
@@ -665,6 +764,7 @@
                           </PropertyValue>
                         </PropertyValues>
                         <SelectedOptionId i:nil="true" />
+                        <WidthOnFlowchart i:nil="true" />
                         <AutoCloseMode>None</AutoCloseMode>
                         <EnableStatus>true</EnableStatus>
                         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -673,10 +773,13 @@
                         <_activityFullName>BR.Core.Base.If</_activityFullName>
                       </AbstractStep>
                     </Childs>
+                    <HeightOnFlowchart i:nil="true" />
                     <Id>a444ca3a-47c6-42f1-b80e-7b19c228027d</Id>
                     <Parent z:Ref="i9" />
+                    <PositionOnFlowchart xmlns:d11p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                     <PropertyValues />
                     <SelectedOptionId i:nil="true" />
+                    <WidthOnFlowchart i:nil="true" />
                     <AutoCloseMode>None</AutoCloseMode>
                     <EnableStatus>true</EnableStatus>
                     <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -689,8 +792,10 @@
                     <Childs>
                       <AbstractStep z:Id="i67" i:type="ExecutedStep">
                         <Childs />
+                        <HeightOnFlowchart>50</HeightOnFlowchart>
                         <Id>d8581e7f-ae03-417a-8105-60abd4c8f388</Id>
                         <Parent z:Ref="i66" />
+                        <PositionOnFlowchart xmlns:d13p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                         <PropertyValues>
                           <PropertyValue z:Id="i68">
                             <PropertyName>Value</PropertyName>
@@ -710,6 +815,7 @@
                           </PropertyValue>
                         </PropertyValues>
                         <SelectedOptionId i:nil="true" />
+                        <WidthOnFlowchart>360</WidthOnFlowchart>
                         <AutoCloseMode>None</AutoCloseMode>
                         <EnableStatus>true</EnableStatus>
                         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -725,10 +831,13 @@
                                 <Childs>
                                   <AbstractStep z:Id="i73" i:type="ExecutedStep">
                                     <Childs />
+                                    <HeightOnFlowchart>50</HeightOnFlowchart>
                                     <Id>79f65fa1-848a-485e-b635-5d4ec2343b21</Id>
                                     <Parent z:Ref="i72" />
+                                    <PositionOnFlowchart xmlns:d19p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                                     <PropertyValues />
                                     <SelectedOptionId i:nil="true" />
+                                    <WidthOnFlowchart>360</WidthOnFlowchart>
                                     <AutoCloseMode>None</AutoCloseMode>
                                     <EnableStatus>true</EnableStatus>
                                     <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -737,10 +846,13 @@
                                     <_activityFullName>BR.Core.Base.ContinueLoop</_activityFullName>
                                   </AbstractStep>
                                 </Childs>
+                                <HeightOnFlowchart i:nil="true" />
                                 <Id>07e00209-2c1c-487f-a016-0e0b68cb7902</Id>
                                 <Parent z:Ref="i71" />
+                                <PositionOnFlowchart xmlns:d17p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                                 <PropertyValues />
                                 <SelectedOptionId i:nil="true" />
+                                <WidthOnFlowchart i:nil="true" />
                                 <AutoCloseMode>None</AutoCloseMode>
                                 <EnableStatus>true</EnableStatus>
                                 <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -752,8 +864,10 @@
                                 <Childs>
                                   <AbstractStep z:Id="i75" i:type="ExecutedStep">
                                     <Childs />
+                                    <HeightOnFlowchart>50</HeightOnFlowchart>
                                     <Id>56f50aa9-220b-4ca8-83f3-249cf38d9d2a</Id>
                                     <Parent z:Ref="i74" />
+                                    <PositionOnFlowchart xmlns:d19p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                                     <PropertyValues>
                                       <PropertyValue z:Id="i76">
                                         <PropertyName>FilePath</PropertyName>
@@ -795,6 +909,7 @@
                                       </PropertyValue>
                                     </PropertyValues>
                                     <SelectedOptionId i:nil="true" />
+                                    <WidthOnFlowchart>360</WidthOnFlowchart>
                                     <AutoCloseMode>None</AutoCloseMode>
                                     <EnableStatus>true</EnableStatus>
                                     <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -804,8 +919,10 @@
                                   </AbstractStep>
                                   <AbstractStep z:Id="i81" i:type="ExecutedStep">
                                     <Childs />
+                                    <HeightOnFlowchart>50</HeightOnFlowchart>
                                     <Id>f41b20a6-747d-473b-93ea-9401a8b4af64</Id>
                                     <Parent z:Ref="i74" />
+                                    <PositionOnFlowchart xmlns:d19p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                                     <PropertyValues>
                                       <PropertyValue z:Id="i82">
                                         <PropertyName>Value</PropertyName>
@@ -825,6 +942,7 @@
                                       </PropertyValue>
                                     </PropertyValues>
                                     <SelectedOptionId i:nil="true" />
+                                    <WidthOnFlowchart>360</WidthOnFlowchart>
                                     <AutoCloseMode>None</AutoCloseMode>
                                     <EnableStatus>true</EnableStatus>
                                     <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -833,10 +951,13 @@
                                     <_activityFullName>BR.Core.Base.Assign</_activityFullName>
                                   </AbstractStep>
                                 </Childs>
+                                <HeightOnFlowchart i:nil="true" />
                                 <Id>d1a8def6-01f5-44c5-b230-6cb2c4a24b33</Id>
                                 <Parent z:Ref="i71" />
+                                <PositionOnFlowchart xmlns:d17p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                                 <PropertyValues />
                                 <SelectedOptionId i:nil="true" />
+                                <WidthOnFlowchart i:nil="true" />
                                 <AutoCloseMode>None</AutoCloseMode>
                                 <EnableStatus>true</EnableStatus>
                                 <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -845,8 +966,10 @@
                                 <_activityFullName>BR.Core.Base.IfFalse</_activityFullName>
                               </AbstractStep>
                             </Childs>
+                            <HeightOnFlowchart i:nil="true" />
                             <Id>4d4387bd-5bfd-4b9e-93a8-548719be7309</Id>
                             <Parent z:Ref="i70" />
+                            <PositionOnFlowchart xmlns:d15p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                             <PropertyValues>
                               <PropertyValue z:Id="i84">
                                 <PropertyName>Condition</PropertyName>
@@ -860,6 +983,7 @@ transaction["rpa_status"].ToString().ToLower() != "retrying"</_expression>
                               </PropertyValue>
                             </PropertyValues>
                             <SelectedOptionId i:nil="true" />
+                            <WidthOnFlowchart i:nil="true" />
                             <AutoCloseMode>None</AutoCloseMode>
                             <EnableStatus>true</EnableStatus>
                             <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -868,10 +992,13 @@ transaction["rpa_status"].ToString().ToLower() != "retrying"</_expression>
                             <_activityFullName>BR.Core.Base.If</_activityFullName>
                           </AbstractStep>
                         </Childs>
+                        <HeightOnFlowchart i:nil="true" />
                         <Id>36c350ba-d54f-4dfd-b2b4-261eaa23b78c</Id>
                         <Parent z:Ref="i66" />
+                        <PositionOnFlowchart xmlns:d13p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                         <PropertyValues />
                         <SelectedOptionId i:nil="true" />
+                        <WidthOnFlowchart i:nil="true" />
                         <AutoCloseMode>None</AutoCloseMode>
                         <EnableStatus>true</EnableStatus>
                         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -883,17 +1010,22 @@ transaction["rpa_status"].ToString().ToLower() != "retrying"</_expression>
                         <Childs>
                           <AbstractStep z:Id="i86" i:type="CommentStep">
                             <Childs />
+                            <HeightOnFlowchart>50</HeightOnFlowchart>
                             <Id>e03e0557-34d1-45fd-a2ca-368b08eddab5</Id>
                             <Parent z:Ref="i85" />
+                            <PositionOnFlowchart xmlns:d15p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                             <PropertyValues />
                             <SelectedOptionId i:nil="true" />
+                            <WidthOnFlowchart>360</WidthOnFlowchart>
                             <IsCollapsed>false</IsCollapsed>
                             <Text>Защищает от ситуации, если тех. окно началось между обработками разных транзакций</Text>
                           </AbstractStep>
                           <AbstractStep z:Id="i87" i:type="ExecutedStep">
                             <Childs />
+                            <HeightOnFlowchart>50</HeightOnFlowchart>
                             <Id>350c30f4-fe08-44d3-9627-d329479e2a30</Id>
                             <Parent z:Ref="i85" />
+                            <PositionOnFlowchart xmlns:d15p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                             <PropertyValues>
                               <PropertyValue z:Id="i88">
                                 <PropertyName>FilePath</PropertyName>
@@ -921,6 +1053,7 @@ transaction["rpa_status"].ToString().ToLower() != "retrying"</_expression>
                               </PropertyValue>
                             </PropertyValues>
                             <SelectedOptionId i:nil="true" />
+                            <WidthOnFlowchart>360</WidthOnFlowchart>
                             <AutoCloseMode>None</AutoCloseMode>
                             <EnableStatus>true</EnableStatus>
                             <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -934,10 +1067,13 @@ transaction["rpa_status"].ToString().ToLower() != "retrying"</_expression>
                                 <Childs>
                                   <AbstractStep z:Id="i93" i:type="ExecutedStep">
                                     <Childs />
+                                    <HeightOnFlowchart>50</HeightOnFlowchart>
                                     <Id>1faac7ac-15f4-4141-85d7-fde87a861511</Id>
                                     <Parent z:Ref="i92" />
+                                    <PositionOnFlowchart xmlns:d19p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                                     <PropertyValues />
-                                    <SelectedOptionId>0</SelectedOptionId>
+                                    <SelectedOptionId i:nil="true" />
+                                    <WidthOnFlowchart>360</WidthOnFlowchart>
                                     <AutoCloseMode>None</AutoCloseMode>
                                     <EnableStatus>true</EnableStatus>
                                     <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -946,10 +1082,13 @@ transaction["rpa_status"].ToString().ToLower() != "retrying"</_expression>
                                     <_activityFullName>BR.Core.Base.Return</_activityFullName>
                                   </AbstractStep>
                                 </Childs>
+                                <HeightOnFlowchart i:nil="true" />
                                 <Id>3df54ce4-95fc-439f-a1d3-ec186a22f8b6</Id>
                                 <Parent z:Ref="i91" />
+                                <PositionOnFlowchart xmlns:d17p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                                 <PropertyValues />
                                 <SelectedOptionId i:nil="true" />
+                                <WidthOnFlowchart i:nil="true" />
                                 <AutoCloseMode>None</AutoCloseMode>
                                 <EnableStatus>true</EnableStatus>
                                 <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -959,10 +1098,13 @@ transaction["rpa_status"].ToString().ToLower() != "retrying"</_expression>
                               </AbstractStep>
                               <AbstractStep z:Id="i94" i:type="ExecutedStep">
                                 <Childs />
+                                <HeightOnFlowchart i:nil="true" />
                                 <Id>5a2d6339-c860-49c4-be60-4ad464fa117b</Id>
                                 <Parent z:Ref="i91" />
+                                <PositionOnFlowchart xmlns:d17p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                                 <PropertyValues />
                                 <SelectedOptionId i:nil="true" />
+                                <WidthOnFlowchart i:nil="true" />
                                 <AutoCloseMode>None</AutoCloseMode>
                                 <EnableStatus>true</EnableStatus>
                                 <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -971,8 +1113,10 @@ transaction["rpa_status"].ToString().ToLower() != "retrying"</_expression>
                                 <_activityFullName>BR.Core.Base.IfFalse</_activityFullName>
                               </AbstractStep>
                             </Childs>
+                            <HeightOnFlowchart i:nil="true" />
                             <Id>c6d630c7-84b8-4f6b-b819-92f7798ab447</Id>
                             <Parent z:Ref="i85" />
+                            <PositionOnFlowchart xmlns:d15p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                             <PropertyValues>
                               <PropertyValue z:Id="i95">
                                 <PropertyName>Condition</PropertyName>
@@ -984,6 +1128,7 @@ transaction["rpa_status"].ToString().ToLower() != "retrying"</_expression>
                               </PropertyValue>
                             </PropertyValues>
                             <SelectedOptionId i:nil="true" />
+                            <WidthOnFlowchart i:nil="true" />
                             <AutoCloseMode>None</AutoCloseMode>
                             <EnableStatus>true</EnableStatus>
                             <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -992,10 +1137,13 @@ transaction["rpa_status"].ToString().ToLower() != "retrying"</_expression>
                             <_activityFullName>BR.Core.Base.If</_activityFullName>
                           </AbstractStep>
                         </Childs>
+                        <HeightOnFlowchart i:nil="true" />
                         <Id>109a8c78-6777-4dff-b812-d18828a79949</Id>
                         <Parent z:Ref="i66" />
+                        <PositionOnFlowchart xmlns:d13p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                         <PropertyValues />
                         <SelectedOptionId i:nil="true" />
+                        <WidthOnFlowchart i:nil="true" />
                         <AutoCloseMode>None</AutoCloseMode>
                         <EnableStatus>true</EnableStatus>
                         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -1012,8 +1160,10 @@ transaction["rpa_status"].ToString().ToLower() != "retrying"</_expression>
                                 <Childs>
                                   <AbstractStep z:Id="i99" i:type="ExecutedStep">
                                     <Childs />
+                                    <HeightOnFlowchart>50</HeightOnFlowchart>
                                     <Id>30d56367-24ec-4ec3-b46a-c7a753c2484f</Id>
                                     <Parent z:Ref="i98" />
+                                    <PositionOnFlowchart xmlns:d19p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                                     <PropertyValues>
                                       <PropertyValue z:Id="i100">
                                         <PropertyName>Key</PropertyName>
@@ -1041,6 +1191,7 @@ transaction["rpa_status"].ToString().ToLower() != "retrying"</_expression>
                                       </PropertyValue>
                                     </PropertyValues>
                                     <SelectedOptionId i:nil="true" />
+                                    <WidthOnFlowchart>360</WidthOnFlowchart>
                                     <AutoCloseMode>None</AutoCloseMode>
                                     <EnableStatus>true</EnableStatus>
                                     <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -1050,8 +1201,10 @@ transaction["rpa_status"].ToString().ToLower() != "retrying"</_expression>
                                   </AbstractStep>
                                   <AbstractStep z:Id="i103" i:type="ExecutedStep">
                                     <Childs />
+                                    <HeightOnFlowchart>50</HeightOnFlowchart>
                                     <Id>6e25bb9d-6ef4-4f20-bb9c-65294974f815</Id>
                                     <Parent z:Ref="i98" />
+                                    <PositionOnFlowchart xmlns:d19p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                                     <PropertyValues>
                                       <PropertyValue z:Id="i104">
                                         <PropertyName>Key</PropertyName>
@@ -1086,6 +1239,7 @@ transaction["rpa_status"].ToString().ToLower() != "retrying"</_expression>
                                       </PropertyValue>
                                     </PropertyValues>
                                     <SelectedOptionId i:nil="true" />
+                                    <WidthOnFlowchart>360</WidthOnFlowchart>
                                     <AutoCloseMode>None</AutoCloseMode>
                                     <EnableStatus>true</EnableStatus>
                                     <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -1096,8 +1250,10 @@ transaction["rpa_status"].ToString().ToLower() != "retrying"</_expression>
                                   </AbstractStep>
                                   <AbstractStep z:Id="i107" i:type="ExecutedStep">
                                     <Childs />
+                                    <HeightOnFlowchart>50</HeightOnFlowchart>
                                     <Id>037d63c3-3083-4854-b701-5b021097e0a6</Id>
                                     <Parent z:Ref="i98" />
+                                    <PositionOnFlowchart xmlns:d19p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                                     <PropertyValues>
                                       <PropertyValue z:Id="i108">
                                         <PropertyName>FilePath</PropertyName>
@@ -1125,6 +1281,7 @@ transaction["rpa_status"].ToString().ToLower() != "retrying"</_expression>
                                       </PropertyValue>
                                     </PropertyValues>
                                     <SelectedOptionId i:nil="true" />
+                                    <WidthOnFlowchart>360</WidthOnFlowchart>
                                     <AutoCloseMode>None</AutoCloseMode>
                                     <EnableStatus>true</EnableStatus>
                                     <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -1133,10 +1290,13 @@ transaction["rpa_status"].ToString().ToLower() != "retrying"</_expression>
                                     <_activityFullName>BR.Core.Base.ExecuteScript</_activityFullName>
                                   </AbstractStep>
                                 </Childs>
+                                <HeightOnFlowchart i:nil="true" />
                                 <Id>7fa4280a-f083-4145-8b20-7c0b0d167347</Id>
                                 <Parent z:Ref="i97" />
+                                <PositionOnFlowchart xmlns:d17p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                                 <PropertyValues />
                                 <SelectedOptionId i:nil="true" />
+                                <WidthOnFlowchart i:nil="true" />
                                 <AutoCloseMode>None</AutoCloseMode>
                                 <EnableStatus>true</EnableStatus>
                                 <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -1146,10 +1306,13 @@ transaction["rpa_status"].ToString().ToLower() != "retrying"</_expression>
                               </AbstractStep>
                               <AbstractStep z:Id="i111" i:type="ExecutedStep">
                                 <Childs />
+                                <HeightOnFlowchart i:nil="true" />
                                 <Id>5c3c8807-1cd8-4c4a-96c9-30ef39c46a7c</Id>
                                 <Parent z:Ref="i97" />
+                                <PositionOnFlowchart xmlns:d17p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                                 <PropertyValues />
                                 <SelectedOptionId i:nil="true" />
+                                <WidthOnFlowchart i:nil="true" />
                                 <AutoCloseMode>None</AutoCloseMode>
                                 <EnableStatus>true</EnableStatus>
                                 <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -1158,8 +1321,10 @@ transaction["rpa_status"].ToString().ToLower() != "retrying"</_expression>
                                 <_activityFullName>BR.Core.Base.IfFalse</_activityFullName>
                               </AbstractStep>
                             </Childs>
+                            <HeightOnFlowchart i:nil="true" />
                             <Id>ec13297e-dc8b-4dae-92d3-9cf2b7fe3857</Id>
                             <Parent z:Ref="i96" />
+                            <PositionOnFlowchart xmlns:d15p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                             <PropertyValues>
                               <PropertyValue z:Id="i112">
                                 <PropertyName>Condition</PropertyName>
@@ -1178,6 +1343,7 @@ transaction["rpa_status"].ToString().ToLower() != "retrying"</_expression>
                               </PropertyValue>
                             </PropertyValues>
                             <SelectedOptionId i:nil="true" />
+                            <WidthOnFlowchart i:nil="true" />
                             <AutoCloseMode>None</AutoCloseMode>
                             <EnableStatus>true</EnableStatus>
                             <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -1186,10 +1352,13 @@ transaction["rpa_status"].ToString().ToLower() != "retrying"</_expression>
                             <_activityFullName>BR.Core.Base.If</_activityFullName>
                           </AbstractStep>
                         </Childs>
+                        <HeightOnFlowchart i:nil="true" />
                         <Id>e3f3ae75-1b57-47ec-a1f5-ef93b333cc2f</Id>
                         <Parent z:Ref="i66" />
+                        <PositionOnFlowchart xmlns:d13p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                         <PropertyValues />
                         <SelectedOptionId i:nil="true" />
+                        <WidthOnFlowchart i:nil="true" />
                         <AutoCloseMode>None</AutoCloseMode>
                         <EnableStatus>true</EnableStatus>
                         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -1199,8 +1368,10 @@ transaction["rpa_status"].ToString().ToLower() != "retrying"</_expression>
                       </AbstractStep>
                       <AbstractStep z:Id="i113" i:type="ExecutedStep">
                         <Childs />
+                        <HeightOnFlowchart>50</HeightOnFlowchart>
                         <Id>93a3dc49-8f7a-4e21-8940-8a2af047f994</Id>
                         <Parent z:Ref="i66" />
+                        <PositionOnFlowchart xmlns:d13p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                         <PropertyValues>
                           <PropertyValue z:Id="i114">
                             <PropertyName>CSCode</PropertyName>
@@ -1212,6 +1383,7 @@ transaction["rpa_status"].ToString().ToLower() != "retrying"</_expression>
                           </PropertyValue>
                         </PropertyValues>
                         <SelectedOptionId i:nil="true" />
+                        <WidthOnFlowchart>360</WidthOnFlowchart>
                         <AutoCloseMode>None</AutoCloseMode>
                         <EnableStatus>true</EnableStatus>
                         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -1221,8 +1393,10 @@ transaction["rpa_status"].ToString().ToLower() != "retrying"</_expression>
                       </AbstractStep>
                       <AbstractStep z:Id="i115" i:type="ExecutedStep">
                         <Childs />
+                        <HeightOnFlowchart>50</HeightOnFlowchart>
                         <Id>aa59bf7b-7f70-4c00-9fb0-6d3d703801a1</Id>
                         <Parent z:Ref="i66" />
+                        <PositionOnFlowchart xmlns:d13p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                         <PropertyValues>
                           <PropertyValue z:Id="i116">
                             <PropertyName>InitialItems</PropertyName>
@@ -1266,6 +1440,7 @@ transaction["rpa_status"].ToString().ToLower() != "retrying"</_expression>
                           </PropertyValue>
                         </PropertyValues>
                         <SelectedOptionId i:nil="true" />
+                        <WidthOnFlowchart>360</WidthOnFlowchart>
                         <AutoCloseMode>None</AutoCloseMode>
                         <EnableStatus>true</EnableStatus>
                         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -1279,8 +1454,10 @@ transaction["rpa_status"].ToString().ToLower() != "retrying"</_expression>
                         <Childs>
                           <AbstractStep z:Id="i122" i:type="ExecutedStep">
                             <Childs />
+                            <HeightOnFlowchart>50</HeightOnFlowchart>
                             <Id>39e19f56-42a8-48c4-99f1-411a8a55baa7</Id>
                             <Parent z:Ref="i121" />
+                            <PositionOnFlowchart xmlns:d15p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                             <PropertyValues>
                               <PropertyValue z:Id="i123">
                                 <PropertyName>CSCode</PropertyName>
@@ -1305,6 +1482,7 @@ transaction["rpa_retries"] = Convert.ToInt32(transaction["rpa_retries"]) + 1;</_
                               </PropertyValue>
                             </PropertyValues>
                             <SelectedOptionId i:nil="true" />
+                            <WidthOnFlowchart>360</WidthOnFlowchart>
                             <AutoCloseMode>None</AutoCloseMode>
                             <EnableStatus>true</EnableStatus>
                             <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -1317,8 +1495,10 @@ transaction["rpa_retries"] = Convert.ToInt32(transaction["rpa_retries"]) + 1;</_
                           </AbstractStep>
                           <AbstractStep z:Id="i124" i:type="ExecutedStep">
                             <Childs />
+                            <HeightOnFlowchart>50</HeightOnFlowchart>
                             <Id>c7063373-c841-49a7-80f0-1f602ae1523e</Id>
                             <Parent z:Ref="i121" />
+                            <PositionOnFlowchart xmlns:d15p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                             <PropertyValues>
                               <PropertyValue z:Id="i125">
                                 <PropertyName>FilePath</PropertyName>
@@ -1353,6 +1533,7 @@ transaction["rpa_retries"] = Convert.ToInt32(transaction["rpa_retries"]) + 1;</_
                               </PropertyValue>
                             </PropertyValues>
                             <SelectedOptionId i:nil="true" />
+                            <WidthOnFlowchart>360</WidthOnFlowchart>
                             <AutoCloseMode>None</AutoCloseMode>
                             <EnableStatus>true</EnableStatus>
                             <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -1362,10 +1543,13 @@ transaction["rpa_retries"] = Convert.ToInt32(transaction["rpa_retries"]) + 1;</_
                             <_activityFullName>BR.Core.Base.ExecuteScript</_activityFullName>
                           </AbstractStep>
                         </Childs>
+                        <HeightOnFlowchart i:nil="true" />
                         <Id>94289e73-ca0e-4735-92f4-9e1b7490c595</Id>
                         <Parent z:Ref="i66" />
+                        <PositionOnFlowchart xmlns:d13p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                         <PropertyValues />
                         <SelectedOptionId i:nil="true" />
+                        <WidthOnFlowchart i:nil="true" />
                         <AutoCloseMode>None</AutoCloseMode>
                         <EnableStatus>true</EnableStatus>
                         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -1380,10 +1564,13 @@ transaction["rpa_retries"] = Convert.ToInt32(transaction["rpa_retries"]) + 1;</_
                         <Childs>
                           <AbstractStep z:Id="i130" i:type="CommentStep">
                             <Childs />
+                            <HeightOnFlowchart>50</HeightOnFlowchart>
                             <Id>3dd7e83b-c5ba-48db-8ec7-37c19a6f3d3a</Id>
                             <Parent z:Ref="i129" />
+                            <PositionOnFlowchart xmlns:d15p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                             <PropertyValues />
                             <SelectedOptionId i:nil="true" />
+                            <WidthOnFlowchart>360</WidthOnFlowchart>
                             <IsCollapsed>false</IsCollapsed>
                             <Text>Работаем в системах, вызываем вложенные скрипты
 На одном из уровней вложенности может возникнуть ошибка, либо мы её генерируем самостоятельно выполнив проверку некоторых ключевых параметров
@@ -1395,8 +1582,10 @@ transaction["rpa_retries"] = Convert.ToInt32(transaction["rpa_retries"]) + 1;</_
                           </AbstractStep>
                           <AbstractStep z:Id="i131" i:type="ExecutedStep">
                             <Childs />
+                            <HeightOnFlowchart>50</HeightOnFlowchart>
                             <Id>59ede573-36c8-4ea3-9789-87af096b1fd3</Id>
                             <Parent z:Ref="i129" />
+                            <PositionOnFlowchart xmlns:d15p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                             <PropertyValues>
                               <PropertyValue z:Id="i132">
                                 <PropertyName>FilePath</PropertyName>
@@ -1431,6 +1620,7 @@ transaction["rpa_retries"] = Convert.ToInt32(transaction["rpa_retries"]) + 1;</_
                               </PropertyValue>
                             </PropertyValues>
                             <SelectedOptionId i:nil="true" />
+                            <WidthOnFlowchart>360</WidthOnFlowchart>
                             <AutoCloseMode>None</AutoCloseMode>
                             <EnableStatus>true</EnableStatus>
                             <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -1439,10 +1629,13 @@ transaction["rpa_retries"] = Convert.ToInt32(transaction["rpa_retries"]) + 1;</_
                             <_activityFullName>BR.Core.Base.ExecuteScript</_activityFullName>
                           </AbstractStep>
                         </Childs>
+                        <HeightOnFlowchart i:nil="true" />
                         <Id>f2cefd32-5b78-4b06-b89c-8e28a9ef4acc</Id>
                         <Parent z:Ref="i66" />
+                        <PositionOnFlowchart xmlns:d13p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                         <PropertyValues />
                         <SelectedOptionId i:nil="true" />
+                        <WidthOnFlowchart i:nil="true" />
                         <AutoCloseMode>None</AutoCloseMode>
                         <EnableStatus>true</EnableStatus>
                         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -1455,8 +1648,10 @@ transaction["rpa_retries"] = Convert.ToInt32(transaction["rpa_retries"]) + 1;</_
                         <Childs>
                           <AbstractStep z:Id="i137" i:type="ExecutedStep">
                             <Childs />
+                            <HeightOnFlowchart>50</HeightOnFlowchart>
                             <Id>6d7a08cf-58bb-4861-8ac3-5caf10a765e7</Id>
                             <Parent z:Ref="i136" />
+                            <PositionOnFlowchart xmlns:d15p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                             <PropertyValues>
                               <PropertyValue z:Id="i138">
                                 <PropertyName>CSCode</PropertyName>
@@ -1474,6 +1669,7 @@ transaction["rpa_screenshot"] = string.Empty;
                               </PropertyValue>
                             </PropertyValues>
                             <SelectedOptionId i:nil="true" />
+                            <WidthOnFlowchart>360</WidthOnFlowchart>
                             <AutoCloseMode>None</AutoCloseMode>
                             <EnableStatus>true</EnableStatus>
                             <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -1483,8 +1679,10 @@ transaction["rpa_screenshot"] = string.Empty;
                           </AbstractStep>
                           <AbstractStep z:Id="i139" i:type="ExecutedStep">
                             <Childs />
+                            <HeightOnFlowchart>50</HeightOnFlowchart>
                             <Id>54423a5a-dee1-406b-a6ce-17a12d447087</Id>
                             <Parent z:Ref="i136" />
+                            <PositionOnFlowchart xmlns:d15p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                             <PropertyValues>
                               <PropertyValue z:Id="i140">
                                 <PropertyName>FilePath</PropertyName>
@@ -1519,6 +1717,7 @@ transaction["rpa_screenshot"] = string.Empty;
                               </PropertyValue>
                             </PropertyValues>
                             <SelectedOptionId i:nil="true" />
+                            <WidthOnFlowchart>360</WidthOnFlowchart>
                             <AutoCloseMode>None</AutoCloseMode>
                             <EnableStatus>true</EnableStatus>
                             <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -1528,10 +1727,13 @@ transaction["rpa_screenshot"] = string.Empty;
                             <_activityFullName>BR.Core.Base.ExecuteScript</_activityFullName>
                           </AbstractStep>
                         </Childs>
+                        <HeightOnFlowchart i:nil="true" />
                         <Id>0f9ade51-b6e3-4f4d-ab78-73e1b76ea16b</Id>
                         <Parent z:Ref="i66" />
+                        <PositionOnFlowchart xmlns:d13p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                         <PropertyValues />
                         <SelectedOptionId i:nil="true" />
+                        <WidthOnFlowchart i:nil="true" />
                         <AutoCloseMode>None</AutoCloseMode>
                         <EnableStatus>true</EnableStatus>
                         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -1544,8 +1746,10 @@ transaction["rpa_screenshot"] = string.Empty;
                         <Childs>
                           <AbstractStep z:Id="i145" i:type="ExecutedStep">
                             <Childs />
+                            <HeightOnFlowchart>50</HeightOnFlowchart>
                             <Id>bea48770-38e8-40e4-a333-00c3343a78fb</Id>
                             <Parent z:Ref="i144" />
+                            <PositionOnFlowchart xmlns:d15p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                             <PropertyValues>
                               <PropertyValue z:Id="i146">
                                 <PropertyName>CSCode</PropertyName>
@@ -1558,6 +1762,7 @@ errors_history.Clear();</_value>
                               </PropertyValue>
                             </PropertyValues>
                             <SelectedOptionId i:nil="true" />
+                            <WidthOnFlowchart>360</WidthOnFlowchart>
                             <AutoCloseMode>None</AutoCloseMode>
                             <EnableStatus>true</EnableStatus>
                             <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -1567,8 +1772,10 @@ errors_history.Clear();</_value>
                           </AbstractStep>
                           <AbstractStep z:Id="i147" i:type="ExecutedStep">
                             <Childs />
+                            <HeightOnFlowchart>50</HeightOnFlowchart>
                             <Id>c5c6ada2-e216-42dd-a8bf-19c952a5902b</Id>
                             <Parent z:Ref="i144" />
+                            <PositionOnFlowchart xmlns:d15p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                             <PropertyValues>
                               <PropertyValue z:Id="i148">
                                 <PropertyName>FilePath</PropertyName>
@@ -1610,6 +1817,7 @@ errors_history.Clear();</_value>
                               </PropertyValue>
                             </PropertyValues>
                             <SelectedOptionId i:nil="true" />
+                            <WidthOnFlowchart>360</WidthOnFlowchart>
                             <AutoCloseMode>None</AutoCloseMode>
                             <EnableStatus>true</EnableStatus>
                             <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -1618,10 +1826,13 @@ errors_history.Clear();</_value>
                             <_activityFullName>BR.Core.Base.ExecuteScript</_activityFullName>
                           </AbstractStep>
                         </Childs>
+                        <HeightOnFlowchart i:nil="true" />
                         <Id>fa92dff8-2d50-47ba-b9a1-b421523ff6e7</Id>
                         <Parent z:Ref="i66" />
+                        <PositionOnFlowchart xmlns:d13p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                         <PropertyValues />
                         <SelectedOptionId i:nil="true" />
+                        <WidthOnFlowchart i:nil="true" />
                         <AutoCloseMode>None</AutoCloseMode>
                         <EnableStatus>true</EnableStatus>
                         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -1631,8 +1842,10 @@ errors_history.Clear();</_value>
                         <_activityFullName>BR.Core.Base.Container</_activityFullName>
                       </AbstractStep>
                     </Childs>
+                    <HeightOnFlowchart i:nil="true" />
                     <Id>b3b7b1d8-ab86-467a-b4bd-e50c242fdf4c</Id>
                     <Parent z:Ref="i9" />
+                    <PositionOnFlowchart xmlns:d11p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                     <PropertyValues>
                       <PropertyValue z:Id="i153">
                         <PropertyName>Collection</PropertyName>
@@ -1660,6 +1873,7 @@ errors_history.Clear();</_value>
                       </PropertyValue>
                     </PropertyValues>
                     <SelectedOptionId i:nil="true" />
+                    <WidthOnFlowchart i:nil="true" />
                     <AutoCloseMode>None</AutoCloseMode>
                     <EnableStatus>true</EnableStatus>
                     <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -1669,8 +1883,10 @@ errors_history.Clear();</_value>
                   </AbstractStep>
                   <AbstractStep z:Id="i156" i:type="ExecutedStep">
                     <Childs />
+                    <HeightOnFlowchart>50</HeightOnFlowchart>
                     <Id>7fa226b2-21f5-442f-a4e9-c21b97d5596c</Id>
                     <Parent z:Ref="i9" />
+                    <PositionOnFlowchart xmlns:d11p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                     <PropertyValues>
                       <PropertyValue z:Id="i157">
                         <PropertyName>Value</PropertyName>
@@ -1690,6 +1906,7 @@ errors_history.Clear();</_value>
                       </PropertyValue>
                     </PropertyValues>
                     <SelectedOptionId i:nil="true" />
+                    <WidthOnFlowchart>360</WidthOnFlowchart>
                     <AutoCloseMode>None</AutoCloseMode>
                     <EnableStatus>true</EnableStatus>
                     <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -1698,10 +1915,13 @@ errors_history.Clear();</_value>
                     <_activityFullName>BR.Core.Base.Assign</_activityFullName>
                   </AbstractStep>
                 </Childs>
+                <HeightOnFlowchart i:nil="true" />
                 <Id>ea81dc61-8d2b-4a71-81fe-d14056f83bfc</Id>
                 <Parent z:Ref="i8" />
+                <PositionOnFlowchart xmlns:d9p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                 <PropertyValues />
                 <SelectedOptionId i:nil="true" />
+                <WidthOnFlowchart i:nil="true" />
                 <AutoCloseMode>None</AutoCloseMode>
                 <EnableStatus>true</EnableStatus>
                 <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -1713,8 +1933,10 @@ errors_history.Clear();</_value>
                 <Childs>
                   <AbstractStep z:Id="i160" i:type="ExecutedStep">
                     <Childs />
+                    <HeightOnFlowchart>50</HeightOnFlowchart>
                     <Id>ef79135b-af5d-4f38-8594-3f22252ac51b</Id>
                     <Parent z:Ref="i159" />
+                    <PositionOnFlowchart xmlns:d11p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                     <PropertyValues>
                       <PropertyValue z:Id="i161">
                         <PropertyName>CSCode</PropertyName>
@@ -1726,6 +1948,7 @@ errors_history.Clear();</_value>
                       </PropertyValue>
                     </PropertyValues>
                     <SelectedOptionId i:nil="true" />
+                    <WidthOnFlowchart>360</WidthOnFlowchart>
                     <AutoCloseMode>None</AutoCloseMode>
                     <EnableStatus>true</EnableStatus>
                     <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -1736,8 +1959,10 @@ errors_history.Clear();</_value>
                   </AbstractStep>
                   <AbstractStep z:Id="i162" i:type="ExecutedStep">
                     <Childs />
+                    <HeightOnFlowchart>50</HeightOnFlowchart>
                     <Id>467dc1c0-f245-474f-93bc-4f017e871783</Id>
                     <Parent z:Ref="i159" />
+                    <PositionOnFlowchart xmlns:d11p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                     <PropertyValues>
                       <PropertyValue z:Id="i163">
                         <PropertyName>Value</PropertyName>
@@ -1757,6 +1982,7 @@ errors_history.Clear();</_value>
                       </PropertyValue>
                     </PropertyValues>
                     <SelectedOptionId i:nil="true" />
+                    <WidthOnFlowchart>360</WidthOnFlowchart>
                     <AutoCloseMode>None</AutoCloseMode>
                     <EnableStatus>true</EnableStatus>
                     <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -1766,8 +1992,10 @@ errors_history.Clear();</_value>
                   </AbstractStep>
                   <AbstractStep z:Id="i165" i:type="ExecutedStep">
                     <Childs />
+                    <HeightOnFlowchart>50</HeightOnFlowchart>
                     <Id>4557e39f-56c4-41ca-b908-dd6de0ed9e15</Id>
                     <Parent z:Ref="i159" />
+                    <PositionOnFlowchart xmlns:d11p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                     <PropertyValues>
                       <PropertyValue z:Id="i166">
                         <PropertyName>FilePath</PropertyName>
@@ -1844,6 +2072,7 @@ errors_history.Clear();</_value>
                       </PropertyValue>
                     </PropertyValues>
                     <SelectedOptionId i:nil="true" />
+                    <WidthOnFlowchart>360</WidthOnFlowchart>
                     <AutoCloseMode>None</AutoCloseMode>
                     <EnableStatus>true</EnableStatus>
                     <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -1859,8 +2088,10 @@ errors_history.Clear();</_value>
                             <Childs>
                               <AbstractStep z:Id="i179" i:type="ExecutedStep">
                                 <Childs />
+                                <HeightOnFlowchart>50</HeightOnFlowchart>
                                 <Id>7ae48c28-f18b-4159-a089-3c0925dbf546</Id>
                                 <Parent z:Ref="i178" />
+                                <PositionOnFlowchart xmlns:d17p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                                 <PropertyValues>
                                   <PropertyValue z:Id="i180">
                                     <PropertyName>Value</PropertyName>
@@ -1880,6 +2111,7 @@ errors_history.Clear();</_value>
                                   </PropertyValue>
                                 </PropertyValues>
                                 <SelectedOptionId i:nil="true" />
+                                <WidthOnFlowchart>360</WidthOnFlowchart>
                                 <AutoCloseMode>None</AutoCloseMode>
                                 <EnableStatus>true</EnableStatus>
                                 <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -1889,8 +2121,10 @@ errors_history.Clear();</_value>
                               </AbstractStep>
                               <AbstractStep z:Id="i182" i:type="ExecutedStep">
                                 <Childs />
+                                <HeightOnFlowchart>50</HeightOnFlowchart>
                                 <Id>af01fb2b-e309-4133-a9ed-9751a0a81c79</Id>
                                 <Parent z:Ref="i178" />
+                                <PositionOnFlowchart xmlns:d17p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                                 <PropertyValues>
                                   <PropertyValue z:Id="i183">
                                     <PropertyName>CSCode</PropertyName>
@@ -1904,6 +2138,7 @@ transaction["rpa_retries"] = Convert.ToInt32(transaction["rpa_retries"].ToString
                                   </PropertyValue>
                                 </PropertyValues>
                                 <SelectedOptionId i:nil="true" />
+                                <WidthOnFlowchart>360</WidthOnFlowchart>
                                 <AutoCloseMode>None</AutoCloseMode>
                                 <EnableStatus>true</EnableStatus>
                                 <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -1917,8 +2152,10 @@ transaction["rpa_retries"] = Convert.ToInt32(transaction["rpa_retries"].ToString
                                     <Childs>
                                       <AbstractStep z:Id="i186" i:type="ExecutedStep">
                                         <Childs />
+                                        <HeightOnFlowchart>50</HeightOnFlowchart>
                                         <Id>b873342e-e66f-4d1f-9504-2fdd39ec57ea</Id>
                                         <Parent z:Ref="i185" />
+                                        <PositionOnFlowchart xmlns:d21p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                                         <PropertyValues>
                                           <PropertyValue z:Id="i187">
                                             <PropertyName>CSCode</PropertyName>
@@ -1932,6 +2169,7 @@ transaction["rpa_screenshot"]   = screenshot_retry_counter_file;</_value>
                                           </PropertyValue>
                                         </PropertyValues>
                                         <SelectedOptionId i:nil="true" />
+                                        <WidthOnFlowchart>360</WidthOnFlowchart>
                                         <AutoCloseMode>None</AutoCloseMode>
                                         <EnableStatus>true</EnableStatus>
                                         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -1941,10 +2179,13 @@ transaction["rpa_screenshot"]   = screenshot_retry_counter_file;</_value>
                                         <_activityFullName>BR.Core.Base.ExecuteCSCode</_activityFullName>
                                       </AbstractStep>
                                     </Childs>
+                                    <HeightOnFlowchart i:nil="true" />
                                     <Id>892a9345-fa3c-46a5-a619-abf502b8ac2b</Id>
                                     <Parent z:Ref="i184" />
+                                    <PositionOnFlowchart xmlns:d19p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                                     <PropertyValues />
                                     <SelectedOptionId i:nil="true" />
+                                    <WidthOnFlowchart i:nil="true" />
                                     <AutoCloseMode>None</AutoCloseMode>
                                     <EnableStatus>true</EnableStatus>
                                     <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -1956,8 +2197,10 @@ transaction["rpa_screenshot"]   = screenshot_retry_counter_file;</_value>
                                     <Childs>
                                       <AbstractStep z:Id="i189" i:type="ExecutedStep">
                                         <Childs />
+                                        <HeightOnFlowchart>50</HeightOnFlowchart>
                                         <Id>4c9b8bc4-2601-4dbc-823e-026bd51582be</Id>
                                         <Parent z:Ref="i188" />
+                                        <PositionOnFlowchart xmlns:d21p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                                         <PropertyValues>
                                           <PropertyValue z:Id="i190">
                                             <PropertyName>CSCode</PropertyName>
@@ -1974,6 +2217,7 @@ errors_history.Clear(); //Бизнес-ошибка сбрасывает сче�
                                           </PropertyValue>
                                         </PropertyValues>
                                         <SelectedOptionId i:nil="true" />
+                                        <WidthOnFlowchart>360</WidthOnFlowchart>
                                         <AutoCloseMode>None</AutoCloseMode>
                                         <EnableStatus>true</EnableStatus>
                                         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -1986,8 +2230,10 @@ errors_history.Clear(); //Бизнес-ошибка сбрасывает сче�
                                         <Childs>
                                           <AbstractStep z:Id="i192" i:type="ExecutedStep">
                                             <Childs />
+                                            <HeightOnFlowchart>50</HeightOnFlowchart>
                                             <Id>7a40669d-5f12-4f11-b597-99fb22f8bb47</Id>
                                             <Parent z:Ref="i191" />
+                                            <PositionOnFlowchart xmlns:d23p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                                             <PropertyValues>
                                               <PropertyValue z:Id="i193">
                                                 <PropertyName>Value</PropertyName>
@@ -2007,6 +2253,7 @@ errors_history.Clear(); //Бизнес-ошибка сбрасывает сче�
                                               </PropertyValue>
                                             </PropertyValues>
                                             <SelectedOptionId i:nil="true" />
+                                            <WidthOnFlowchart>360</WidthOnFlowchart>
                                             <AutoCloseMode>None</AutoCloseMode>
                                             <EnableStatus>true</EnableStatus>
                                             <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -2017,8 +2264,10 @@ errors_history.Clear(); //Бизнес-ошибка сбрасывает сче�
                                           </AbstractStep>
                                           <AbstractStep z:Id="i195" i:type="ExecutedStep">
                                             <Childs />
+                                            <HeightOnFlowchart>50</HeightOnFlowchart>
                                             <Id>633395c9-89b4-45c8-ac3d-7dee3c4ba8ee</Id>
                                             <Parent z:Ref="i191" />
+                                            <PositionOnFlowchart xmlns:d23p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                                             <PropertyValues>
                                               <PropertyValue z:Id="i196">
                                                 <PropertyName>FilePath</PropertyName>
@@ -2060,6 +2309,7 @@ errors_history.Clear(); //Бизнес-ошибка сбрасывает сче�
                                               </PropertyValue>
                                             </PropertyValues>
                                             <SelectedOptionId i:nil="true" />
+                                            <WidthOnFlowchart>360</WidthOnFlowchart>
                                             <AutoCloseMode>None</AutoCloseMode>
                                             <EnableStatus>true</EnableStatus>
                                             <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -2068,10 +2318,13 @@ errors_history.Clear(); //Бизнес-ошибка сбрасывает сче�
                                             <_activityFullName>BR.Core.Base.ExecuteScript</_activityFullName>
                                           </AbstractStep>
                                         </Childs>
+                                        <HeightOnFlowchart i:nil="true" />
                                         <Id>1f9259a9-3396-4bb7-8758-9415f2f1441c</Id>
                                         <Parent z:Ref="i188" />
+                                        <PositionOnFlowchart xmlns:d21p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                                         <PropertyValues />
                                         <SelectedOptionId i:nil="true" />
+                                        <WidthOnFlowchart i:nil="true" />
                                         <AutoCloseMode>None</AutoCloseMode>
                                         <EnableStatus>true</EnableStatus>
                                         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -2080,8 +2333,10 @@ errors_history.Clear(); //Бизнес-ошибка сбрасывает сче�
                                         <_activityFullName>BR.Core.Base.Container</_activityFullName>
                                       </AbstractStep>
                                     </Childs>
+                                    <HeightOnFlowchart i:nil="true" />
                                     <Id>46375322-fcd7-470e-bddc-9312e361268f</Id>
                                     <Parent z:Ref="i184" />
+                                    <PositionOnFlowchart xmlns:d19p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                                     <PropertyValues>
                                       <PropertyValue z:Id="i201">
                                         <PropertyName>Condition</PropertyName>
@@ -2093,6 +2348,7 @@ errors_history.Clear(); //Бизнес-ошибка сбрасывает сче�
                                       </PropertyValue>
                                     </PropertyValues>
                                     <SelectedOptionId i:nil="true" />
+                                    <WidthOnFlowchart i:nil="true" />
                                     <AutoCloseMode>None</AutoCloseMode>
                                     <EnableStatus>true</EnableStatus>
                                     <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -2104,8 +2360,10 @@ errors_history.Clear(); //Бизнес-ошибка сбрасывает сче�
                                     <Childs>
                                       <AbstractStep z:Id="i203" i:type="ExecutedStep">
                                         <Childs />
+                                        <HeightOnFlowchart>50</HeightOnFlowchart>
                                         <Id>c7868b1f-7b10-475c-8552-ad6a69b344d2</Id>
                                         <Parent z:Ref="i202" />
+                                        <PositionOnFlowchart xmlns:d21p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                                         <PropertyValues>
                                           <PropertyValue z:Id="i204">
                                             <PropertyName>CSCode</PropertyName>
@@ -2119,6 +2377,7 @@ transaction["rpa_screenshot"]   = screenshot_retry_counter_file;</_value>
                                           </PropertyValue>
                                         </PropertyValues>
                                         <SelectedOptionId i:nil="true" />
+                                        <WidthOnFlowchart>360</WidthOnFlowchart>
                                         <AutoCloseMode>None</AutoCloseMode>
                                         <EnableStatus>true</EnableStatus>
                                         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -2128,10 +2387,13 @@ transaction["rpa_screenshot"]   = screenshot_retry_counter_file;</_value>
                                         <_activityFullName>BR.Core.Base.ExecuteCSCode</_activityFullName>
                                       </AbstractStep>
                                     </Childs>
+                                    <HeightOnFlowchart i:nil="true" />
                                     <Id>9de2095c-e8f0-49ff-a7e4-01bc3a5de540</Id>
                                     <Parent z:Ref="i184" />
+                                    <PositionOnFlowchart xmlns:d19p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                                     <PropertyValues />
                                     <SelectedOptionId i:nil="true" />
+                                    <WidthOnFlowchart i:nil="true" />
                                     <AutoCloseMode>None</AutoCloseMode>
                                     <EnableStatus>true</EnableStatus>
                                     <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -2140,8 +2402,10 @@ transaction["rpa_screenshot"]   = screenshot_retry_counter_file;</_value>
                                     <_activityFullName>BR.Core.Base.IfFalse</_activityFullName>
                                   </AbstractStep>
                                 </Childs>
+                                <HeightOnFlowchart i:nil="true" />
                                 <Id>cadcaf9e-9b67-4cc2-b8cb-52da44648c47</Id>
                                 <Parent z:Ref="i178" />
+                                <PositionOnFlowchart xmlns:d17p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                                 <PropertyValues>
                                   <PropertyValue z:Id="i205">
                                     <PropertyName>Condition</PropertyName>
@@ -2153,6 +2417,7 @@ transaction["rpa_screenshot"]   = screenshot_retry_counter_file;</_value>
                                   </PropertyValue>
                                 </PropertyValues>
                                 <SelectedOptionId i:nil="true" />
+                                <WidthOnFlowchart i:nil="true" />
                                 <AutoCloseMode>None</AutoCloseMode>
                                 <EnableStatus>true</EnableStatus>
                                 <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -2165,8 +2430,10 @@ transaction["rpa_screenshot"]   = screenshot_retry_counter_file;</_value>
                               </AbstractStep>
                               <AbstractStep z:Id="i206" i:type="ExecutedStep">
                                 <Childs />
+                                <HeightOnFlowchart>50</HeightOnFlowchart>
                                 <Id>d4a56ffd-f0b6-44f1-97ea-757626bf9f1e</Id>
                                 <Parent z:Ref="i178" />
+                                <PositionOnFlowchart xmlns:d17p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                                 <PropertyValues>
                                   <PropertyValue z:Id="i207">
                                     <PropertyName>FilePath</PropertyName>
@@ -2201,6 +2468,7 @@ transaction["rpa_screenshot"]   = screenshot_retry_counter_file;</_value>
                                   </PropertyValue>
                                 </PropertyValues>
                                 <SelectedOptionId i:nil="true" />
+                                <WidthOnFlowchart>360</WidthOnFlowchart>
                                 <AutoCloseMode>None</AutoCloseMode>
                                 <EnableStatus>true</EnableStatus>
                                 <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -2210,10 +2478,13 @@ transaction["rpa_screenshot"]   = screenshot_retry_counter_file;</_value>
                                 <_activityFullName>BR.Core.Base.ExecuteScript</_activityFullName>
                               </AbstractStep>
                             </Childs>
+                            <HeightOnFlowchart i:nil="true" />
                             <Id>4b9430e2-bbcb-453f-b398-abd8cb853677</Id>
                             <Parent z:Ref="i177" />
+                            <PositionOnFlowchart xmlns:d15p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                             <PropertyValues />
                             <SelectedOptionId i:nil="true" />
+                            <WidthOnFlowchart i:nil="true" />
                             <AutoCloseMode>None</AutoCloseMode>
                             <EnableStatus>true</EnableStatus>
                             <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -2226,10 +2497,13 @@ transaction["rpa_screenshot"]   = screenshot_retry_counter_file;</_value>
                             <_activityFullName>BR.Core.Base.Container</_activityFullName>
                           </AbstractStep>
                         </Childs>
+                        <HeightOnFlowchart i:nil="true" />
                         <Id>4000b3b1-7eaf-482a-97d5-4588a4509047</Id>
                         <Parent z:Ref="i176" />
+                        <PositionOnFlowchart xmlns:d13p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                         <PropertyValues />
                         <SelectedOptionId i:nil="true" />
+                        <WidthOnFlowchart i:nil="true" />
                         <AutoCloseMode>None</AutoCloseMode>
                         <EnableStatus>true</EnableStatus>
                         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -2239,10 +2513,13 @@ transaction["rpa_screenshot"]   = screenshot_retry_counter_file;</_value>
                       </AbstractStep>
                       <AbstractStep z:Id="i211" i:type="ExecutedStep">
                         <Childs />
+                        <HeightOnFlowchart i:nil="true" />
                         <Id>7f7b089a-7a3e-412b-b237-ffac1479da00</Id>
                         <Parent z:Ref="i176" />
+                        <PositionOnFlowchart xmlns:d13p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                         <PropertyValues />
                         <SelectedOptionId i:nil="true" />
+                        <WidthOnFlowchart i:nil="true" />
                         <AutoCloseMode>None</AutoCloseMode>
                         <EnableStatus>true</EnableStatus>
                         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -2251,8 +2528,10 @@ transaction["rpa_screenshot"]   = screenshot_retry_counter_file;</_value>
                         <_activityFullName>BR.Core.Base.IfFalse</_activityFullName>
                       </AbstractStep>
                     </Childs>
+                    <HeightOnFlowchart i:nil="true" />
                     <Id>b62be030-58e6-4ef8-8921-e8708bce0ea0</Id>
                     <Parent z:Ref="i159" />
+                    <PositionOnFlowchart xmlns:d11p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                     <PropertyValues>
                       <PropertyValue z:Id="i212">
                         <PropertyName>Condition</PropertyName>
@@ -2264,6 +2543,7 @@ transaction["rpa_screenshot"]   = screenshot_retry_counter_file;</_value>
                       </PropertyValue>
                     </PropertyValues>
                     <SelectedOptionId i:nil="true" />
+                    <WidthOnFlowchart i:nil="true" />
                     <AutoCloseMode>None</AutoCloseMode>
                     <EnableStatus>true</EnableStatus>
                     <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -2279,8 +2559,10 @@ transaction["rpa_screenshot"]   = screenshot_retry_counter_file;</_value>
                             <Childs>
                               <AbstractStep z:Id="i216" i:type="ExecutedStep">
                                 <Childs />
+                                <HeightOnFlowchart>50</HeightOnFlowchart>
                                 <Id>b885df1c-bf5d-435d-a9ea-fe0d7b6da315</Id>
                                 <Parent z:Ref="i215" />
+                                <PositionOnFlowchart xmlns:d17p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                                 <PropertyValues>
                                   <PropertyValue z:Id="i217">
                                     <PropertyName>DataTable</PropertyName>
@@ -2316,6 +2598,7 @@ transaction["rpa_screenshot"]   = screenshot_retry_counter_file;</_value>
                                   </PropertyValue>
                                 </PropertyValues>
                                 <SelectedOptionId i:nil="true" />
+                                <WidthOnFlowchart>360</WidthOnFlowchart>
                                 <AutoCloseMode>None</AutoCloseMode>
                                 <EnableStatus>true</EnableStatus>
                                 <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -2325,8 +2608,10 @@ transaction["rpa_screenshot"]   = screenshot_retry_counter_file;</_value>
                               </AbstractStep>
                               <AbstractStep z:Id="i221" i:type="ExecutedStep">
                                 <Childs />
+                                <HeightOnFlowchart>50</HeightOnFlowchart>
                                 <Id>e26a7a95-afa0-44dd-9527-bae6ae342485</Id>
                                 <Parent z:Ref="i215" />
+                                <PositionOnFlowchart xmlns:d17p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                                 <PropertyValues>
                                   <PropertyValue z:Id="i222">
                                     <PropertyName>FilePath</PropertyName>
@@ -2368,6 +2653,7 @@ transaction["rpa_screenshot"]   = screenshot_retry_counter_file;</_value>
                                   </PropertyValue>
                                 </PropertyValues>
                                 <SelectedOptionId i:nil="true" />
+                                <WidthOnFlowchart>360</WidthOnFlowchart>
                                 <AutoCloseMode>None</AutoCloseMode>
                                 <EnableStatus>true</EnableStatus>
                                 <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -2377,8 +2663,10 @@ transaction["rpa_screenshot"]   = screenshot_retry_counter_file;</_value>
                               </AbstractStep>
                               <AbstractStep z:Id="i227" i:type="ExecutedStep">
                                 <Childs />
+                                <HeightOnFlowchart>50</HeightOnFlowchart>
                                 <Id>ef916c2a-bb01-4f4e-8846-66063ade7298</Id>
                                 <Parent z:Ref="i215" />
+                                <PositionOnFlowchart xmlns:d17p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                                 <PropertyValues>
                                   <PropertyValue z:Id="i228">
                                     <PropertyName>Value</PropertyName>
@@ -2398,6 +2686,7 @@ transaction["rpa_screenshot"]   = screenshot_retry_counter_file;</_value>
                                   </PropertyValue>
                                 </PropertyValues>
                                 <SelectedOptionId i:nil="true" />
+                                <WidthOnFlowchart>360</WidthOnFlowchart>
                                 <AutoCloseMode>None</AutoCloseMode>
                                 <EnableStatus>true</EnableStatus>
                                 <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -2407,8 +2696,10 @@ transaction["rpa_screenshot"]   = screenshot_retry_counter_file;</_value>
                               </AbstractStep>
                               <AbstractStep z:Id="i230" i:type="ExecutedStep">
                                 <Childs />
+                                <HeightOnFlowchart>50</HeightOnFlowchart>
                                 <Id>478fe79a-7968-49c0-abf0-0fa68ebb62cc</Id>
                                 <Parent z:Ref="i215" />
+                                <PositionOnFlowchart xmlns:d17p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                                 <PropertyValues>
                                   <PropertyValue z:Id="i231">
                                     <PropertyName>Value</PropertyName>
@@ -2428,6 +2719,7 @@ transaction["rpa_screenshot"]   = screenshot_retry_counter_file;</_value>
                                   </PropertyValue>
                                 </PropertyValues>
                                 <SelectedOptionId i:nil="true" />
+                                <WidthOnFlowchart>360</WidthOnFlowchart>
                                 <AutoCloseMode>None</AutoCloseMode>
                                 <EnableStatus>true</EnableStatus>
                                 <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -2436,10 +2728,13 @@ transaction["rpa_screenshot"]   = screenshot_retry_counter_file;</_value>
                                 <_activityFullName>BR.Core.Base.Assign</_activityFullName>
                               </AbstractStep>
                             </Childs>
+                            <HeightOnFlowchart i:nil="true" />
                             <Id>215db7d3-505c-458b-bb7a-5daf42940234</Id>
                             <Parent z:Ref="i214" />
+                            <PositionOnFlowchart xmlns:d15p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                             <PropertyValues />
                             <SelectedOptionId i:nil="true" />
+                            <WidthOnFlowchart i:nil="true" />
                             <AutoCloseMode>None</AutoCloseMode>
                             <EnableStatus>true</EnableStatus>
                             <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -2455,8 +2750,10 @@ transaction["rpa_screenshot"]   = screenshot_retry_counter_file;</_value>
                                     <Childs>
                                       <AbstractStep z:Id="i236" i:type="ExecutedStep">
                                         <Childs />
+                                        <HeightOnFlowchart>50</HeightOnFlowchart>
                                         <Id>007117a3-80a8-4879-b647-4f4a57ebaf3e</Id>
                                         <Parent z:Ref="i235" />
+                                        <PositionOnFlowchart xmlns:d21p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                                         <PropertyValues>
                                           <PropertyValue z:Id="i237">
                                             <PropertyName>FilePath</PropertyName>
@@ -2484,6 +2781,7 @@ transaction["rpa_screenshot"]   = screenshot_retry_counter_file;</_value>
                                           </PropertyValue>
                                         </PropertyValues>
                                         <SelectedOptionId i:nil="true" />
+                                        <WidthOnFlowchart>360</WidthOnFlowchart>
                                         <AutoCloseMode>None</AutoCloseMode>
                                         <EnableStatus>true</EnableStatus>
                                         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -2492,10 +2790,13 @@ transaction["rpa_screenshot"]   = screenshot_retry_counter_file;</_value>
                                         <_activityFullName>BR.Core.Base.ExecuteScript</_activityFullName>
                                       </AbstractStep>
                                     </Childs>
+                                    <HeightOnFlowchart i:nil="true" />
                                     <Id>0310f2d3-0d4f-4e1b-861c-bbb85cf2d797</Id>
                                     <Parent z:Ref="i234" />
+                                    <PositionOnFlowchart xmlns:d19p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                                     <PropertyValues />
                                     <SelectedOptionId i:nil="true" />
+                                    <WidthOnFlowchart i:nil="true" />
                                     <AutoCloseMode>None</AutoCloseMode>
                                     <EnableStatus>true</EnableStatus>
                                     <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -2507,8 +2808,10 @@ transaction["rpa_screenshot"]   = screenshot_retry_counter_file;</_value>
                                     <Childs>
                                       <AbstractStep z:Id="i241" i:type="ExecutedStep">
                                         <Childs />
+                                        <HeightOnFlowchart>50</HeightOnFlowchart>
                                         <Id>97c9635c-7326-4d54-86dd-297a21da141b</Id>
                                         <Parent z:Ref="i240" />
+                                        <PositionOnFlowchart xmlns:d21p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                                         <PropertyValues>
                                           <PropertyValue z:Id="i242">
                                             <PropertyName>FilePath</PropertyName>
@@ -2550,6 +2853,7 @@ transaction["rpa_screenshot"]   = screenshot_retry_counter_file;</_value>
                                           </PropertyValue>
                                         </PropertyValues>
                                         <SelectedOptionId i:nil="true" />
+                                        <WidthOnFlowchart>360</WidthOnFlowchart>
                                         <AutoCloseMode>None</AutoCloseMode>
                                         <EnableStatus>true</EnableStatus>
                                         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -2558,10 +2862,13 @@ transaction["rpa_screenshot"]   = screenshot_retry_counter_file;</_value>
                                         <_activityFullName>BR.Core.Base.ExecuteScript</_activityFullName>
                                       </AbstractStep>
                                     </Childs>
+                                    <HeightOnFlowchart i:nil="true" />
                                     <Id>f8a52ee9-3572-4a2c-b55d-2ecca1d9ef50</Id>
                                     <Parent z:Ref="i234" />
+                                    <PositionOnFlowchart xmlns:d19p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                                     <PropertyValues />
                                     <SelectedOptionId i:nil="true" />
+                                    <WidthOnFlowchart i:nil="true" />
                                     <AutoCloseMode>None</AutoCloseMode>
                                     <EnableStatus>true</EnableStatus>
                                     <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -2570,8 +2877,10 @@ transaction["rpa_screenshot"]   = screenshot_retry_counter_file;</_value>
                                     <_activityFullName>BR.Core.Base.IfFalse</_activityFullName>
                                   </AbstractStep>
                                 </Childs>
+                                <HeightOnFlowchart i:nil="true" />
                                 <Id>b0dbac6b-615e-4d7f-8bfa-30c3eca592ac</Id>
                                 <Parent z:Ref="i233" />
+                                <PositionOnFlowchart xmlns:d17p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                                 <PropertyValues>
                                   <PropertyValue z:Id="i247">
                                     <PropertyName>Condition</PropertyName>
@@ -2583,6 +2892,7 @@ transaction["rpa_screenshot"]   = screenshot_retry_counter_file;</_value>
                                   </PropertyValue>
                                 </PropertyValues>
                                 <SelectedOptionId i:nil="true" />
+                                <WidthOnFlowchart i:nil="true" />
                                 <AutoCloseMode>None</AutoCloseMode>
                                 <EnableStatus>true</EnableStatus>
                                 <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -2591,10 +2901,13 @@ transaction["rpa_screenshot"]   = screenshot_retry_counter_file;</_value>
                                 <_activityFullName>BR.Core.Base.If</_activityFullName>
                               </AbstractStep>
                             </Childs>
+                            <HeightOnFlowchart i:nil="true" />
                             <Id>283aaaa3-c29d-4f87-9d17-d6721b419f74</Id>
                             <Parent z:Ref="i214" />
+                            <PositionOnFlowchart xmlns:d15p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                             <PropertyValues />
                             <SelectedOptionId i:nil="true" />
+                            <WidthOnFlowchart i:nil="true" />
                             <AutoCloseMode>None</AutoCloseMode>
                             <EnableStatus>true</EnableStatus>
                             <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -2610,8 +2923,10 @@ transaction["rpa_screenshot"]   = screenshot_retry_counter_file;</_value>
                                     <Childs>
                                       <AbstractStep z:Id="i251" i:type="ExecutedStep">
                                         <Childs />
+                                        <HeightOnFlowchart>50</HeightOnFlowchart>
                                         <Id>e88e7d89-f015-4604-aa1e-941d78104602</Id>
                                         <Parent z:Ref="i250" />
+                                        <PositionOnFlowchart xmlns:d21p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                                         <PropertyValues>
                                           <PropertyValue z:Id="i252">
                                             <PropertyName>Value</PropertyName>
@@ -2633,6 +2948,7 @@ transaction["rpa_screenshot"]   = screenshot_retry_counter_file;</_value>
                                           </PropertyValue>
                                         </PropertyValues>
                                         <SelectedOptionId i:nil="true" />
+                                        <WidthOnFlowchart>360</WidthOnFlowchart>
                                         <AutoCloseMode>None</AutoCloseMode>
                                         <EnableStatus>true</EnableStatus>
                                         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -2642,8 +2958,10 @@ transaction["rpa_screenshot"]   = screenshot_retry_counter_file;</_value>
                                       </AbstractStep>
                                       <AbstractStep z:Id="i254" i:type="ExecutedStep">
                                         <Childs />
+                                        <HeightOnFlowchart>50</HeightOnFlowchart>
                                         <Id>12ae272e-8ceb-4037-9340-6c1f9aefd0aa</Id>
                                         <Parent z:Ref="i250" />
+                                        <PositionOnFlowchart xmlns:d21p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                                         <PropertyValues>
                                           <PropertyValue z:Id="i255">
                                             <PropertyName>FilePath</PropertyName>
@@ -2685,6 +3003,7 @@ transaction["rpa_screenshot"]   = screenshot_retry_counter_file;</_value>
                                           </PropertyValue>
                                         </PropertyValues>
                                         <SelectedOptionId i:nil="true" />
+                                        <WidthOnFlowchart>360</WidthOnFlowchart>
                                         <AutoCloseMode>None</AutoCloseMode>
                                         <EnableStatus>true</EnableStatus>
                                         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -2694,8 +3013,10 @@ transaction["rpa_screenshot"]   = screenshot_retry_counter_file;</_value>
                                       </AbstractStep>
                                       <AbstractStep z:Id="i260" i:type="ExecutedStep">
                                         <Childs />
+                                        <HeightOnFlowchart>50</HeightOnFlowchart>
                                         <Id>8a477c33-8e34-4901-821e-4431310859b6</Id>
                                         <Parent z:Ref="i250" />
+                                        <PositionOnFlowchart xmlns:d21p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                                         <PropertyValues>
                                           <PropertyValue z:Id="i261">
                                             <PropertyName>Count</PropertyName>
@@ -2707,6 +3028,7 @@ transaction["rpa_screenshot"]   = screenshot_retry_counter_file;</_value>
                                           </PropertyValue>
                                         </PropertyValues>
                                         <SelectedOptionId>0</SelectedOptionId>
+                                        <WidthOnFlowchart>360</WidthOnFlowchart>
                                         <AutoCloseMode>None</AutoCloseMode>
                                         <EnableStatus>true</EnableStatus>
                                         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -2715,10 +3037,13 @@ transaction["rpa_screenshot"]   = screenshot_retry_counter_file;</_value>
                                         <_activityFullName>BR.Core.Base.Sleep</_activityFullName>
                                       </AbstractStep>
                                     </Childs>
+                                    <HeightOnFlowchart i:nil="true" />
                                     <Id>b08d9081-d568-480e-973f-378da69d2748</Id>
                                     <Parent z:Ref="i249" />
+                                    <PositionOnFlowchart xmlns:d19p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                                     <PropertyValues />
                                     <SelectedOptionId i:nil="true" />
+                                    <WidthOnFlowchart i:nil="true" />
                                     <AutoCloseMode>None</AutoCloseMode>
                                     <EnableStatus>true</EnableStatus>
                                     <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -2730,8 +3055,10 @@ transaction["rpa_screenshot"]   = screenshot_retry_counter_file;</_value>
                                     <Childs>
                                       <AbstractStep z:Id="i263" i:type="ExecutedStep">
                                         <Childs />
+                                        <HeightOnFlowchart>50</HeightOnFlowchart>
                                         <Id>ca0e81e6-a900-42be-b2d8-d8a940656035</Id>
                                         <Parent z:Ref="i262" />
+                                        <PositionOnFlowchart xmlns:d21p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                                         <PropertyValues>
                                           <PropertyValue z:Id="i264">
                                             <PropertyName>FilePath</PropertyName>
@@ -2773,6 +3100,7 @@ transaction["rpa_screenshot"]   = screenshot_retry_counter_file;</_value>
                                           </PropertyValue>
                                         </PropertyValues>
                                         <SelectedOptionId i:nil="true" />
+                                        <WidthOnFlowchart>360</WidthOnFlowchart>
                                         <AutoCloseMode>None</AutoCloseMode>
                                         <EnableStatus>true</EnableStatus>
                                         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -2781,10 +3109,13 @@ transaction["rpa_screenshot"]   = screenshot_retry_counter_file;</_value>
                                         <_activityFullName>BR.Core.Base.ExecuteScript</_activityFullName>
                                       </AbstractStep>
                                     </Childs>
+                                    <HeightOnFlowchart i:nil="true" />
                                     <Id>06fb70b6-217f-4a1a-86c2-89f002c44dee</Id>
                                     <Parent z:Ref="i249" />
+                                    <PositionOnFlowchart xmlns:d19p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                                     <PropertyValues />
                                     <SelectedOptionId i:nil="true" />
+                                    <WidthOnFlowchart i:nil="true" />
                                     <AutoCloseMode>None</AutoCloseMode>
                                     <EnableStatus>true</EnableStatus>
                                     <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -2793,8 +3124,10 @@ transaction["rpa_screenshot"]   = screenshot_retry_counter_file;</_value>
                                     <_activityFullName>BR.Core.Base.IfFalse</_activityFullName>
                                   </AbstractStep>
                                 </Childs>
+                                <HeightOnFlowchart i:nil="true" />
                                 <Id>9df9e45f-3854-45f3-a9cf-033bf85083e8</Id>
                                 <Parent z:Ref="i248" />
+                                <PositionOnFlowchart xmlns:d17p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                                 <PropertyValues>
                                   <PropertyValue z:Id="i269">
                                     <PropertyName>Condition</PropertyName>
@@ -2806,6 +3139,7 @@ transaction["rpa_screenshot"]   = screenshot_retry_counter_file;</_value>
                                   </PropertyValue>
                                 </PropertyValues>
                                 <SelectedOptionId i:nil="true" />
+                                <WidthOnFlowchart i:nil="true" />
                                 <AutoCloseMode>None</AutoCloseMode>
                                 <EnableStatus>true</EnableStatus>
                                 <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -2814,10 +3148,13 @@ transaction["rpa_screenshot"]   = screenshot_retry_counter_file;</_value>
                                 <_activityFullName>BR.Core.Base.If</_activityFullName>
                               </AbstractStep>
                             </Childs>
+                            <HeightOnFlowchart i:nil="true" />
                             <Id>79f4bcf8-a13e-487b-a364-9602c8531a08</Id>
                             <Parent z:Ref="i214" />
+                            <PositionOnFlowchart xmlns:d15p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                             <PropertyValues />
                             <SelectedOptionId i:nil="true" />
+                            <WidthOnFlowchart i:nil="true" />
                             <AutoCloseMode>None</AutoCloseMode>
                             <EnableStatus>true</EnableStatus>
                             <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -2826,10 +3163,13 @@ transaction["rpa_screenshot"]   = screenshot_retry_counter_file;</_value>
                             <_activityFullName>BR.Core.Base.Container</_activityFullName>
                           </AbstractStep>
                         </Childs>
+                        <HeightOnFlowchart i:nil="true" />
                         <Id>f1b5edf9-13ca-4b50-94da-59c2c296a337</Id>
                         <Parent z:Ref="i213" />
+                        <PositionOnFlowchart xmlns:d13p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                         <PropertyValues />
                         <SelectedOptionId i:nil="true" />
+                        <WidthOnFlowchart i:nil="true" />
                         <AutoCloseMode>None</AutoCloseMode>
                         <EnableStatus>true</EnableStatus>
                         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -2839,10 +3179,13 @@ transaction["rpa_screenshot"]   = screenshot_retry_counter_file;</_value>
                       </AbstractStep>
                       <AbstractStep z:Id="i270" i:type="ExecutedStep">
                         <Childs />
+                        <HeightOnFlowchart i:nil="true" />
                         <Id>e9855d6c-f87e-4645-925d-481831155bb8</Id>
                         <Parent z:Ref="i213" />
+                        <PositionOnFlowchart xmlns:d13p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                         <PropertyValues />
                         <SelectedOptionId i:nil="true" />
+                        <WidthOnFlowchart i:nil="true" />
                         <AutoCloseMode>None</AutoCloseMode>
                         <EnableStatus>true</EnableStatus>
                         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -2851,8 +3194,10 @@ transaction["rpa_screenshot"]   = screenshot_retry_counter_file;</_value>
                         <_activityFullName>BR.Core.Base.IfFalse</_activityFullName>
                       </AbstractStep>
                     </Childs>
+                    <HeightOnFlowchart i:nil="true" />
                     <Id>e4966b8e-f8e1-430b-9f4e-463e35a90976</Id>
                     <Parent z:Ref="i159" />
+                    <PositionOnFlowchart xmlns:d11p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                     <PropertyValues>
                       <PropertyValue z:Id="i271">
                         <PropertyName>Condition</PropertyName>
@@ -2864,6 +3209,7 @@ transaction["rpa_screenshot"]   = screenshot_retry_counter_file;</_value>
                       </PropertyValue>
                     </PropertyValues>
                     <SelectedOptionId i:nil="true" />
+                    <WidthOnFlowchart i:nil="true" />
                     <AutoCloseMode>None</AutoCloseMode>
                     <EnableStatus>true</EnableStatus>
                     <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -2872,8 +3218,10 @@ transaction["rpa_screenshot"]   = screenshot_retry_counter_file;</_value>
                     <_activityFullName>BR.Core.Base.If</_activityFullName>
                   </AbstractStep>
                 </Childs>
+                <HeightOnFlowchart i:nil="true" />
                 <Id>370c84a8-0beb-4358-8c1c-a2dc4cdbfbb0</Id>
                 <Parent z:Ref="i8" />
+                <PositionOnFlowchart xmlns:d9p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                 <PropertyValues>
                   <PropertyValue z:Id="i272">
                     <PropertyName>Exception</PropertyName>
@@ -2909,6 +3257,7 @@ transaction["rpa_screenshot"]   = screenshot_retry_counter_file;</_value>
                   </PropertyValue>
                 </PropertyValues>
                 <SelectedOptionId i:nil="true" />
+                <WidthOnFlowchart i:nil="true" />
                 <AutoCloseMode>None</AutoCloseMode>
                 <EnableStatus>true</EnableStatus>
                 <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -2922,8 +3271,10 @@ transaction["rpa_screenshot"]   = screenshot_retry_counter_file;</_value>
                     <Childs>
                       <AbstractStep z:Id="i278" i:type="ExecutedStep">
                         <Childs />
+                        <HeightOnFlowchart>50</HeightOnFlowchart>
                         <Id>ab5918c2-1159-45ae-a79d-9ad82eee9e23</Id>
                         <Parent z:Ref="i277" />
+                        <PositionOnFlowchart xmlns:d13p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                         <PropertyValues>
                           <PropertyValue z:Id="i279">
                             <PropertyName>CSCode</PropertyName>
@@ -2942,6 +3293,7 @@ transaction["rpa_screenshot"]   = screenshot_retry_counter_file;</_value>
                           </PropertyValue>
                         </PropertyValues>
                         <SelectedOptionId i:nil="true" />
+                        <WidthOnFlowchart>360</WidthOnFlowchart>
                         <AutoCloseMode>None</AutoCloseMode>
                         <EnableStatus>true</EnableStatus>
                         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -2952,10 +3304,13 @@ transaction["rpa_screenshot"]   = screenshot_retry_counter_file;</_value>
                         <_activityFullName>BR.Core.Base.ExecuteCSCode</_activityFullName>
                       </AbstractStep>
                     </Childs>
+                    <HeightOnFlowchart i:nil="true" />
                     <Id>e85704a1-4d1e-4eec-b4fe-78daf3363e93</Id>
                     <Parent z:Ref="i276" />
+                    <PositionOnFlowchart xmlns:d11p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                     <PropertyValues />
                     <SelectedOptionId i:nil="true" />
+                    <WidthOnFlowchart i:nil="true" />
                     <AutoCloseMode>None</AutoCloseMode>
                     <EnableStatus>true</EnableStatus>
                     <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -2964,10 +3319,13 @@ transaction["rpa_screenshot"]   = screenshot_retry_counter_file;</_value>
                     <_activityFullName>BR.Core.Base.Container</_activityFullName>
                   </AbstractStep>
                 </Childs>
+                <HeightOnFlowchart i:nil="true" />
                 <Id>3cac4a6a-d660-4364-ac77-0fb3f12bd40d</Id>
                 <Parent z:Ref="i8" />
+                <PositionOnFlowchart xmlns:d9p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                 <PropertyValues />
                 <SelectedOptionId i:nil="true" />
+                <WidthOnFlowchart i:nil="true" />
                 <AutoCloseMode>None</AutoCloseMode>
                 <EnableStatus>true</EnableStatus>
                 <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -2976,10 +3334,13 @@ transaction["rpa_screenshot"]   = screenshot_retry_counter_file;</_value>
                 <_activityFullName>BR.Core.Base.Finally</_activityFullName>
               </AbstractStep>
             </Childs>
+            <HeightOnFlowchart i:nil="true" />
             <Id>a6f21e19-6ee4-4746-92ce-87dff248a60c</Id>
             <Parent z:Ref="i7" />
+            <PositionOnFlowchart xmlns:d7p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
             <PropertyValues />
             <SelectedOptionId i:nil="true" />
+            <WidthOnFlowchart i:nil="true" />
             <AutoCloseMode>None</AutoCloseMode>
             <EnableStatus>true</EnableStatus>
             <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -2988,8 +3349,10 @@ transaction["rpa_screenshot"]   = screenshot_retry_counter_file;</_value>
             <_activityFullName>BR.Core.Base.TryCatch</_activityFullName>
           </AbstractStep>
         </Childs>
+        <HeightOnFlowchart i:nil="true" />
         <Id>286f2d9b-3914-4424-843e-50125dc4dfdb</Id>
         <Parent z:Ref="i2" />
+        <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
         <PropertyValues>
           <PropertyValue z:Id="i280">
             <PropertyName>Condition</PropertyName>
@@ -3009,6 +3372,7 @@ transaction["rpa_screenshot"]   = screenshot_retry_counter_file;</_value>
           </PropertyValue>
         </PropertyValues>
         <SelectedOptionId i:nil="true" />
+        <WidthOnFlowchart i:nil="true" />
         <AutoCloseMode>None</AutoCloseMode>
         <EnableStatus>true</EnableStatus>
         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -3017,10 +3381,13 @@ transaction["rpa_screenshot"]   = screenshot_retry_counter_file;</_value>
         <_activityFullName>BR.Core.Base.LoopWhile</_activityFullName>
       </AbstractStep>
     </Childs>
+    <HeightOnFlowchart i:nil="true" />
     <Id>f8ebaf59-e37d-40fe-8766-99042fce4dea</Id>
     <Parent i:nil="true" />
+    <PositionOnFlowchart xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
     <PropertyValues />
     <SelectedOptionId i:nil="true" />
+    <WidthOnFlowchart i:nil="true" />
     <AutoCloseMode>None</AutoCloseMode>
     <EnableStatus>true</EnableStatus>
     <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -3036,13 +3403,13 @@ transaction["rpa_screenshot"]   = screenshot_retry_counter_file;</_value>
       <Description>Глобальный контекст выполнения приложения. Содержит пути, конфигурации и динамические параметры.</Description>
       <Name>global_context</Name>
       <RunnerType>None</RunnerType>
-      <TypeString>System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]</TypeString>
+      <TypeString>System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]</TypeString>
     </Parameter>
   </Params>
   <PlatformVersion xmlns:d2p1="http://schemas.datacontract.org/2004/07/System">
-    <d2p1:_Build>6</d2p1:_Build>
-    <d2p1:_Major>2</d2p1:_Major>
-    <d2p1:_Minor>27</d2p1:_Minor>
+    <d2p1:_Build>1</d2p1:_Build>
+    <d2p1:_Major>3</d2p1:_Major>
+    <d2p1:_Minor>1</d2p1:_Minor>
     <d2p1:_Revision>0</d2p1:_Revision>
   </PlatformVersion>
   <TemplateVersion xmlns:d2p1="http://schemas.datacontract.org/2004/07/System" i:nil="true" />
@@ -3075,7 +3442,7 @@ transaction["rpa_screenshot"]   = screenshot_retry_counter_file;</_value>
       <d2p1:DefaultValueExpression>new List&lt;string&gt;()</d2p1:DefaultValueExpression>
       <d2p1:Description>Список накопленных ошибок при обработке (N подряд)</d2p1:Description>
       <d2p1:Name>errors_history</d2p1:Name>
-      <d2p1:TypeString>System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]</d2p1:TypeString>
+      <d2p1:TypeString>System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]</d2p1:TypeString>
     </d2p1:Variable>
   </Variables>
   <Version i:nil="true" />

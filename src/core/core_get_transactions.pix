@@ -7,22 +7,31 @@
     <Childs>
       <AbstractStep z:Id="i3" i:type="CommentStep">
         <Childs />
+        <HeightOnFlowchart>50</HeightOnFlowchart>
         <Id>1c2e2a65-aa7a-41b6-8758-ecdd86be8297</Id>
         <Parent z:Ref="i2" />
+        <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
         <PropertyValues />
         <SelectedOptionId i:nil="true" />
+        <WidthOnFlowchart>360</WidthOnFlowchart>
         <IsCollapsed>false</IsCollapsed>
-        <Text>// ===================================================
-// Описание:
-// Скрипт получает и формирует список транзакций для обработки из внешних источников (например, файловой системы или базы 1С). Создаёт буферную таблицу, объединяет её с основной таблицей транзакций, добавляет технические столбцы и вычисляет количество доступных слотов для новых транзакций. Осуществляет контроль дублей по составному первичному ключу и ведёт журналы о статусе операций.
-// ===================================================</Text>
+        <Text>### Описание
+Скрипт получает и формирует список транзакций из внешних источников, создаёт буферную таблицу, объединяет её с основной, добавляет технические столбцы, рассчитывает количество слотов для новых транзакций и контролирует дубли по составному первичному ключу с ведением журналов операций.
+
+| Направление | Аргумент | Тип | Описание |
+| :--- | :--- | :--- | :--- |
+| **InOut** | `global_context` | Dictionary&lt;System.String, System.Object&gt; | Глобальный контекст выполнения приложения. Содержит пути, конфигурации и динамические параметры. |
+
+---</Text>
       </AbstractStep>
       <AbstractStep z:Id="i4" i:type="ExecutedStep">
         <Childs>
           <AbstractStep z:Id="i5" i:type="ExecutedStep">
             <Childs />
+            <HeightOnFlowchart>50</HeightOnFlowchart>
             <Id>33e482a2-59a3-41d4-b084-0fe04a2dff51</Id>
             <Parent z:Ref="i4" />
+            <PositionOnFlowchart xmlns:d7p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
             <PropertyValues>
               <PropertyValue z:Id="i6">
                 <PropertyName>Value</PropertyName>
@@ -42,6 +51,7 @@
               </PropertyValue>
             </PropertyValues>
             <SelectedOptionId i:nil="true" />
+            <WidthOnFlowchart>360</WidthOnFlowchart>
             <AutoCloseMode>None</AutoCloseMode>
             <EnableStatus>true</EnableStatus>
             <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -51,8 +61,10 @@
           </AbstractStep>
           <AbstractStep z:Id="i8" i:type="ExecutedStep">
             <Childs />
+            <HeightOnFlowchart>50</HeightOnFlowchart>
             <Id>315d90b1-f3da-49da-a9f2-da2987a1b199</Id>
             <Parent z:Ref="i4" />
+            <PositionOnFlowchart xmlns:d7p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
             <PropertyValues>
               <PropertyValue z:Id="i9">
                 <PropertyName>CSCode</PropertyName>
@@ -72,6 +84,7 @@ global_context["available_transaction_slots"] = available_transaction_slots;</_v
               </PropertyValue>
             </PropertyValues>
             <SelectedOptionId i:nil="true" />
+            <WidthOnFlowchart>360</WidthOnFlowchart>
             <AutoCloseMode>None</AutoCloseMode>
             <EnableStatus>true</EnableStatus>
             <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -81,8 +94,10 @@ global_context["available_transaction_slots"] = available_transaction_slots;</_v
           </AbstractStep>
           <AbstractStep z:Id="i10" i:type="ExecutedStep">
             <Childs />
+            <HeightOnFlowchart>50</HeightOnFlowchart>
             <Id>c0284e68-296b-4ab5-bed1-5b9291c446c6</Id>
             <Parent z:Ref="i4" />
+            <PositionOnFlowchart xmlns:d7p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
             <PropertyValues>
               <PropertyValue z:Id="i11">
                 <PropertyName>FilePath</PropertyName>
@@ -124,6 +139,7 @@ global_context["available_transaction_slots"] = available_transaction_slots;</_v
               </PropertyValue>
             </PropertyValues>
             <SelectedOptionId i:nil="true" />
+            <WidthOnFlowchart>360</WidthOnFlowchart>
             <AutoCloseMode>None</AutoCloseMode>
             <EnableStatus>true</EnableStatus>
             <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -137,10 +153,13 @@ global_context["available_transaction_slots"] = available_transaction_slots;</_v
                 <Childs>
                   <AbstractStep z:Id="i18" i:type="CommentStep">
                     <Childs />
+                    <HeightOnFlowchart>50</HeightOnFlowchart>
                     <Id>3a219c2e-fd19-459f-b0ed-aa93592f536b</Id>
                     <Parent z:Ref="i17" />
+                    <PositionOnFlowchart xmlns:d11p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                     <PropertyValues />
                     <SelectedOptionId i:nil="true" />
+                    <WidthOnFlowchart>360</WidthOnFlowchart>
                     <IsCollapsed>false</IsCollapsed>
                     <Text>Реализация получения новых транзакций из внешней системы.
    Внимание! Если источник данных динамически изменяется (состояние транзакций может обновляться),
@@ -153,8 +172,10 @@ global_context["available_transaction_slots"] = available_transaction_slots;</_v
                   </AbstractStep>
                   <AbstractStep z:Id="i19" i:type="ExecutedStep">
                     <Childs />
+                    <HeightOnFlowchart>50</HeightOnFlowchart>
                     <Id>565d4693-e7fe-45bd-886a-9f4a383d754f</Id>
                     <Parent z:Ref="i17" />
+                    <PositionOnFlowchart xmlns:d11p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                     <PropertyValues>
                       <PropertyValue z:Id="i20">
                         <PropertyName>CSCode</PropertyName>
@@ -173,6 +194,7 @@ for (int i = 0; i &lt; 50; i++)
                       </PropertyValue>
                     </PropertyValues>
                     <SelectedOptionId i:nil="true" />
+                    <WidthOnFlowchart>360</WidthOnFlowchart>
                     <AutoCloseMode>None</AutoCloseMode>
                     <EnableStatus>true</EnableStatus>
                     <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -186,8 +208,10 @@ for (int i = 0; i &lt; 50; i++)
                   </AbstractStep>
                   <AbstractStep z:Id="i21" i:type="ExecutedStep">
                     <Childs />
+                    <HeightOnFlowchart>50</HeightOnFlowchart>
                     <Id>00d36e9c-1110-493a-9f80-b66437a8173a</Id>
                     <Parent z:Ref="i17" />
+                    <PositionOnFlowchart xmlns:d11p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                     <PropertyValues>
                       <PropertyValue z:Id="i22">
                         <PropertyName>InputTable</PropertyName>
@@ -215,6 +239,7 @@ for (int i = 0; i &lt; 50; i++)
                       </PropertyValue>
                     </PropertyValues>
                     <SelectedOptionId>0</SelectedOptionId>
+                    <WidthOnFlowchart>360</WidthOnFlowchart>
                     <AutoCloseMode>None</AutoCloseMode>
                     <EnableStatus>true</EnableStatus>
                     <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -225,8 +250,10 @@ for (int i = 0; i &lt; 50; i++)
                   </AbstractStep>
                   <AbstractStep z:Id="i25" i:type="ExecutedStep">
                     <Childs />
+                    <HeightOnFlowchart>50</HeightOnFlowchart>
                     <Id>0db1d64d-773c-4b78-a41b-9f6bf1816d56</Id>
                     <Parent z:Ref="i17" />
+                    <PositionOnFlowchart xmlns:d11p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                     <PropertyValues>
                       <PropertyValue z:Id="i26">
                         <PropertyName>FilePath</PropertyName>
@@ -268,6 +295,7 @@ for (int i = 0; i &lt; 50; i++)
                       </PropertyValue>
                     </PropertyValues>
                     <SelectedOptionId i:nil="true" />
+                    <WidthOnFlowchart>360</WidthOnFlowchart>
                     <AutoCloseMode>None</AutoCloseMode>
                     <EnableStatus>true</EnableStatus>
                     <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -277,10 +305,13 @@ for (int i = 0; i &lt; 50; i++)
                     <_activityFullName>BR.Core.Base.ExecuteScript</_activityFullName>
                   </AbstractStep>
                 </Childs>
+                <HeightOnFlowchart i:nil="true" />
                 <Id>66d16540-4794-47fd-9c18-cc222562b99e</Id>
                 <Parent z:Ref="i16" />
+                <PositionOnFlowchart xmlns:d9p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                 <PropertyValues />
                 <SelectedOptionId i:nil="true" />
+                <WidthOnFlowchart i:nil="true" />
                 <AutoCloseMode>None</AutoCloseMode>
                 <EnableStatus>true</EnableStatus>
                 <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -292,8 +323,10 @@ for (int i = 0; i &lt; 50; i++)
                 <Childs>
                   <AbstractStep z:Id="i32" i:type="ExecutedStep">
                     <Childs />
+                    <HeightOnFlowchart>50</HeightOnFlowchart>
                     <Id>51948e51-cda6-4247-be1f-2b13d57df714</Id>
                     <Parent z:Ref="i31" />
+                    <PositionOnFlowchart xmlns:d11p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                     <PropertyValues>
                       <PropertyValue z:Id="i33">
                         <PropertyName>FilePath</PropertyName>
@@ -335,6 +368,7 @@ for (int i = 0; i &lt; 50; i++)
                       </PropertyValue>
                     </PropertyValues>
                     <SelectedOptionId i:nil="true" />
+                    <WidthOnFlowchart>360</WidthOnFlowchart>
                     <AutoCloseMode>None</AutoCloseMode>
                     <EnableStatus>true</EnableStatus>
                     <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -344,8 +378,10 @@ for (int i = 0; i &lt; 50; i++)
                   </AbstractStep>
                   <AbstractStep z:Id="i38" i:type="ExecutedStep">
                     <Childs />
+                    <HeightOnFlowchart>50</HeightOnFlowchart>
                     <Id>81c3dfff-d997-4965-a9cb-84b82479d215</Id>
                     <Parent z:Ref="i31" />
+                    <PositionOnFlowchart xmlns:d11p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                     <PropertyValues>
                       <PropertyValue z:Id="i39">
                         <PropertyName>FilePath</PropertyName>
@@ -387,6 +423,7 @@ for (int i = 0; i &lt; 50; i++)
                       </PropertyValue>
                     </PropertyValues>
                     <SelectedOptionId i:nil="true" />
+                    <WidthOnFlowchart>360</WidthOnFlowchart>
                     <AutoCloseMode>None</AutoCloseMode>
                     <EnableStatus>true</EnableStatus>
                     <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -396,10 +433,13 @@ for (int i = 0; i &lt; 50; i++)
                   </AbstractStep>
                   <AbstractStep z:Id="i44" i:type="ExecutedStep">
                     <Childs />
+                    <HeightOnFlowchart>50</HeightOnFlowchart>
                     <Id>a8d9012e-1b9e-4260-bf01-66182a5fd84a</Id>
                     <Parent z:Ref="i31" />
+                    <PositionOnFlowchart xmlns:d11p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                     <PropertyValues />
-                    <SelectedOptionId>0</SelectedOptionId>
+                    <SelectedOptionId i:nil="true" />
+                    <WidthOnFlowchart>360</WidthOnFlowchart>
                     <AutoCloseMode>None</AutoCloseMode>
                     <EnableStatus>true</EnableStatus>
                     <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -408,10 +448,13 @@ for (int i = 0; i &lt; 50; i++)
                     <_activityFullName>BR.Core.Base.Return</_activityFullName>
                   </AbstractStep>
                 </Childs>
+                <HeightOnFlowchart i:nil="true" />
                 <Id>ffa87ba4-2d08-4613-9c57-bf5b5781450a</Id>
                 <Parent z:Ref="i16" />
+                <PositionOnFlowchart xmlns:d9p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                 <PropertyValues />
                 <SelectedOptionId i:nil="true" />
+                <WidthOnFlowchart i:nil="true" />
                 <AutoCloseMode>None</AutoCloseMode>
                 <EnableStatus>true</EnableStatus>
                 <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -420,8 +463,10 @@ for (int i = 0; i &lt; 50; i++)
                 <_activityFullName>BR.Core.Base.IfFalse</_activityFullName>
               </AbstractStep>
             </Childs>
+            <HeightOnFlowchart i:nil="true" />
             <Id>f5c86265-757e-420f-9c91-44cef5b6d7f9</Id>
             <Parent z:Ref="i4" />
+            <PositionOnFlowchart xmlns:d7p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
             <PropertyValues>
               <PropertyValue z:Id="i45">
                 <PropertyName>Condition</PropertyName>
@@ -433,6 +478,7 @@ for (int i = 0; i &lt; 50; i++)
               </PropertyValue>
             </PropertyValues>
             <SelectedOptionId i:nil="true" />
+            <WidthOnFlowchart i:nil="true" />
             <AutoCloseMode>None</AutoCloseMode>
             <EnableStatus>true</EnableStatus>
             <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -441,10 +487,13 @@ for (int i = 0; i &lt; 50; i++)
             <_activityFullName>BR.Core.Base.If</_activityFullName>
           </AbstractStep>
         </Childs>
+        <HeightOnFlowchart i:nil="true" />
         <Id>c4e9a6e8-5fbd-4bbf-b650-bfcaa030fe41</Id>
         <Parent z:Ref="i2" />
+        <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
         <PropertyValues />
         <SelectedOptionId i:nil="true" />
+        <WidthOnFlowchart i:nil="true" />
         <AutoCloseMode>None</AutoCloseMode>
         <EnableStatus>true</EnableStatus>
         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -456,8 +505,10 @@ for (int i = 0; i &lt; 50; i++)
         <Childs>
           <AbstractStep z:Id="i47" i:type="ExecutedStep">
             <Childs />
+            <HeightOnFlowchart>50</HeightOnFlowchart>
             <Id>afcde8d5-7c1b-4bae-a008-04e29807f5d2</Id>
             <Parent z:Ref="i46" />
+            <PositionOnFlowchart xmlns:d7p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
             <PropertyValues>
               <PropertyValue z:Id="i48">
                 <PropertyName>Value</PropertyName>
@@ -477,6 +528,7 @@ for (int i = 0; i &lt; 50; i++)
               </PropertyValue>
             </PropertyValues>
             <SelectedOptionId i:nil="true" />
+            <WidthOnFlowchart>360</WidthOnFlowchart>
             <AutoCloseMode>None</AutoCloseMode>
             <EnableStatus>true</EnableStatus>
             <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -487,8 +539,10 @@ for (int i = 0; i &lt; 50; i++)
           </AbstractStep>
           <AbstractStep z:Id="i50" i:type="ExecutedStep">
             <Childs />
+            <HeightOnFlowchart>50</HeightOnFlowchart>
             <Id>c238f7e8-a3dd-43a3-a991-645d0595172e</Id>
             <Parent z:Ref="i46" />
+            <PositionOnFlowchart xmlns:d7p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
             <PropertyValues>
               <PropertyValue z:Id="i51">
                 <PropertyName>FilePath</PropertyName>
@@ -530,6 +584,7 @@ for (int i = 0; i &lt; 50; i++)
               </PropertyValue>
             </PropertyValues>
             <SelectedOptionId i:nil="true" />
+            <WidthOnFlowchart>360</WidthOnFlowchart>
             <AutoCloseMode>None</AutoCloseMode>
             <EnableStatus>true</EnableStatus>
             <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -539,8 +594,10 @@ for (int i = 0; i &lt; 50; i++)
           </AbstractStep>
           <AbstractStep z:Id="i56" i:type="ExecutedStep">
             <Childs />
+            <HeightOnFlowchart>50</HeightOnFlowchart>
             <Id>a1170d50-3648-4193-b383-e6448edd6a37</Id>
             <Parent z:Ref="i46" />
+            <PositionOnFlowchart xmlns:d7p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
             <PropertyValues>
               <PropertyValue z:Id="i57">
                 <PropertyName>FilePath</PropertyName>
@@ -582,6 +639,7 @@ for (int i = 0; i &lt; 50; i++)
               </PropertyValue>
             </PropertyValues>
             <SelectedOptionId i:nil="true" />
+            <WidthOnFlowchart>360</WidthOnFlowchart>
             <AutoCloseMode>None</AutoCloseMode>
             <EnableStatus>true</EnableStatus>
             <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -590,10 +648,13 @@ for (int i = 0; i &lt; 50; i++)
             <_activityFullName>BR.Core.Base.ExecuteScript</_activityFullName>
           </AbstractStep>
         </Childs>
+        <HeightOnFlowchart i:nil="true" />
         <Id>6bcdbbe1-e65c-43d5-b8be-8f27dc340be4</Id>
         <Parent z:Ref="i2" />
+        <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
         <PropertyValues />
         <SelectedOptionId i:nil="true" />
+        <WidthOnFlowchart i:nil="true" />
         <AutoCloseMode>None</AutoCloseMode>
         <EnableStatus>true</EnableStatus>
         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -603,10 +664,13 @@ for (int i = 0; i &lt; 50; i++)
         <_activityFullName>BR.Core.Base.Container</_activityFullName>
       </AbstractStep>
     </Childs>
+    <HeightOnFlowchart i:nil="true" />
     <Id>f761683b-f567-48bc-b2db-bbe66b4e6da1</Id>
     <Parent i:nil="true" />
+    <PositionOnFlowchart xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
     <PropertyValues />
     <SelectedOptionId i:nil="true" />
+    <WidthOnFlowchart i:nil="true" />
     <AutoCloseMode>None</AutoCloseMode>
     <EnableStatus>true</EnableStatus>
     <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -622,13 +686,13 @@ for (int i = 0; i &lt; 50; i++)
       <Description>Глобальный контекст выполнения приложения. Содержит пути, конфигурации и динамические параметры.</Description>
       <Name>global_context</Name>
       <RunnerType>None</RunnerType>
-      <TypeString>System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]</TypeString>
+      <TypeString>System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]</TypeString>
     </Parameter>
   </Params>
   <PlatformVersion xmlns:d2p1="http://schemas.datacontract.org/2004/07/System">
-    <d2p1:_Build>6</d2p1:_Build>
-    <d2p1:_Major>2</d2p1:_Major>
-    <d2p1:_Minor>27</d2p1:_Minor>
+    <d2p1:_Build>1</d2p1:_Build>
+    <d2p1:_Major>3</d2p1:_Major>
+    <d2p1:_Minor>1</d2p1:_Minor>
     <d2p1:_Revision>0</d2p1:_Revision>
   </PlatformVersion>
   <TemplateVersion xmlns:d2p1="http://schemas.datacontract.org/2004/07/System" i:nil="true" />

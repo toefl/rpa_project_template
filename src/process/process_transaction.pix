@@ -7,22 +7,33 @@
     <Childs>
       <AbstractStep z:Id="i3" i:type="CommentStep">
         <Childs />
+        <HeightOnFlowchart>50</HeightOnFlowchart>
         <Id>12bfd794-1ec7-4453-b191-ac6e597ffc30</Id>
         <Parent z:Ref="i2" />
+        <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
         <PropertyValues />
         <SelectedOptionId i:nil="true" />
+        <WidthOnFlowchart>360</WidthOnFlowchart>
         <IsCollapsed>false</IsCollapsed>
-        <Text>// ===================================================
-// Описание:
-// Скрипт выполняет бизнес-логику атомарной транзакции: поэтапно вызывает открытие карточки аккаунта и проверку данных на соответствие бизнес-правилам. Результатом выполнения устанавливает финальный статус обработки ("completed") в контексте данной транзакции. Все действия выполняются в соответствии с общей архитектурой обработки транзакций и могут быть расширены или модифицированы под нужды конкретного кейса.
-// ===================================================</Text>
+        <Text>### Описание
+Демонстрационный скрипт  
+Скрипт выполняет бизнес-логику атомарной транзакции: поэтапно открывает карточку аккаунта, проверяет данные на соответствие бизнес-правилам и устанавливает финальный статус обработки `"completed"` в контексте транзакции, следуя общей архитектуре обработки транзакций.
+
+| Направление | Аргумент | Тип | Описание |
+| :--- | :--- | :--- | :--- |
+| **InOut** | `global_context` | Dictionary&lt;System.String, System.Object&gt; | Глобальный контекст выполнения приложения. Содержит пути, конфигурации и динамические параметры. |
+| **InOut** | `transaction_info` | Dictionary&lt;System.String, System.Object&gt; | Накопительный словарь по текущей транзакции. |
+
+---</Text>
       </AbstractStep>
       <AbstractStep z:Id="i4" i:type="ExecutedStep">
         <Childs>
           <AbstractStep z:Id="i5" i:type="ExecutedStep">
             <Childs />
+            <HeightOnFlowchart>50</HeightOnFlowchart>
             <Id>568f32e1-8499-4cd2-8c5b-893e946ae6a5</Id>
             <Parent z:Ref="i4" />
+            <PositionOnFlowchart xmlns:d7p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
             <PropertyValues>
               <PropertyValue z:Id="i6">
                 <PropertyName>FilePath</PropertyName>
@@ -57,6 +68,7 @@
               </PropertyValue>
             </PropertyValues>
             <SelectedOptionId i:nil="true" />
+            <WidthOnFlowchart>360</WidthOnFlowchart>
             <AutoCloseMode>None</AutoCloseMode>
             <EnableStatus>true</EnableStatus>
             <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -65,10 +77,13 @@
             <_activityFullName>BR.Core.Base.ExecuteScript</_activityFullName>
           </AbstractStep>
         </Childs>
+        <HeightOnFlowchart i:nil="true" />
         <Id>9ce4b068-b056-420d-be90-fb696569e469</Id>
         <Parent z:Ref="i2" />
+        <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
         <PropertyValues />
         <SelectedOptionId i:nil="true" />
+        <WidthOnFlowchart i:nil="true" />
         <AutoCloseMode>None</AutoCloseMode>
         <EnableStatus>true</EnableStatus>
         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -81,8 +96,10 @@
         <Childs>
           <AbstractStep z:Id="i11" i:type="ExecutedStep">
             <Childs />
+            <HeightOnFlowchart>50</HeightOnFlowchart>
             <Id>ca7afc03-5246-4971-9bf5-86fc028e616c</Id>
             <Parent z:Ref="i10" />
+            <PositionOnFlowchart xmlns:d7p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
             <PropertyValues>
               <PropertyValue z:Id="i12">
                 <PropertyName>FilePath</PropertyName>
@@ -117,6 +134,7 @@
               </PropertyValue>
             </PropertyValues>
             <SelectedOptionId i:nil="true" />
+            <WidthOnFlowchart>360</WidthOnFlowchart>
             <AutoCloseMode>None</AutoCloseMode>
             <EnableStatus>true</EnableStatus>
             <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -125,10 +143,13 @@
             <_activityFullName>BR.Core.Base.ExecuteScript</_activityFullName>
           </AbstractStep>
         </Childs>
+        <HeightOnFlowchart i:nil="true" />
         <Id>1780b143-1967-43b1-be01-c32984a59914</Id>
         <Parent z:Ref="i2" />
+        <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
         <PropertyValues />
         <SelectedOptionId i:nil="true" />
+        <WidthOnFlowchart i:nil="true" />
         <AutoCloseMode>None</AutoCloseMode>
         <EnableStatus>true</EnableStatus>
         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -139,8 +160,10 @@
       </AbstractStep>
       <AbstractStep z:Id="i16" i:type="ExecutedStep">
         <Childs />
+        <HeightOnFlowchart>50</HeightOnFlowchart>
         <Id>74592956-58be-48cf-9eb6-deb0c1134edd</Id>
         <Parent z:Ref="i2" />
+        <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
         <PropertyValues>
           <PropertyValue z:Id="i17">
             <PropertyName>Value</PropertyName>
@@ -160,6 +183,7 @@
           </PropertyValue>
         </PropertyValues>
         <SelectedOptionId i:nil="true" />
+        <WidthOnFlowchart>360</WidthOnFlowchart>
         <AutoCloseMode>None</AutoCloseMode>
         <EnableStatus>true</EnableStatus>
         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -168,10 +192,13 @@
         <_activityFullName>BR.Core.Base.Assign</_activityFullName>
       </AbstractStep>
     </Childs>
+    <HeightOnFlowchart i:nil="true" />
     <Id>3b54ef50-45f1-4ddf-a484-99aa7551ba82</Id>
     <Parent i:nil="true" />
+    <PositionOnFlowchart xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
     <PropertyValues />
     <SelectedOptionId i:nil="true" />
+    <WidthOnFlowchart i:nil="true" />
     <AutoCloseMode>None</AutoCloseMode>
     <EnableStatus>true</EnableStatus>
     <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -187,20 +214,20 @@
       <Description>Глобальный контекст выполнения приложения. Содержит пути, конфигурации и динамические параметры.</Description>
       <Name>global_context</Name>
       <RunnerType>None</RunnerType>
-      <TypeString>System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]</TypeString>
+      <TypeString>System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]</TypeString>
     </Parameter>
     <Parameter z:Id="i20">
       <DefaultValueExpression>new Dictionary&lt;string, object&gt;()</DefaultValueExpression>
       <Description>Накопительный словарь по текущей транзакции</Description>
       <Name>transaction_info</Name>
       <RunnerType>None</RunnerType>
-      <TypeString>System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]</TypeString>
+      <TypeString>System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]</TypeString>
     </Parameter>
   </Params>
   <PlatformVersion xmlns:d2p1="http://schemas.datacontract.org/2004/07/System">
-    <d2p1:_Build>6</d2p1:_Build>
-    <d2p1:_Major>2</d2p1:_Major>
-    <d2p1:_Minor>27</d2p1:_Minor>
+    <d2p1:_Build>1</d2p1:_Build>
+    <d2p1:_Major>3</d2p1:_Major>
+    <d2p1:_Minor>1</d2p1:_Minor>
     <d2p1:_Revision>0</d2p1:_Revision>
   </PlatformVersion>
   <TemplateVersion xmlns:d2p1="http://schemas.datacontract.org/2004/07/System" i:nil="true" />

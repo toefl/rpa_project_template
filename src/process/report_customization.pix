@@ -7,29 +7,29 @@
     <Childs>
       <AbstractStep z:Id="i3" i:type="CommentStep">
         <Childs />
-        <HeightOnFlowchart>50</HeightOnFlowchart>
         <Id>6ae25336-b828-4b03-8193-dee7593d4239</Id>
         <Parent z:Ref="i2" />
-        <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
         <PropertyValues />
         <SelectedOptionId i:nil="true" />
-        <WidthOnFlowchart>360</WidthOnFlowchart>
         <IsCollapsed>false</IsCollapsed>
-        <Text>### Описание
-Скрипт формирует итоговый отчёт на основе обработанных транзакций: подготавливает человекочитаемую таблицу, преобразует статусы, генерирует HTML-отчёт, устанавливает итоговый статус выполнения и фиксирует время завершения.
-
-| Направление | Аргумент | Тип | Описание |
-| :--- | :--- | :--- | :--- |
-| **InOut** | `global_context` | Dictionary&lt;System.String, System.Object&gt; | Глобальный контекст выполнения приложения. Содержит пути, конфигурации и динамические параметры. |
-
----</Text>
+        <Text>[2.1.0] - 01-09-2025
+Назначение:
+Пример кастомизации итогового отчета на основании таблицы транзакций.
+- Копирует исходную таблицу транзакций из global_context["transactions"]
+- Удаляет технические столбцы, не нужные в отчетности
+- Переименовывает отдельные столбцы для читаемого вида отчета
+- Добавляет порядковый номер каждой строки ("№")
+- Упорядочивает столбцы по заданному шаблону
+- Выставляет статус отчета с учетом признака технического окна (global_context["maintenance_active"])
+- Фиксирует время завершения отчета ("end_time")
+Скрипт может быть адаптирован под любые требования к составу и структуре итогового отчета.
+============
+</Text>
       </AbstractStep>
       <AbstractStep z:Id="i4" i:type="ExecutedStep">
         <Childs />
-        <HeightOnFlowchart>50</HeightOnFlowchart>
         <Id>5570f428-8500-4a02-a2b3-81eb0660dbc3</Id>
         <Parent z:Ref="i2" />
-        <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
         <PropertyValues>
           <PropertyValue z:Id="i5">
             <PropertyName>Value</PropertyName>
@@ -49,7 +49,6 @@
           </PropertyValue>
         </PropertyValues>
         <SelectedOptionId i:nil="true" />
-        <WidthOnFlowchart>360</WidthOnFlowchart>
         <AutoCloseMode>None</AutoCloseMode>
         <EnableStatus>true</EnableStatus>
         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -59,10 +58,8 @@
       </AbstractStep>
       <AbstractStep z:Id="i7" i:type="ExecutedStep">
         <Childs />
-        <HeightOnFlowchart>50</HeightOnFlowchart>
         <Id>6c05ba1f-c3b3-498a-998a-01af9c5fe2d0</Id>
         <Parent z:Ref="i2" />
-        <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
         <PropertyValues>
           <PropertyValue z:Id="i8">
             <PropertyName>CSCode</PropertyName>
@@ -154,7 +151,6 @@ for (int i = 0; i &lt; ordered_columns.Count; i++)
           </PropertyValue>
         </PropertyValues>
         <SelectedOptionId i:nil="true" />
-        <WidthOnFlowchart>360</WidthOnFlowchart>
         <AutoCloseMode>None</AutoCloseMode>
         <EnableStatus>true</EnableStatus>
         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -164,10 +160,8 @@ for (int i = 0; i &lt; ordered_columns.Count; i++)
       </AbstractStep>
       <AbstractStep z:Id="i9" i:type="ExecutedStep">
         <Childs />
-        <HeightOnFlowchart>50</HeightOnFlowchart>
         <Id>94769332-11b1-41fc-8593-a80407a3c8f2</Id>
         <Parent z:Ref="i2" />
-        <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
         <PropertyValues>
           <PropertyValue z:Id="i10">
             <PropertyName>InputTable</PropertyName>
@@ -211,7 +205,6 @@ for (int i = 0; i &lt; ordered_columns.Count; i++)
           </PropertyValue>
         </PropertyValues>
         <SelectedOptionId>1</SelectedOptionId>
-        <WidthOnFlowchart>360</WidthOnFlowchart>
         <AutoCloseMode>None</AutoCloseMode>
         <EnableStatus>true</EnableStatus>
         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -221,10 +214,8 @@ for (int i = 0; i &lt; ordered_columns.Count; i++)
       </AbstractStep>
       <AbstractStep z:Id="i15" i:type="ExecutedStep">
         <Childs />
-        <HeightOnFlowchart>50</HeightOnFlowchart>
         <Id>140e5962-1e6c-4d55-87ee-a3e4038091af</Id>
         <Parent z:Ref="i2" />
-        <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
         <PropertyValues>
           <PropertyValue z:Id="i16">
             <PropertyName>Key</PropertyName>
@@ -252,7 +243,6 @@ for (int i = 0; i &lt; ordered_columns.Count; i++)
           </PropertyValue>
         </PropertyValues>
         <SelectedOptionId i:nil="true" />
-        <WidthOnFlowchart>360</WidthOnFlowchart>
         <AutoCloseMode>None</AutoCloseMode>
         <EnableStatus>true</EnableStatus>
         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -266,10 +256,8 @@ for (int i = 0; i &lt; ordered_columns.Count; i++)
             <Childs>
               <AbstractStep z:Id="i21" i:type="ExecutedStep">
                 <Childs />
-                <HeightOnFlowchart>50</HeightOnFlowchart>
                 <Id>3dc2d86c-cbc5-45c0-94da-2b03a051f1a0</Id>
                 <Parent z:Ref="i20" />
-                <PositionOnFlowchart xmlns:d9p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                 <PropertyValues>
                   <PropertyValue z:Id="i22">
                     <PropertyName>Key</PropertyName>
@@ -297,7 +285,6 @@ for (int i = 0; i &lt; ordered_columns.Count; i++)
                   </PropertyValue>
                 </PropertyValues>
                 <SelectedOptionId i:nil="true" />
-                <WidthOnFlowchart>360</WidthOnFlowchart>
                 <AutoCloseMode>None</AutoCloseMode>
                 <EnableStatus>true</EnableStatus>
                 <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -306,13 +293,10 @@ for (int i = 0; i &lt; ordered_columns.Count; i++)
                 <_activityFullName>Activities.BaseCollections.Dictionary.AddKey</_activityFullName>
               </AbstractStep>
             </Childs>
-            <HeightOnFlowchart i:nil="true" />
             <Id>9e0679fc-d57b-4864-a260-ad3b02309b93</Id>
             <Parent z:Ref="i19" />
-            <PositionOnFlowchart xmlns:d7p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
             <PropertyValues />
             <SelectedOptionId i:nil="true" />
-            <WidthOnFlowchart i:nil="true" />
             <AutoCloseMode>None</AutoCloseMode>
             <EnableStatus>true</EnableStatus>
             <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -324,10 +308,8 @@ for (int i = 0; i &lt; ordered_columns.Count; i++)
             <Childs>
               <AbstractStep z:Id="i26" i:type="ExecutedStep">
                 <Childs />
-                <HeightOnFlowchart>50</HeightOnFlowchart>
                 <Id>2c8fc8c1-4103-4b99-b1e3-c0fb4c3660b4</Id>
                 <Parent z:Ref="i25" />
-                <PositionOnFlowchart xmlns:d9p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                 <PropertyValues>
                   <PropertyValue z:Id="i27">
                     <PropertyName>Key</PropertyName>
@@ -355,7 +337,6 @@ for (int i = 0; i &lt; ordered_columns.Count; i++)
                   </PropertyValue>
                 </PropertyValues>
                 <SelectedOptionId i:nil="true" />
-                <WidthOnFlowchart>360</WidthOnFlowchart>
                 <AutoCloseMode>None</AutoCloseMode>
                 <EnableStatus>true</EnableStatus>
                 <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -364,13 +345,10 @@ for (int i = 0; i &lt; ordered_columns.Count; i++)
                 <_activityFullName>Activities.BaseCollections.Dictionary.AddKey</_activityFullName>
               </AbstractStep>
             </Childs>
-            <HeightOnFlowchart i:nil="true" />
             <Id>e98feb48-f976-4918-a023-cfd9d44deea1</Id>
             <Parent z:Ref="i19" />
-            <PositionOnFlowchart xmlns:d7p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
             <PropertyValues />
             <SelectedOptionId i:nil="true" />
-            <WidthOnFlowchart i:nil="true" />
             <AutoCloseMode>None</AutoCloseMode>
             <EnableStatus>true</EnableStatus>
             <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -379,10 +357,8 @@ for (int i = 0; i &lt; ordered_columns.Count; i++)
             <_activityFullName>BR.Core.Base.IfFalse</_activityFullName>
           </AbstractStep>
         </Childs>
-        <HeightOnFlowchart i:nil="true" />
         <Id>794b6aae-ca35-436e-bbe8-892668159b36</Id>
         <Parent z:Ref="i2" />
-        <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
         <PropertyValues>
           <PropertyValue z:Id="i30">
             <PropertyName>Condition</PropertyName>
@@ -394,7 +370,6 @@ for (int i = 0; i &lt; ordered_columns.Count; i++)
           </PropertyValue>
         </PropertyValues>
         <SelectedOptionId i:nil="true" />
-        <WidthOnFlowchart i:nil="true" />
         <AutoCloseMode>None</AutoCloseMode>
         <EnableStatus>true</EnableStatus>
         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -404,10 +379,8 @@ for (int i = 0; i &lt; ordered_columns.Count; i++)
       </AbstractStep>
       <AbstractStep z:Id="i31" i:type="ExecutedStep">
         <Childs />
-        <HeightOnFlowchart>50</HeightOnFlowchart>
         <Id>e1a2fcc5-3cef-49d5-89f1-484c40dd6111</Id>
         <Parent z:Ref="i2" />
-        <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
         <PropertyValues>
           <PropertyValue z:Id="i32">
             <PropertyName>Key</PropertyName>
@@ -435,7 +408,6 @@ for (int i = 0; i &lt; ordered_columns.Count; i++)
           </PropertyValue>
         </PropertyValues>
         <SelectedOptionId i:nil="true" />
-        <WidthOnFlowchart>360</WidthOnFlowchart>
         <AutoCloseMode>None</AutoCloseMode>
         <EnableStatus>true</EnableStatus>
         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -444,13 +416,10 @@ for (int i = 0; i &lt; ordered_columns.Count; i++)
         <_activityFullName>Activities.BaseCollections.Dictionary.AddKey</_activityFullName>
       </AbstractStep>
     </Childs>
-    <HeightOnFlowchart i:nil="true" />
     <Id>a0080c38-d169-48d0-bbe6-ff8443eb8ecd</Id>
     <Parent i:nil="true" />
-    <PositionOnFlowchart xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
     <PropertyValues />
     <SelectedOptionId i:nil="true" />
-    <WidthOnFlowchart i:nil="true" />
     <AutoCloseMode>None</AutoCloseMode>
     <EnableStatus>true</EnableStatus>
     <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -458,7 +427,7 @@ for (int i = 0; i &lt; ordered_columns.Count; i++)
     <Text></Text>
     <_activityFullName>BR.Core.Base.Container</_activityFullName>
   </Logic>
-  <Name>core_report_formatter.pix</Name>
+  <Name>report_customization.pix</Name>
   <Namespaces xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
   <Params>
     <Parameter z:Id="i35">
@@ -466,19 +435,19 @@ for (int i = 0; i &lt; ordered_columns.Count; i++)
       <Description>Глобальный контекст выполнения приложения. Содержит пути, конфигурации и динамические параметры.</Description>
       <Name>global_context</Name>
       <RunnerType>None</RunnerType>
-      <TypeString>System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]</TypeString>
+      <TypeString>System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]</TypeString>
     </Parameter>
   </Params>
   <PlatformVersion xmlns:d2p1="http://schemas.datacontract.org/2004/07/System">
-    <d2p1:_Build>1</d2p1:_Build>
-    <d2p1:_Major>3</d2p1:_Major>
-    <d2p1:_Minor>1</d2p1:_Minor>
+    <d2p1:_Build>4</d2p1:_Build>
+    <d2p1:_Major>2</d2p1:_Major>
+    <d2p1:_Minor>27</d2p1:_Minor>
     <d2p1:_Revision>0</d2p1:_Revision>
   </PlatformVersion>
   <TemplateVersion xmlns:d2p1="http://schemas.datacontract.org/2004/07/System" i:nil="true" />
   <Variables xmlns:d2p1="http://schemas.datacontract.org/2004/07/BR.Logic.Params">
     <d2p1:Variable z:Id="i36">
-      <d2p1:DefaultValueExpression>"core_report_formatter.pix"</d2p1:DefaultValueExpression>
+      <d2p1:DefaultValueExpression>"report_customization.pix"</d2p1:DefaultValueExpression>
       <d2p1:Description>Наименование текущего скрипта, используется в логировании.</d2p1:Description>
       <d2p1:Name>script_name</d2p1:Name>
       <d2p1:TypeString>System.String</d2p1:TypeString>

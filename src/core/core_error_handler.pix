@@ -7,20 +7,37 @@
     <Childs>
       <AbstractStep z:Id="i3" i:type="CommentStep">
         <Childs />
+        <HeightOnFlowchart>50</HeightOnFlowchart>
         <Id>a3823a24-5bec-49b4-b420-59a81cebe03b</Id>
         <Parent z:Ref="i2" />
+        <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
         <PropertyValues />
         <SelectedOptionId i:nil="true" />
+        <WidthOnFlowchart>360</WidthOnFlowchart>
         <IsCollapsed>false</IsCollapsed>
-        <Text>// ===================================================
-// Описание:
-// Скрипт обрабатывает ошибки в процессе работы с транзакциями. Логирует детали исключения, фиксирует лимиты попыток, добавляет информацию об ошибках в историю, сохраняет скриншоты экранов для каждой неудачной попытки и сохраняет пути к ним в глобальном контексте. После каждой ошибки формирует лог с техническими деталями и обновляет историю ошибок для использования в дальнейшей обработке или отчётности.
-// ===================================================</Text>
+        <Text>### Описание
+Скрипт обрабатывает ошибки при работе с транзакциями: логирует детали исключений, ведёт историю ошибок, отслеживает лимиты попыток, сохраняет скриншоты и пути к ним в глобальном контексте для последующей обработки и отчётности.
+
+| Направление | Аргумент | Тип | Описание |
+| :--- | :--- | :--- | :--- |
+| **InOut** | `global_context` | Dictionary&lt;System.String, System.Object&gt; | Глобальный контекст выполнения приложения. Содержит пути, конфигурации и динамические параметры. |
+| **In** | `transaction_handling_error` | System.Exception | Объект ошибки при транзакционной обработке. |
+| **In** | `transactions_error_source` | System.String | Источник ошибки при транзакционной обработке. |
+| **In** | `retry_counter` | System.Int32 | Счётчик текущих попыток. |
+| **In** | `max_serial_errors` | System.Int32 | Максимальное число подряд идущих ошибок перед прерыванием процесса робота. |
+| **In** | `errors_history` | List&lt;System.String&gt; | Список накопленных ошибок при обработке (N подряд). |
+| **In** | `transactions_error_message` | System.String | Сообщение об ошибке при транзакционной обработке. |
+| **In** | `screenshot_retry_counter_file` | System.String | Скриншот ошибки по текущей попытке. |
+
+
+---</Text>
       </AbstractStep>
       <AbstractStep z:Id="i4" i:type="ExecutedStep">
         <Childs />
+        <HeightOnFlowchart>50</HeightOnFlowchart>
         <Id>fa243c72-0439-427e-8256-3efd612445a6</Id>
         <Parent z:Ref="i2" />
+        <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
         <PropertyValues>
           <PropertyValue z:Id="i5">
             <PropertyName>FilePath</PropertyName>
@@ -62,6 +79,7 @@
           </PropertyValue>
         </PropertyValues>
         <SelectedOptionId i:nil="true" />
+        <WidthOnFlowchart>360</WidthOnFlowchart>
         <AutoCloseMode>None</AutoCloseMode>
         <EnableStatus>true</EnableStatus>
         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -71,8 +89,10 @@
       </AbstractStep>
       <AbstractStep z:Id="i10" i:type="ExecutedStep">
         <Childs />
+        <HeightOnFlowchart>50</HeightOnFlowchart>
         <Id>b7e57b0e-cadd-48cc-9455-e6e0a1ad908d</Id>
         <Parent z:Ref="i2" />
+        <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
         <PropertyValues>
           <PropertyValue z:Id="i11">
             <PropertyName>FilePath</PropertyName>
@@ -116,6 +136,7 @@
           </PropertyValue>
         </PropertyValues>
         <SelectedOptionId i:nil="true" />
+        <WidthOnFlowchart>360</WidthOnFlowchart>
         <AutoCloseMode>None</AutoCloseMode>
         <EnableStatus>true</EnableStatus>
         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -127,8 +148,10 @@
       </AbstractStep>
       <AbstractStep z:Id="i16" i:type="ExecutedStep">
         <Childs />
+        <HeightOnFlowchart>50</HeightOnFlowchart>
         <Id>4fe2164c-1dcb-4363-98f0-ef173ca25a73</Id>
         <Parent z:Ref="i2" />
+        <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
         <PropertyValues>
           <PropertyValue z:Id="i17">
             <PropertyName>Value</PropertyName>
@@ -148,6 +171,7 @@
           </PropertyValue>
         </PropertyValues>
         <SelectedOptionId i:nil="true" />
+        <WidthOnFlowchart>360</WidthOnFlowchart>
         <AutoCloseMode>None</AutoCloseMode>
         <EnableStatus>true</EnableStatus>
         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -158,8 +182,10 @@
       </AbstractStep>
       <AbstractStep z:Id="i19" i:type="ExecutedStep">
         <Childs />
+        <HeightOnFlowchart>50</HeightOnFlowchart>
         <Id>14097c6e-9c9e-494b-a5f0-a530b677cb4a</Id>
         <Parent z:Ref="i2" />
+        <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
         <PropertyValues>
           <PropertyValue z:Id="i20">
             <PropertyName>CSCode</PropertyName>
@@ -171,6 +197,7 @@
           </PropertyValue>
         </PropertyValues>
         <SelectedOptionId i:nil="true" />
+        <WidthOnFlowchart>360</WidthOnFlowchart>
         <AutoCloseMode>None</AutoCloseMode>
         <EnableStatus>true</EnableStatus>
         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -183,8 +210,10 @@
         <Childs>
           <AbstractStep z:Id="i22" i:type="ExecutedStep">
             <Childs />
+            <HeightOnFlowchart>50</HeightOnFlowchart>
             <Id>65b389c6-b806-455e-ad58-529df4db798d</Id>
             <Parent z:Ref="i21" />
+            <PositionOnFlowchart xmlns:d7p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
             <PropertyValues>
               <PropertyValue z:Id="i23">
                 <PropertyName>Key</PropertyName>
@@ -212,6 +241,7 @@
               </PropertyValue>
             </PropertyValues>
             <SelectedOptionId i:nil="true" />
+            <WidthOnFlowchart>360</WidthOnFlowchart>
             <AutoCloseMode>None</AutoCloseMode>
             <EnableStatus>true</EnableStatus>
             <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -221,8 +251,10 @@
           </AbstractStep>
           <AbstractStep z:Id="i26" i:type="ExecutedStep">
             <Childs />
+            <HeightOnFlowchart>50</HeightOnFlowchart>
             <Id>5a239ae4-de8d-4bea-bcc3-dcc9886ddaaf</Id>
             <Parent z:Ref="i21" />
+            <PositionOnFlowchart xmlns:d7p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
             <PropertyValues>
               <PropertyValue z:Id="i27">
                 <PropertyName>ImagePath</PropertyName>
@@ -234,6 +266,7 @@
               </PropertyValue>
             </PropertyValues>
             <SelectedOptionId i:nil="true" />
+            <WidthOnFlowchart>360</WidthOnFlowchart>
             <AutoCloseMode>None</AutoCloseMode>
             <EnableStatus>true</EnableStatus>
             <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -243,8 +276,10 @@
           </AbstractStep>
           <AbstractStep z:Id="i28" i:type="ExecutedStep">
             <Childs />
+            <HeightOnFlowchart>50</HeightOnFlowchart>
             <Id>51aa904f-de3e-414c-b6dd-d8027daa2e77</Id>
             <Parent z:Ref="i21" />
+            <PositionOnFlowchart xmlns:d7p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
             <PropertyValues>
               <PropertyValue z:Id="i29">
                 <PropertyName>FilePath</PropertyName>
@@ -286,6 +321,7 @@
               </PropertyValue>
             </PropertyValues>
             <SelectedOptionId i:nil="true" />
+            <WidthOnFlowchart>360</WidthOnFlowchart>
             <AutoCloseMode>None</AutoCloseMode>
             <EnableStatus>true</EnableStatus>
             <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -294,10 +330,13 @@
             <_activityFullName>BR.Core.Base.ExecuteScript</_activityFullName>
           </AbstractStep>
         </Childs>
+        <HeightOnFlowchart i:nil="true" />
         <Id>83d15c4c-1eff-4511-8d7d-0a21ff39c37c</Id>
         <Parent z:Ref="i2" />
+        <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
         <PropertyValues />
         <SelectedOptionId i:nil="true" />
+        <WidthOnFlowchart i:nil="true" />
         <AutoCloseMode>None</AutoCloseMode>
         <EnableStatus>true</EnableStatus>
         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -308,10 +347,13 @@
         <_activityFullName>BR.Core.Base.Container</_activityFullName>
       </AbstractStep>
     </Childs>
+    <HeightOnFlowchart i:nil="true" />
     <Id>da6d7d3f-ba3a-4362-8923-dd7c09aa2d63</Id>
     <Parent i:nil="true" />
+    <PositionOnFlowchart xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
     <PropertyValues />
     <SelectedOptionId i:nil="true" />
+    <WidthOnFlowchart i:nil="true" />
     <AutoCloseMode>None</AutoCloseMode>
     <EnableStatus>true</EnableStatus>
     <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -327,7 +369,7 @@
       <Description>Глобальный контекст выполнения приложения. Содержит пути, конфигурации и динамические параметры.</Description>
       <Name>global_context</Name>
       <RunnerType>None</RunnerType>
-      <TypeString>System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]</TypeString>
+      <TypeString>System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]</TypeString>
     </Parameter>
     <Parameter z:Id="i35">
       <DefaultValueExpression>default(System.Exception)</DefaultValueExpression>
@@ -362,7 +404,7 @@
       <Description>Список накопленных ошибок при обработке (N подряд)</Description>
       <Name>errors_history</Name>
       <RunnerType>None</RunnerType>
-      <TypeString>System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]</TypeString>
+      <TypeString>System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]</TypeString>
     </Parameter>
     <Parameter z:Id="i40">
       <DefaultValueExpression>string.Empty</DefaultValueExpression>
@@ -380,9 +422,9 @@
     </Parameter>
   </Params>
   <PlatformVersion xmlns:d2p1="http://schemas.datacontract.org/2004/07/System">
-    <d2p1:_Build>6</d2p1:_Build>
-    <d2p1:_Major>2</d2p1:_Major>
-    <d2p1:_Minor>27</d2p1:_Minor>
+    <d2p1:_Build>1</d2p1:_Build>
+    <d2p1:_Major>3</d2p1:_Major>
+    <d2p1:_Minor>1</d2p1:_Minor>
     <d2p1:_Revision>0</d2p1:_Revision>
   </PlatformVersion>
   <TemplateVersion xmlns:d2p1="http://schemas.datacontract.org/2004/07/System" i:nil="true" />

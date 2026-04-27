@@ -7,20 +7,25 @@
     <Childs>
       <AbstractStep z:Id="i3" i:type="CommentStep">
         <Childs />
+        <HeightOnFlowchart>50</HeightOnFlowchart>
         <Id>79e9c878-4f4b-48ef-a4bc-b52ce02c1335</Id>
         <Parent z:Ref="i2" />
+        <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
         <PropertyValues />
         <SelectedOptionId i:nil="true" />
+        <WidthOnFlowchart>360</WidthOnFlowchart>
         <IsCollapsed>false</IsCollapsed>
-        <Text>// ===================================================
-// Описание:
-// Стартовый технический скрипт, отвечающий за инициализацию путей, загрузку фреймворка, проверку технических условий (окна обслуживания, нерабочий день), запуск уведомлений о старте RPA-проекта. Делегирует дальнейшую бизнес-логику во внешние компоненты. Соблюдает принцип минимальной ответственности: выполняет только подготовительные операции, обработку ошибок и завершение процесса.
-// ===================================================</Text>
+        <Text>### Описание
+Стартовый технический скрипт инициализирует рабочее окружение, проверяет технические условия запуска и обрабатывает уведомления и ошибки, обеспечивая корректное завершение процесса; дальнейшая бизнес-логика выполняется во внешних компонентах.
+
+---</Text>
       </AbstractStep>
       <AbstractStep z:Id="i4" i:type="ExecutedStep">
         <Childs />
+        <HeightOnFlowchart>50</HeightOnFlowchart>
         <Id>7121493b-58c0-4865-bf25-79786c92a74e</Id>
         <Parent z:Ref="i2" />
+        <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
         <PropertyValues>
           <PropertyValue z:Id="i5">
             <PropertyName>Key</PropertyName>
@@ -48,6 +53,7 @@
           </PropertyValue>
         </PropertyValues>
         <SelectedOptionId i:nil="true" />
+        <WidthOnFlowchart>360</WidthOnFlowchart>
         <AutoCloseMode>None</AutoCloseMode>
         <EnableStatus>true</EnableStatus>
         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -57,8 +63,10 @@
       </AbstractStep>
       <AbstractStep z:Id="i8" i:type="ExecutedStep">
         <Childs />
+        <HeightOnFlowchart>50</HeightOnFlowchart>
         <Id>c6db0300-2e8c-4c0d-b5ff-ac818809dde3</Id>
         <Parent z:Ref="i2" />
+        <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
         <PropertyValues>
           <PropertyValue z:Id="i9">
             <PropertyName>Key</PropertyName>
@@ -86,6 +94,7 @@
           </PropertyValue>
         </PropertyValues>
         <SelectedOptionId i:nil="true" />
+        <WidthOnFlowchart>360</WidthOnFlowchart>
         <AutoCloseMode>None</AutoCloseMode>
         <EnableStatus>true</EnableStatus>
         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -94,15 +103,58 @@
         <_activityFullName>Activities.BaseCollections.Dictionary.AddKey</_activityFullName>
       </AbstractStep>
       <AbstractStep z:Id="i12" i:type="ExecutedStep">
+        <Childs />
+        <HeightOnFlowchart>50</HeightOnFlowchart>
+        <Id>0609150a-ee44-442b-89c1-a5bd214d6360</Id>
+        <Parent z:Ref="i2" />
+        <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
+        <PropertyValues>
+          <PropertyValue z:Id="i13">
+            <PropertyName>FilePath</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>Path.Combine(framework_root, "src", "core", "analytics", "code_review", "audit_manager.pix")</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i14">
+            <PropertyName>Parameters</PropertyName>
+            <_dataType>Value</_dataType>
+            <_expression i:nil="true" />
+            <_screenShotBase64 i:nil="true" />
+            <_value xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.Core" i:type="d7p1:ArrayOfArgumentItem">
+              <d7p1:ArgumentItem z:Id="i15">
+                <d7p1:ArgumentName>global_context</d7p1:ArgumentName>
+                <d7p1:Description i:nil="true" />
+                <d7p1:Expression>global_context</d7p1:Expression>
+                <d7p1:IsRequired>false</d7p1:IsRequired>
+                <d7p1:Type>Dictionary&lt;System.String, System.Object&gt;</d7p1:Type>
+              </d7p1:ArgumentItem>
+            </_value>
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId i:nil="true" />
+        <WidthOnFlowchart>360</WidthOnFlowchart>
+        <AutoCloseMode>None</AutoCloseMode>
+        <EnableStatus>true</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text>Сбор аудита по проекту</Text>
+        <_activityFullName>BR.Core.Base.ExecuteScript</_activityFullName>
+      </AbstractStep>
+      <AbstractStep z:Id="i16" i:type="ExecutedStep">
         <Childs>
-          <AbstractStep z:Id="i13" i:type="ExecutedStep">
+          <AbstractStep z:Id="i17" i:type="ExecutedStep">
             <Childs>
-              <AbstractStep z:Id="i14" i:type="ExecutedStep">
+              <AbstractStep z:Id="i18" i:type="ExecutedStep">
                 <Childs />
+                <HeightOnFlowchart>50</HeightOnFlowchart>
                 <Id>54ecac82-e520-4fde-9fce-3ba8bed04fb8</Id>
-                <Parent z:Ref="i13" />
+                <Parent z:Ref="i17" />
+                <PositionOnFlowchart xmlns:d9p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                 <PropertyValues>
-                  <PropertyValue z:Id="i15">
+                  <PropertyValue z:Id="i19">
                     <PropertyName>FilePath</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>Path.Combine(framework_root, "src", "framework_loader.pix")</_expression>
@@ -110,13 +162,13 @@
                     <_value i:nil="true" />
                     <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                   </PropertyValue>
-                  <PropertyValue z:Id="i16">
+                  <PropertyValue z:Id="i20">
                     <PropertyName>Parameters</PropertyName>
                     <_dataType>Value</_dataType>
                     <_expression i:nil="true" />
                     <_screenShotBase64 i:nil="true" />
                     <_value xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.Core" i:type="d11p1:ArrayOfArgumentItem">
-                      <d11p1:ArgumentItem z:Id="i17">
+                      <d11p1:ArgumentItem z:Id="i21">
                         <d11p1:ArgumentName>global_context</d11p1:ArgumentName>
                         <d11p1:Description i:nil="true" />
                         <d11p1:Expression>global_context</d11p1:Expression>
@@ -128,6 +180,7 @@
                   </PropertyValue>
                 </PropertyValues>
                 <SelectedOptionId i:nil="true" />
+                <WidthOnFlowchart>360</WidthOnFlowchart>
                 <AutoCloseMode>None</AutoCloseMode>
                 <EnableStatus>true</EnableStatus>
                 <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -135,18 +188,21 @@
                 <Text></Text>
                 <_activityFullName>BR.Core.Base.ExecuteScript</_activityFullName>
               </AbstractStep>
-              <AbstractStep z:Id="i18" i:type="ExecutedStep">
+              <AbstractStep z:Id="i22" i:type="ExecutedStep">
                 <Childs>
-                  <AbstractStep z:Id="i19" i:type="ExecutedStep">
+                  <AbstractStep z:Id="i23" i:type="ExecutedStep">
                     <Childs>
-                      <AbstractStep z:Id="i20" i:type="ExecutedStep">
+                      <AbstractStep z:Id="i24" i:type="ExecutedStep">
                         <Childs>
-                          <AbstractStep z:Id="i21" i:type="ExecutedStep">
+                          <AbstractStep z:Id="i25" i:type="ExecutedStep">
                             <Childs />
+                            <HeightOnFlowchart>50</HeightOnFlowchart>
                             <Id>73353584-c033-4c20-af8c-a99eaade82af</Id>
-                            <Parent z:Ref="i20" />
+                            <Parent z:Ref="i24" />
+                            <PositionOnFlowchart xmlns:d15p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                             <PropertyValues />
-                            <SelectedOptionId>0</SelectedOptionId>
+                            <SelectedOptionId i:nil="true" />
+                            <WidthOnFlowchart>360</WidthOnFlowchart>
                             <AutoCloseMode>None</AutoCloseMode>
                             <EnableStatus>true</EnableStatus>
                             <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -155,10 +211,13 @@
                             <_activityFullName>BR.Core.Base.Return</_activityFullName>
                           </AbstractStep>
                         </Childs>
+                        <HeightOnFlowchart i:nil="true" />
                         <Id>f0e42bbc-1ee5-4155-a032-904f5e27804f</Id>
-                        <Parent z:Ref="i19" />
+                        <Parent z:Ref="i23" />
+                        <PositionOnFlowchart xmlns:d13p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                         <PropertyValues />
                         <SelectedOptionId i:nil="true" />
+                        <WidthOnFlowchart i:nil="true" />
                         <AutoCloseMode>None</AutoCloseMode>
                         <EnableStatus>true</EnableStatus>
                         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -166,12 +225,15 @@
                         <Text></Text>
                         <_activityFullName>BR.Core.Base.IfTrue</_activityFullName>
                       </AbstractStep>
-                      <AbstractStep z:Id="i22" i:type="ExecutedStep">
+                      <AbstractStep z:Id="i26" i:type="ExecutedStep">
                         <Childs />
+                        <HeightOnFlowchart i:nil="true" />
                         <Id>0455dbe6-5a2d-4cee-86e5-0f4640406609</Id>
-                        <Parent z:Ref="i19" />
+                        <Parent z:Ref="i23" />
+                        <PositionOnFlowchart xmlns:d13p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                         <PropertyValues />
                         <SelectedOptionId i:nil="true" />
+                        <WidthOnFlowchart i:nil="true" />
                         <AutoCloseMode>None</AutoCloseMode>
                         <EnableStatus>true</EnableStatus>
                         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -180,10 +242,12 @@
                         <_activityFullName>BR.Core.Base.IfFalse</_activityFullName>
                       </AbstractStep>
                     </Childs>
+                    <HeightOnFlowchart i:nil="true" />
                     <Id>05e54e21-569a-4797-93b8-9124d5b20abc</Id>
-                    <Parent z:Ref="i18" />
+                    <Parent z:Ref="i22" />
+                    <PositionOnFlowchart xmlns:d11p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                     <PropertyValues>
-                      <PropertyValue z:Id="i23">
+                      <PropertyValue z:Id="i27">
                         <PropertyName>Condition</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>(bool)global_context["maintenance_active"] || !(bool)global_context["is_work_day"]</_expression>
@@ -193,6 +257,7 @@
                       </PropertyValue>
                     </PropertyValues>
                     <SelectedOptionId i:nil="true" />
+                    <WidthOnFlowchart i:nil="true" />
                     <AutoCloseMode>None</AutoCloseMode>
                     <EnableStatus>true</EnableStatus>
                     <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -201,10 +266,13 @@
                     <_activityFullName>BR.Core.Base.If</_activityFullName>
                   </AbstractStep>
                 </Childs>
+                <HeightOnFlowchart i:nil="true" />
                 <Id>67be2e61-03b2-4fc2-8417-a39b53377f57</Id>
-                <Parent z:Ref="i13" />
+                <Parent z:Ref="i17" />
+                <PositionOnFlowchart xmlns:d9p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                 <PropertyValues />
                 <SelectedOptionId i:nil="true" />
+                <WidthOnFlowchart i:nil="true" />
                 <AutoCloseMode>None</AutoCloseMode>
                 <EnableStatus>true</EnableStatus>
                 <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -212,14 +280,16 @@
                 <Text>Пропуск в нерабочие дни и в технические окна</Text>
                 <_activityFullName>BR.Core.Base.Container</_activityFullName>
               </AbstractStep>
-              <AbstractStep z:Id="i24" i:type="ExecutedStep">
+              <AbstractStep z:Id="i28" i:type="ExecutedStep">
                 <Childs>
-                  <AbstractStep z:Id="i25" i:type="ExecutedStep">
+                  <AbstractStep z:Id="i29" i:type="ExecutedStep">
                     <Childs />
+                    <HeightOnFlowchart>50</HeightOnFlowchart>
                     <Id>ea5ccaab-f0a7-4a4e-875e-b0df9665b43e</Id>
-                    <Parent z:Ref="i24" />
+                    <Parent z:Ref="i28" />
+                    <PositionOnFlowchart xmlns:d11p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                     <PropertyValues>
-                      <PropertyValue z:Id="i26">
+                      <PropertyValue z:Id="i30">
                         <PropertyName>Key</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>"robot_status"</_expression>
@@ -227,48 +297,10 @@
                         <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
-                      <PropertyValue z:Id="i27">
-                        <PropertyName>Value</PropertyName>
-                        <_dataType>Expression</_dataType>
-                        <_expression>"В обработке"</_expression>
-                        <_screenShotBase64 i:nil="true" />
-                        <_value i:nil="true" />
-                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                      </PropertyValue>
-                      <PropertyValue z:Id="i28">
-                        <PropertyName>Dictionary</PropertyName>
-                        <_dataType>Expression</_dataType>
-                        <_expression>global_context</_expression>
-                        <_screenShotBase64 i:nil="true" />
-                        <_value i:nil="true" />
-                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                      </PropertyValue>
-                    </PropertyValues>
-                    <SelectedOptionId i:nil="true" />
-                    <AutoCloseMode>None</AutoCloseMode>
-                    <EnableStatus>true</EnableStatus>
-                    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
-                    <RetryCount>-1</RetryCount>
-                    <Text>Указание статуса обработки для письма</Text>
-                    <_activityFullName>Activities.BaseCollections.Dictionary.AddKey</_activityFullName>
-                  </AbstractStep>
-                  <AbstractStep z:Id="i29" i:type="ExecutedStep">
-                    <Childs />
-                    <Id>64b7dff9-3d2b-457b-8bf4-37979fa693d2</Id>
-                    <Parent z:Ref="i24" />
-                    <PropertyValues>
-                      <PropertyValue z:Id="i30">
-                        <PropertyName>Key</PropertyName>
-                        <_dataType>Expression</_dataType>
-                        <_expression>"custom_content"</_expression>
-                        <_screenShotBase64 i:nil="true" />
-                        <_value i:nil="true" />
-                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                      </PropertyValue>
                       <PropertyValue z:Id="i31">
                         <PropertyName>Value</PropertyName>
                         <_dataType>Expression</_dataType>
-                        <_expression>"&lt;p&gt;Стартовое уведомление при запуске RPA-проекта.&lt;/p&gt;"</_expression>
+                        <_expression>"В обработке"</_expression>
                         <_screenShotBase64 i:nil="true" />
                         <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
@@ -283,6 +315,48 @@
                       </PropertyValue>
                     </PropertyValues>
                     <SelectedOptionId i:nil="true" />
+                    <WidthOnFlowchart>360</WidthOnFlowchart>
+                    <AutoCloseMode>None</AutoCloseMode>
+                    <EnableStatus>true</EnableStatus>
+                    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                    <RetryCount>-1</RetryCount>
+                    <Text>Указание статуса обработки для письма</Text>
+                    <_activityFullName>Activities.BaseCollections.Dictionary.AddKey</_activityFullName>
+                  </AbstractStep>
+                  <AbstractStep z:Id="i33" i:type="ExecutedStep">
+                    <Childs />
+                    <HeightOnFlowchart>50</HeightOnFlowchart>
+                    <Id>64b7dff9-3d2b-457b-8bf4-37979fa693d2</Id>
+                    <Parent z:Ref="i28" />
+                    <PositionOnFlowchart xmlns:d11p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
+                    <PropertyValues>
+                      <PropertyValue z:Id="i34">
+                        <PropertyName>Key</PropertyName>
+                        <_dataType>Expression</_dataType>
+                        <_expression>"custom_content"</_expression>
+                        <_screenShotBase64 i:nil="true" />
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                      <PropertyValue z:Id="i35">
+                        <PropertyName>Value</PropertyName>
+                        <_dataType>Expression</_dataType>
+                        <_expression>"&lt;p&gt;Стартовое уведомление при запуске RPA-проекта.&lt;/p&gt;"</_expression>
+                        <_screenShotBase64 i:nil="true" />
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                      <PropertyValue z:Id="i36">
+                        <PropertyName>Dictionary</PropertyName>
+                        <_dataType>Expression</_dataType>
+                        <_expression>global_context</_expression>
+                        <_screenShotBase64 i:nil="true" />
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                    </PropertyValues>
+                    <SelectedOptionId i:nil="true" />
+                    <WidthOnFlowchart>360</WidthOnFlowchart>
                     <AutoCloseMode>None</AutoCloseMode>
                     <EnableStatus>true</EnableStatus>
                     <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -290,12 +364,14 @@
                     <Text>Указание пользовательского контента для письма</Text>
                     <_activityFullName>Activities.BaseCollections.Dictionary.AddKey</_activityFullName>
                   </AbstractStep>
-                  <AbstractStep z:Id="i33" i:type="ExecutedStep">
+                  <AbstractStep z:Id="i37" i:type="ExecutedStep">
                     <Childs />
+                    <HeightOnFlowchart>50</HeightOnFlowchart>
                     <Id>cae9b468-4063-4812-a283-c5054b92e0e0</Id>
-                    <Parent z:Ref="i24" />
+                    <Parent z:Ref="i28" />
+                    <PositionOnFlowchart xmlns:d11p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                     <PropertyValues>
-                      <PropertyValue z:Id="i34">
+                      <PropertyValue z:Id="i38">
                         <PropertyName>FilePath</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>Path.Combine((string)global_context["framework_root"], "src", "core", "system", "notifications", "email", "send_report.pix")</_expression>
@@ -303,13 +379,13 @@
                         <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
-                      <PropertyValue z:Id="i35">
+                      <PropertyValue z:Id="i39">
                         <PropertyName>Parameters</PropertyName>
                         <_dataType>Value</_dataType>
                         <_expression i:nil="true" />
                         <_screenShotBase64 i:nil="true" />
                         <_value xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.Core" i:type="d13p1:ArrayOfArgumentItem">
-                          <d13p1:ArgumentItem z:Id="i36">
+                          <d13p1:ArgumentItem z:Id="i40">
                             <d13p1:ArgumentName>global_context</d13p1:ArgumentName>
                             <d13p1:Description i:nil="true" />
                             <d13p1:Expression>global_context</d13p1:Expression>
@@ -321,6 +397,7 @@
                       </PropertyValue>
                     </PropertyValues>
                     <SelectedOptionId i:nil="true" />
+                    <WidthOnFlowchart>360</WidthOnFlowchart>
                     <AutoCloseMode>None</AutoCloseMode>
                     <EnableStatus>true</EnableStatus>
                     <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -329,10 +406,13 @@
                     <_activityFullName>BR.Core.Base.ExecuteScript</_activityFullName>
                   </AbstractStep>
                 </Childs>
+                <HeightOnFlowchart i:nil="true" />
                 <Id>18019b34-3904-4bcb-b7a7-76a84653d3e0</Id>
-                <Parent z:Ref="i13" />
+                <Parent z:Ref="i17" />
+                <PositionOnFlowchart xmlns:d9p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                 <PropertyValues />
                 <SelectedOptionId i:nil="true" />
+                <WidthOnFlowchart i:nil="true" />
                 <AutoCloseMode>None</AutoCloseMode>
                 <EnableStatus>true</EnableStatus>
                 <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -340,14 +420,16 @@
                 <Text>Уведомление о запуске</Text>
                 <_activityFullName>BR.Core.Base.Container</_activityFullName>
               </AbstractStep>
-              <AbstractStep z:Id="i37" i:type="ExecutedStep">
+              <AbstractStep z:Id="i41" i:type="ExecutedStep">
                 <Childs>
-                  <AbstractStep z:Id="i38" i:type="ExecutedStep">
+                  <AbstractStep z:Id="i42" i:type="ExecutedStep">
                     <Childs />
+                    <HeightOnFlowchart>50</HeightOnFlowchart>
                     <Id>9ae93f05-32a5-4804-92c4-0edebe505bf5</Id>
-                    <Parent z:Ref="i37" />
+                    <Parent z:Ref="i41" />
+                    <PositionOnFlowchart xmlns:d11p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                     <PropertyValues>
-                      <PropertyValue z:Id="i39">
+                      <PropertyValue z:Id="i43">
                         <PropertyName>FilePath</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>Path.Combine(project_root, "src", "core", "core_workflow.pix")</_expression>
@@ -355,13 +437,13 @@
                         <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
-                      <PropertyValue z:Id="i40">
+                      <PropertyValue z:Id="i44">
                         <PropertyName>Parameters</PropertyName>
                         <_dataType>Value</_dataType>
                         <_expression i:nil="true" />
                         <_screenShotBase64 i:nil="true" />
                         <_value xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.Core" i:type="d13p1:ArrayOfArgumentItem">
-                          <d13p1:ArgumentItem z:Id="i41">
+                          <d13p1:ArgumentItem z:Id="i45">
                             <d13p1:ArgumentName>global_context</d13p1:ArgumentName>
                             <d13p1:Description i:nil="true" />
                             <d13p1:Expression>global_context</d13p1:Expression>
@@ -373,6 +455,7 @@
                       </PropertyValue>
                     </PropertyValues>
                     <SelectedOptionId i:nil="true" />
+                    <WidthOnFlowchart>360</WidthOnFlowchart>
                     <AutoCloseMode>None</AutoCloseMode>
                     <EnableStatus>true</EnableStatus>
                     <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -381,10 +464,13 @@
                     <_activityFullName>BR.Core.Base.ExecuteScript</_activityFullName>
                   </AbstractStep>
                 </Childs>
+                <HeightOnFlowchart i:nil="true" />
                 <Id>646dd339-50de-496b-9782-1440c69d92e8</Id>
-                <Parent z:Ref="i13" />
+                <Parent z:Ref="i17" />
+                <PositionOnFlowchart xmlns:d9p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                 <PropertyValues />
                 <SelectedOptionId i:nil="true" />
+                <WidthOnFlowchart i:nil="true" />
                 <AutoCloseMode>None</AutoCloseMode>
                 <EnableStatus>true</EnableStatus>
                 <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -392,55 +478,19 @@
                 <Text>Запуск основного процесса</Text>
                 <_activityFullName>BR.Core.Base.Container</_activityFullName>
               </AbstractStep>
-              <AbstractStep z:Id="i42" i:type="ExecutedStep">
+              <AbstractStep z:Id="i46" i:type="ExecutedStep">
                 <Childs>
-                  <AbstractStep z:Id="i43" i:type="ExecutedStep">
-                    <Childs />
-                    <Id>45c059fd-9072-4300-b6e6-eefcc49dc5e3</Id>
-                    <Parent z:Ref="i42" />
-                    <PropertyValues>
-                      <PropertyValue z:Id="i44">
-                        <PropertyName>FilePath</PropertyName>
-                        <_dataType>Expression</_dataType>
-                        <_expression>Path.Combine((string)global_context["project_root"], "src", "core", "core_report_formatter.pix")</_expression>
-                        <_screenShotBase64 i:nil="true" />
-                        <_value i:nil="true" />
-                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                      </PropertyValue>
-                      <PropertyValue z:Id="i45">
-                        <PropertyName>Parameters</PropertyName>
-                        <_dataType>Value</_dataType>
-                        <_expression i:nil="true" />
-                        <_screenShotBase64 i:nil="true" />
-                        <_value xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.Core" i:type="d13p1:ArrayOfArgumentItem">
-                          <d13p1:ArgumentItem z:Id="i46">
-                            <d13p1:ArgumentName>global_context</d13p1:ArgumentName>
-                            <d13p1:Description i:nil="true" />
-                            <d13p1:Expression>global_context</d13p1:Expression>
-                            <d13p1:IsRequired>false</d13p1:IsRequired>
-                            <d13p1:Type>Dictionary&lt;System.String, System.Object&gt;</d13p1:Type>
-                          </d13p1:ArgumentItem>
-                        </_value>
-                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                      </PropertyValue>
-                    </PropertyValues>
-                    <SelectedOptionId i:nil="true" />
-                    <AutoCloseMode>None</AutoCloseMode>
-                    <EnableStatus>true</EnableStatus>
-                    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
-                    <RetryCount>-1</RetryCount>
-                    <Text>Персонализация отчета</Text>
-                    <_activityFullName>BR.Core.Base.ExecuteScript</_activityFullName>
-                  </AbstractStep>
                   <AbstractStep z:Id="i47" i:type="ExecutedStep">
                     <Childs />
-                    <Id>67821726-704d-458d-8225-2e2908c717a7</Id>
-                    <Parent z:Ref="i42" />
+                    <HeightOnFlowchart>50</HeightOnFlowchart>
+                    <Id>45c059fd-9072-4300-b6e6-eefcc49dc5e3</Id>
+                    <Parent z:Ref="i46" />
+                    <PositionOnFlowchart xmlns:d11p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                     <PropertyValues>
                       <PropertyValue z:Id="i48">
                         <PropertyName>FilePath</PropertyName>
                         <_dataType>Expression</_dataType>
-                        <_expression>Path.Combine((string)global_context["framework_root"], "src", "core", "system", "notifications", "email", "send_report.pix")</_expression>
+                        <_expression>Path.Combine((string)global_context["project_root"], "src", "core", "core_report_formatter.pix")</_expression>
                         <_screenShotBase64 i:nil="true" />
                         <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
@@ -463,6 +513,48 @@
                       </PropertyValue>
                     </PropertyValues>
                     <SelectedOptionId i:nil="true" />
+                    <WidthOnFlowchart>360</WidthOnFlowchart>
+                    <AutoCloseMode>None</AutoCloseMode>
+                    <EnableStatus>true</EnableStatus>
+                    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                    <RetryCount>-1</RetryCount>
+                    <Text>Персонализация отчета</Text>
+                    <_activityFullName>BR.Core.Base.ExecuteScript</_activityFullName>
+                  </AbstractStep>
+                  <AbstractStep z:Id="i51" i:type="ExecutedStep">
+                    <Childs />
+                    <HeightOnFlowchart>50</HeightOnFlowchart>
+                    <Id>67821726-704d-458d-8225-2e2908c717a7</Id>
+                    <Parent z:Ref="i46" />
+                    <PositionOnFlowchart xmlns:d11p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
+                    <PropertyValues>
+                      <PropertyValue z:Id="i52">
+                        <PropertyName>FilePath</PropertyName>
+                        <_dataType>Expression</_dataType>
+                        <_expression>Path.Combine((string)global_context["framework_root"], "src", "core", "system", "notifications", "email", "send_report.pix")</_expression>
+                        <_screenShotBase64 i:nil="true" />
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                      <PropertyValue z:Id="i53">
+                        <PropertyName>Parameters</PropertyName>
+                        <_dataType>Value</_dataType>
+                        <_expression i:nil="true" />
+                        <_screenShotBase64 i:nil="true" />
+                        <_value xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.Core" i:type="d13p1:ArrayOfArgumentItem">
+                          <d13p1:ArgumentItem z:Id="i54">
+                            <d13p1:ArgumentName>global_context</d13p1:ArgumentName>
+                            <d13p1:Description i:nil="true" />
+                            <d13p1:Expression>global_context</d13p1:Expression>
+                            <d13p1:IsRequired>false</d13p1:IsRequired>
+                            <d13p1:Type>Dictionary&lt;System.String, System.Object&gt;</d13p1:Type>
+                          </d13p1:ArgumentItem>
+                        </_value>
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                    </PropertyValues>
+                    <SelectedOptionId i:nil="true" />
+                    <WidthOnFlowchart>360</WidthOnFlowchart>
                     <AutoCloseMode>None</AutoCloseMode>
                     <EnableStatus>true</EnableStatus>
                     <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -471,10 +563,13 @@
                     <_activityFullName>BR.Core.Base.ExecuteScript</_activityFullName>
                   </AbstractStep>
                 </Childs>
+                <HeightOnFlowchart i:nil="true" />
                 <Id>719fc692-31f7-431d-92b1-aa1fa21fede2</Id>
-                <Parent z:Ref="i13" />
+                <Parent z:Ref="i17" />
+                <PositionOnFlowchart xmlns:d9p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                 <PropertyValues />
                 <SelectedOptionId i:nil="true" />
+                <WidthOnFlowchart i:nil="true" />
                 <AutoCloseMode>None</AutoCloseMode>
                 <EnableStatus>true</EnableStatus>
                 <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -483,12 +578,14 @@
 Отчетность</Text>
                 <_activityFullName>BR.Core.Base.Container</_activityFullName>
               </AbstractStep>
-              <AbstractStep z:Id="i51" i:type="ExecutedStep">
+              <AbstractStep z:Id="i55" i:type="ExecutedStep">
                 <Childs />
+                <HeightOnFlowchart>50</HeightOnFlowchart>
                 <Id>926e6591-6b00-4f52-a8d0-cc310a823ff6</Id>
-                <Parent z:Ref="i13" />
+                <Parent z:Ref="i17" />
+                <PositionOnFlowchart xmlns:d9p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                 <PropertyValues>
-                  <PropertyValue z:Id="i52">
+                  <PropertyValue z:Id="i56">
                     <PropertyName>FilePath</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>Path.Combine(framework_root, "src", "core", "system", "transactions", "transactions_move_to_archive.pix")</_expression>
@@ -496,13 +593,13 @@
                     <_value i:nil="true" />
                     <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                   </PropertyValue>
-                  <PropertyValue z:Id="i53">
+                  <PropertyValue z:Id="i57">
                     <PropertyName>Parameters</PropertyName>
                     <_dataType>Value</_dataType>
                     <_expression i:nil="true" />
                     <_screenShotBase64 i:nil="true" />
                     <_value xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.Core" i:type="d11p1:ArrayOfArgumentItem">
-                      <d11p1:ArgumentItem z:Id="i54">
+                      <d11p1:ArgumentItem z:Id="i58">
                         <d11p1:ArgumentName>global_context</d11p1:ArgumentName>
                         <d11p1:Description i:nil="true" />
                         <d11p1:Expression>global_context</d11p1:Expression>
@@ -514,6 +611,7 @@
                   </PropertyValue>
                 </PropertyValues>
                 <SelectedOptionId i:nil="true" />
+                <WidthOnFlowchart>360</WidthOnFlowchart>
                 <AutoCloseMode>None</AutoCloseMode>
                 <EnableStatus>true</EnableStatus>
                 <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -522,10 +620,13 @@
                 <_activityFullName>BR.Core.Base.ExecuteScript</_activityFullName>
               </AbstractStep>
             </Childs>
+            <HeightOnFlowchart i:nil="true" />
             <Id>41c54a02-5ca6-4c6e-8a66-b7e610b94d68</Id>
-            <Parent z:Ref="i12" />
+            <Parent z:Ref="i16" />
+            <PositionOnFlowchart xmlns:d7p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
             <PropertyValues />
             <SelectedOptionId i:nil="true" />
+            <WidthOnFlowchart i:nil="true" />
             <AutoCloseMode>None</AutoCloseMode>
             <EnableStatus>true</EnableStatus>
             <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -533,35 +634,37 @@
             <Text></Text>
             <_activityFullName>BR.Core.Base.Try</_activityFullName>
           </AbstractStep>
-          <AbstractStep z:Id="i55" i:type="ExecutedStep">
+          <AbstractStep z:Id="i59" i:type="ExecutedStep">
             <Childs>
-              <AbstractStep z:Id="i56" i:type="ExecutedStep">
+              <AbstractStep z:Id="i60" i:type="ExecutedStep">
                 <Childs />
+                <HeightOnFlowchart>50</HeightOnFlowchart>
                 <Id>a67c5279-4f30-4c0c-ae39-951f823dba18</Id>
-                <Parent z:Ref="i55" />
+                <Parent z:Ref="i59" />
+                <PositionOnFlowchart xmlns:d9p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                 <PropertyValues>
-                  <PropertyValue z:Id="i57">
+                  <PropertyValue z:Id="i61">
                     <PropertyName>InitialItems</PropertyName>
                     <_dataType>Value</_dataType>
                     <_expression i:nil="true" />
                     <_screenShotBase64 i:nil="true" />
                     <_value xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.Collections" i:type="d11p1:DictionarySettings">
                       <d11p1:ArgumentsToCompile xmlns:d12p1="http://schemas.datacontract.org/2004/07/BR.Core">
-                        <d12p1:ArgumentItem z:Id="i58">
+                        <d12p1:ArgumentItem z:Id="i62">
                           <d12p1:ArgumentName>message</d12p1:ArgumentName>
                           <d12p1:Description i:nil="true" />
                           <d12p1:Expression>global_error_message</d12p1:Expression>
                           <d12p1:IsRequired>false</d12p1:IsRequired>
                           <d12p1:Type>System.Object</d12p1:Type>
                         </d12p1:ArgumentItem>
-                        <d12p1:ArgumentItem z:Id="i59">
+                        <d12p1:ArgumentItem z:Id="i63">
                           <d12p1:ArgumentName>stack</d12p1:ArgumentName>
                           <d12p1:Description i:nil="true" />
                           <d12p1:Expression>global_error_stack</d12p1:Expression>
                           <d12p1:IsRequired>false</d12p1:IsRequired>
                           <d12p1:Type>System.Object</d12p1:Type>
                         </d12p1:ArgumentItem>
-                        <d12p1:ArgumentItem z:Id="i60">
+                        <d12p1:ArgumentItem z:Id="i64">
                           <d12p1:ArgumentName>source</d12p1:ArgumentName>
                           <d12p1:Description i:nil="true" />
                           <d12p1:Expression>global_error_source</d12p1:Expression>
@@ -572,7 +675,7 @@
                     </_value>
                     <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                   </PropertyValue>
-                  <PropertyValue z:Id="i61">
+                  <PropertyValue z:Id="i65">
                     <PropertyName>Dictionary</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>global_error</_expression>
@@ -582,6 +685,7 @@
                   </PropertyValue>
                 </PropertyValues>
                 <SelectedOptionId i:nil="true" />
+                <WidthOnFlowchart>360</WidthOnFlowchart>
                 <AutoCloseMode>None</AutoCloseMode>
                 <EnableStatus>true</EnableStatus>
                 <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -589,12 +693,14 @@
                 <Text></Text>
                 <_activityFullName>Activities.BaseCollections.Dictionary.CreateDictionary</_activityFullName>
               </AbstractStep>
-              <AbstractStep z:Id="i62" i:type="ExecutedStep">
+              <AbstractStep z:Id="i66" i:type="ExecutedStep">
                 <Childs />
+                <HeightOnFlowchart>50</HeightOnFlowchart>
                 <Id>33086f20-2298-492d-b8ed-89fc56d3eadd</Id>
-                <Parent z:Ref="i55" />
+                <Parent z:Ref="i59" />
+                <PositionOnFlowchart xmlns:d9p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                 <PropertyValues>
-                  <PropertyValue z:Id="i63">
+                  <PropertyValue z:Id="i67">
                     <PropertyName>FilePath</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>Path.Combine(framework_root, "src", "core", "system", "error_handler.pix")</_expression>
@@ -602,20 +708,20 @@
                     <_value i:nil="true" />
                     <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                   </PropertyValue>
-                  <PropertyValue z:Id="i64">
+                  <PropertyValue z:Id="i68">
                     <PropertyName>Parameters</PropertyName>
                     <_dataType>Value</_dataType>
                     <_expression i:nil="true" />
                     <_screenShotBase64 i:nil="true" />
                     <_value xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.Core" i:type="d11p1:ArrayOfArgumentItem">
-                      <d11p1:ArgumentItem z:Id="i65">
+                      <d11p1:ArgumentItem z:Id="i69">
                         <d11p1:ArgumentName>global_context</d11p1:ArgumentName>
                         <d11p1:Description i:nil="true" />
                         <d11p1:Expression>global_context</d11p1:Expression>
                         <d11p1:IsRequired>false</d11p1:IsRequired>
                         <d11p1:Type>Dictionary&lt;System.String, System.Object&gt;</d11p1:Type>
                       </d11p1:ArgumentItem>
-                      <d11p1:ArgumentItem z:Id="i66">
+                      <d11p1:ArgumentItem z:Id="i70">
                         <d11p1:ArgumentName>global_error</d11p1:ArgumentName>
                         <d11p1:Description i:nil="true" />
                         <d11p1:Expression>global_error</d11p1:Expression>
@@ -627,6 +733,7 @@
                   </PropertyValue>
                 </PropertyValues>
                 <SelectedOptionId i:nil="true" />
+                <WidthOnFlowchart>360</WidthOnFlowchart>
                 <AutoCloseMode>None</AutoCloseMode>
                 <EnableStatus>true</EnableStatus>
                 <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -637,12 +744,14 @@
 4 Уведомление об ошибке SMTP</Text>
                 <_activityFullName>BR.Core.Base.ExecuteScript</_activityFullName>
               </AbstractStep>
-              <AbstractStep z:Id="i67" i:type="ExecutedStep">
+              <AbstractStep z:Id="i71" i:type="ExecutedStep">
                 <Childs />
+                <HeightOnFlowchart>50</HeightOnFlowchart>
                 <Id>e05553f2-df1b-4854-a9eb-a896fbd75236</Id>
-                <Parent z:Ref="i55" />
+                <Parent z:Ref="i59" />
+                <PositionOnFlowchart xmlns:d9p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                 <PropertyValues>
-                  <PropertyValue z:Id="i68">
+                  <PropertyValue z:Id="i72">
                     <PropertyName>FilePath</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>Path.Combine(framework_root, "src", "core", "system", "cleanup", "cleanup_processes.pix")</_expression>
@@ -650,13 +759,13 @@
                     <_value i:nil="true" />
                     <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                   </PropertyValue>
-                  <PropertyValue z:Id="i69">
+                  <PropertyValue z:Id="i73">
                     <PropertyName>Parameters</PropertyName>
                     <_dataType>Value</_dataType>
                     <_expression i:nil="true" />
                     <_screenShotBase64 i:nil="true" />
                     <_value xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.Core" i:type="d11p1:ArrayOfArgumentItem">
-                      <d11p1:ArgumentItem z:Id="i70">
+                      <d11p1:ArgumentItem z:Id="i74">
                         <d11p1:ArgumentName>global_context</d11p1:ArgumentName>
                         <d11p1:Description i:nil="true" />
                         <d11p1:Expression>global_context</d11p1:Expression>
@@ -668,6 +777,7 @@
                   </PropertyValue>
                 </PropertyValues>
                 <SelectedOptionId i:nil="true" />
+                <WidthOnFlowchart>360</WidthOnFlowchart>
                 <AutoCloseMode>None</AutoCloseMode>
                 <EnableStatus>true</EnableStatus>
                 <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -675,12 +785,14 @@
                 <Text>Завершение процессов после обработки задания</Text>
                 <_activityFullName>BR.Core.Base.ExecuteScript</_activityFullName>
               </AbstractStep>
-              <AbstractStep z:Id="i71" i:type="ExecutedStep">
+              <AbstractStep z:Id="i75" i:type="ExecutedStep">
                 <Childs />
+                <HeightOnFlowchart>50</HeightOnFlowchart>
                 <Id>0c79b794-4999-453f-b647-7b6b54afcd1b</Id>
-                <Parent z:Ref="i55" />
+                <Parent z:Ref="i59" />
+                <PositionOnFlowchart xmlns:d9p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                 <PropertyValues>
-                  <PropertyValue z:Id="i72">
+                  <PropertyValue z:Id="i76">
                     <PropertyName>Text</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>global_error_message</_expression>
@@ -690,6 +802,7 @@
                   </PropertyValue>
                 </PropertyValues>
                 <SelectedOptionId>0</SelectedOptionId>
+                <WidthOnFlowchart>360</WidthOnFlowchart>
                 <AutoCloseMode>None</AutoCloseMode>
                 <EnableStatus>true</EnableStatus>
                 <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -698,10 +811,12 @@
                 <_activityFullName>BR.Core.Base.ThrowException</_activityFullName>
               </AbstractStep>
             </Childs>
+            <HeightOnFlowchart i:nil="true" />
             <Id>17fe2f4f-44cc-4c15-a912-60b7ce4d5735</Id>
-            <Parent z:Ref="i12" />
+            <Parent z:Ref="i16" />
+            <PositionOnFlowchart xmlns:d7p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
             <PropertyValues>
-              <PropertyValue z:Id="i73">
+              <PropertyValue z:Id="i77">
                 <PropertyName>Message</PropertyName>
                 <_dataType>Expression</_dataType>
                 <_expression>global_error_message</_expression>
@@ -709,7 +824,7 @@
                 <_value i:nil="true" />
                 <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
               </PropertyValue>
-              <PropertyValue z:Id="i74">
+              <PropertyValue z:Id="i78">
                 <PropertyName>StackTrace</PropertyName>
                 <_dataType>Expression</_dataType>
                 <_expression>global_error_stack</_expression>
@@ -717,7 +832,7 @@
                 <_value i:nil="true" />
                 <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
               </PropertyValue>
-              <PropertyValue z:Id="i75">
+              <PropertyValue z:Id="i79">
                 <PropertyName>Source</PropertyName>
                 <_dataType>Expression</_dataType>
                 <_expression>global_error_source</_expression>
@@ -727,6 +842,7 @@
               </PropertyValue>
             </PropertyValues>
             <SelectedOptionId i:nil="true" />
+            <WidthOnFlowchart i:nil="true" />
             <AutoCloseMode>None</AutoCloseMode>
             <EnableStatus>true</EnableStatus>
             <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -734,14 +850,16 @@
             <Text></Text>
             <_activityFullName>BR.Core.Base.Catch</_activityFullName>
           </AbstractStep>
-          <AbstractStep z:Id="i76" i:type="ExecutedStep">
+          <AbstractStep z:Id="i80" i:type="ExecutedStep">
             <Childs>
-              <AbstractStep z:Id="i77" i:type="ExecutedStep">
+              <AbstractStep z:Id="i81" i:type="ExecutedStep">
                 <Childs />
+                <HeightOnFlowchart>50</HeightOnFlowchart>
                 <Id>014c3ed9-bab3-4465-a762-dbaff085fd29</Id>
-                <Parent z:Ref="i76" />
+                <Parent z:Ref="i80" />
+                <PositionOnFlowchart xmlns:d9p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                 <PropertyValues>
-                  <PropertyValue z:Id="i78">
+                  <PropertyValue z:Id="i82">
                     <PropertyName>FilePath</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>Path.Combine(framework_root, "src", "core", "system", "write_log.pix")</_expression>
@@ -749,27 +867,27 @@
                     <_value i:nil="true" />
                     <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                   </PropertyValue>
-                  <PropertyValue z:Id="i79">
+                  <PropertyValue z:Id="i83">
                     <PropertyName>Parameters</PropertyName>
                     <_dataType>Value</_dataType>
                     <_expression i:nil="true" />
                     <_screenShotBase64 i:nil="true" />
                     <_value xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.Core" i:type="d11p1:ArrayOfArgumentItem">
-                      <d11p1:ArgumentItem z:Id="i80">
+                      <d11p1:ArgumentItem z:Id="i84">
                         <d11p1:ArgumentName>global_context</d11p1:ArgumentName>
                         <d11p1:Description i:nil="true" />
                         <d11p1:Expression>global_context</d11p1:Expression>
                         <d11p1:IsRequired>false</d11p1:IsRequired>
                         <d11p1:Type>Dictionary&lt;System.String, System.Object&gt;</d11p1:Type>
                       </d11p1:ArgumentItem>
-                      <d11p1:ArgumentItem z:Id="i81">
+                      <d11p1:ArgumentItem z:Id="i85">
                         <d11p1:ArgumentName>message</d11p1:ArgumentName>
                         <d11p1:Description i:nil="true" />
                         <d11p1:Expression>$"[{script_name}] Процесс завершён."</d11p1:Expression>
                         <d11p1:IsRequired>false</d11p1:IsRequired>
                         <d11p1:Type>System.String</d11p1:Type>
                       </d11p1:ArgumentItem>
-                      <d11p1:ArgumentItem z:Id="i82">
+                      <d11p1:ArgumentItem z:Id="i86">
                         <d11p1:ArgumentName>log_level</d11p1:ArgumentName>
                         <d11p1:Description i:nil="true" />
                         <d11p1:Expression>"info"</d11p1:Expression>
@@ -781,19 +899,22 @@
                   </PropertyValue>
                 </PropertyValues>
                 <SelectedOptionId i:nil="true" />
+                <WidthOnFlowchart>360</WidthOnFlowchart>
                 <AutoCloseMode>None</AutoCloseMode>
                 <EnableStatus>true</EnableStatus>
                 <ExceptionHandlingMode>Default</ExceptionHandlingMode>
                 <RetryCount>-1</RetryCount>
-                <Text></Text>
+                <Text>$"[{script_name}] Процесс завершён."</Text>
                 <_activityFullName>BR.Core.Base.ExecuteScript</_activityFullName>
               </AbstractStep>
-              <AbstractStep z:Id="i83" i:type="ExecutedStep">
+              <AbstractStep z:Id="i87" i:type="ExecutedStep">
                 <Childs />
+                <HeightOnFlowchart>50</HeightOnFlowchart>
                 <Id>756f4125-11ad-4bbe-bfe5-8ccad31d9c69</Id>
-                <Parent z:Ref="i76" />
+                <Parent z:Ref="i80" />
+                <PositionOnFlowchart xmlns:d9p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
                 <PropertyValues>
-                  <PropertyValue z:Id="i84">
+                  <PropertyValue z:Id="i88">
                     <PropertyName>FilePath</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>Path.Combine(framework_root, "src", "core", "system", "cleanup", "cleanup_processes.pix")</_expression>
@@ -801,13 +922,13 @@
                     <_value i:nil="true" />
                     <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                   </PropertyValue>
-                  <PropertyValue z:Id="i85">
+                  <PropertyValue z:Id="i89">
                     <PropertyName>Parameters</PropertyName>
                     <_dataType>Value</_dataType>
                     <_expression i:nil="true" />
                     <_screenShotBase64 i:nil="true" />
                     <_value xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.Core" i:type="d11p1:ArrayOfArgumentItem">
-                      <d11p1:ArgumentItem z:Id="i86">
+                      <d11p1:ArgumentItem z:Id="i90">
                         <d11p1:ArgumentName>global_context</d11p1:ArgumentName>
                         <d11p1:Description i:nil="true" />
                         <d11p1:Expression>global_context</d11p1:Expression>
@@ -819,6 +940,7 @@
                   </PropertyValue>
                 </PropertyValues>
                 <SelectedOptionId i:nil="true" />
+                <WidthOnFlowchart>360</WidthOnFlowchart>
                 <AutoCloseMode>None</AutoCloseMode>
                 <EnableStatus>true</EnableStatus>
                 <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -827,10 +949,13 @@
                 <_activityFullName>BR.Core.Base.ExecuteScript</_activityFullName>
               </AbstractStep>
             </Childs>
+            <HeightOnFlowchart i:nil="true" />
             <Id>00825039-2b7b-454c-a8c9-566647e9e8c2</Id>
-            <Parent z:Ref="i12" />
+            <Parent z:Ref="i16" />
+            <PositionOnFlowchart xmlns:d7p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
             <PropertyValues />
             <SelectedOptionId i:nil="true" />
+            <WidthOnFlowchart i:nil="true" />
             <AutoCloseMode>None</AutoCloseMode>
             <EnableStatus>true</EnableStatus>
             <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -839,10 +964,13 @@
             <_activityFullName>BR.Core.Base.Finally</_activityFullName>
           </AbstractStep>
         </Childs>
+        <HeightOnFlowchart i:nil="true" />
         <Id>204a8925-af76-4b71-bc9b-971d7de92d97</Id>
         <Parent z:Ref="i2" />
+        <PositionOnFlowchart xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
         <PropertyValues />
         <SelectedOptionId i:nil="true" />
+        <WidthOnFlowchart i:nil="true" />
         <AutoCloseMode>None</AutoCloseMode>
         <EnableStatus>true</EnableStatus>
         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -851,10 +979,13 @@
         <_activityFullName>BR.Core.Base.TryCatch</_activityFullName>
       </AbstractStep>
     </Childs>
+    <HeightOnFlowchart i:nil="true" />
     <Id>4c7550c1-e9aa-430a-82c2-c0cc01c09874</Id>
     <Parent i:nil="true" />
+    <PositionOnFlowchart xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Numerics" i:nil="true" />
     <PropertyValues />
     <SelectedOptionId i:nil="true" />
+    <WidthOnFlowchart i:nil="true" />
     <AutoCloseMode>None</AutoCloseMode>
     <EnableStatus>true</EnableStatus>
     <ExceptionHandlingMode>Default</ExceptionHandlingMode>
@@ -866,33 +997,33 @@
   <Namespaces xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
   <Params />
   <PlatformVersion xmlns:d2p1="http://schemas.datacontract.org/2004/07/System">
-    <d2p1:_Build>6</d2p1:_Build>
-    <d2p1:_Major>2</d2p1:_Major>
-    <d2p1:_Minor>27</d2p1:_Minor>
+    <d2p1:_Build>1</d2p1:_Build>
+    <d2p1:_Major>3</d2p1:_Major>
+    <d2p1:_Minor>1</d2p1:_Minor>
     <d2p1:_Revision>0</d2p1:_Revision>
   </PlatformVersion>
   <TemplateVersion xmlns:d2p1="http://schemas.datacontract.org/2004/07/System" i:nil="true" />
   <Variables xmlns:d2p1="http://schemas.datacontract.org/2004/07/BR.Logic.Params">
-    <d2p1:Variable z:Id="i87">
+    <d2p1:Variable z:Id="i91">
       <d2p1:DefaultValueExpression>new Dictionary&lt;string, object&gt;()</d2p1:DefaultValueExpression>
       <d2p1:Description>Глобальный контекст выполнения приложения. Содержит пути, конфигурации и динамические параметры.</d2p1:Description>
       <d2p1:Name>global_context</d2p1:Name>
-      <d2p1:TypeString>System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]</d2p1:TypeString>
+      <d2p1:TypeString>System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]</d2p1:TypeString>
     </d2p1:Variable>
-    <d2p1:Variable z:Id="i88">
+    <d2p1:Variable z:Id="i92">
       <d2p1:DefaultValueExpression>"main.pix"</d2p1:DefaultValueExpression>
       <d2p1:Description>Наименование текущего скрипта, используется в логировании.</d2p1:Description>
       <d2p1:Name>script_name</d2p1:Name>
       <d2p1:TypeString>System.String</d2p1:TypeString>
     </d2p1:Variable>
-    <d2p1:Variable z:Id="i89">
-      <d2p1:DefaultValueExpression>@"D:\yandex_disk\YandexDisk\01_birpa\02_rpa\rpa_development\projects\rpa_framework"</d2p1:DefaultValueExpression>
+    <d2p1:Variable z:Id="i93">
+      <d2p1:DefaultValueExpression>@"D:\yandex_disk\YandexDisk\01_birpa\02_rpa\rpa_development\projects\pix_3_0_templates\rpa_framework"</d2p1:DefaultValueExpression>
       <d2p1:Description>Полный путь до корня фреймворка. Все пути скриптов фреймворка вычисляются относительно framework_root</d2p1:Description>
       <d2p1:Name>framework_root</d2p1:Name>
       <d2p1:TypeString>System.String</d2p1:TypeString>
     </d2p1:Variable>
-    <d2p1:Variable z:Id="i90">
-      <d2p1:DefaultValueExpression>@"D:\yandex_disk\YandexDisk\01_birpa\02_rpa\rpa_development\projects\rpa_project_template"</d2p1:DefaultValueExpression>
+    <d2p1:Variable z:Id="i94">
+      <d2p1:DefaultValueExpression>@"D:\yandex_disk\YandexDisk\01_birpa\02_rpa\rpa_development\projects\pix_3_0_templates\rpa_project_template"</d2p1:DefaultValueExpression>
       <d2p1:Description>Полный путь до корня проекта. Все пути вычисляются относительно project_root</d2p1:Description>
       <d2p1:Name>project_root</d2p1:Name>
       <d2p1:TypeString>System.String</d2p1:TypeString>
